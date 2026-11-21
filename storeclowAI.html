@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="so">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>StoreClaw AI - TechSomalia</title>
+<meta name="description" content="Ku samee muuqaallo iyo sawirro AI ah, maamul dukaankaaga internetka, kuna bilow ganacsi online ah.">
+<meta name="theme-color" content="#080D1B">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 22px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at top, #182d55, transparent 50%),
+        #080D1B;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 440px;
+    padding: 28px 22px;
+    text-align: center;
+    background: #111d35;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 23px;
+    box-shadow: 0 20px 65px rgba(0,0,0,.4);
+}
+
+/* TOP CTA BUTTON */
+
+.top-area {
+    margin-bottom: 28px;
+}
+
+.top-label {
+    display: block;
+    color: #aebbd0;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.top-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 17px 12px;
+    overflow: hidden;
+    border-radius: 13px;
+    background: linear-gradient(100deg, #087cf5, #00b9e8);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: 0 0 22px rgba(0,170,255,.35);
+    animation: bluePulse 2s infinite;
+}
+
+.top-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.3),
+        transparent
+    );
+    animation: shine 3s infinite;
+}
+
+.top-button span {
+    position: relative;
+    z-index: 1;
+}
+
+.arrow {
+    display: inline-block;
+    animation: arrowMove 1s infinite;
+}
+
+@keyframes bluePulse {
+    0%, 100% {
+        box-shadow: 0 0 12px rgba(0,170,255,.3);
+    }
+    50% {
+        box-shadow: 0 0 28px rgba(0,170,255,.7);
+    }
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    60%, 100% { left: 150%; }
+}
+
+@keyframes arrowMove {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(6px); }
+}
+
+/* BRAND */
+
+.brand {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.brand span {
+    color: #ff9d36;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-bottom: 19px;
+    background: rgba(255,157,54,.12);
+    border: 1px solid rgba(255,157,54,.3);
+    color: #ffb15c;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 29px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+h1 span {
+    color: #ff9d36;
+}
+
+.description {
+    color: #b5c1d5;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 23px;
+}
+
+/* CREDITS */
+
+.credits {
+    padding: 19px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffbd55, #ff8236);
+    color: #172033;
+}
+
+.credits strong {
+    display: block;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.credits small {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* FEATURES */
+
+.features {
+    text-align: left;
+    margin-bottom: 27px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    margin-bottom: 15px;
+    color: #dce5f4;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.check {
+    color: #35dc9b;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* BOTTOM CTA */
+
+.bottom-area {
+    padding: 17px 12px;
+    background: rgba(40,220,145,.07);
+    border: 1px solid rgba(40,220,145,.2);
+    border-radius: 16px;
+}
+
+.bottom-label {
+    display: block;
+    color: #65eab4;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 11px;
+    letter-spacing: .5px;
+}
+
+.bottom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 18px 10px;
+    border-radius: 12px;
+    background: linear-gradient(100deg, #08b979, #23df91);
+    color: #052d20;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: 0 0 22px rgba(35,223,145,.3);
+    animation: greenPulse 2s infinite;
+    transition: transform .2s;
+}
+
+.bottom-button:hover {
+    transform: scale(1.025);
+}
+
+@keyframes greenPulse {
+    0%, 100% {
+        box-shadow: 0 0 12px rgba(35,223,145,.25);
+    }
+    50% {
+        box-shadow: 0 0 27px rgba(35,223,145,.65);
+    }
+}
+
+.bottom-arrow {
+    font-size: 20px;
+    animation: arrowMove 1s infinite;
+}
+
+.note {
+    color: #9aa8bd;
+    font-size: 11px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.footer {
+    margin-top: 24px;
+    color: #8190a8;
+    font-size: 12px;
+}
+
+.footer a {
+    color: #ffad55;
+    text-decoration: none;
+}
+
+@media (max-width: 380px) {
+    .container {
+        padding: 25px 17px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+    <!-- TOP BUTTON: BOOQO STORECLAW AI -->
+
+    <div class="top-area">
+
+        <span class="top-label">
+            MA RABTAA INAAD SHARAXAADDA KA BOODDO?
+        </span>
+
+        <a
+            class="top-button"
+            href="https://www.awin1.com/cread.php?awinmid=126991&awinaffid=2990203&ued=https%3A%2F%2Fwww.storeclaw.ai%2F"
+            rel="sponsored nofollow"
+        >
+            <span>BOOQO STORECLAW AI</span>
+            <span class="arrow">➜</span>
+        </a>
+
+    </div>
+
+    <!-- BRAND -->
+
+    <div class="brand">
+        StoreClaw <span>AI</span>
+    </div>
+
+    <span class="badge">
+        GANACSIGA MUSTAQBALKAAGA
+    </span>
+
+    <h1>
+        Ganacsigaaga<br>
+        <span>AI ku kobci!</span>
+    </h1>
+
+    <p class="description">
+        Ma rabtaa inaad AI ku samaysato muuqaallo
+        iyo sawirro qurux badan, ku xayeysiiso
+        alaabtaada, maamusho dukaankaaga internetka,
+        ama bilowdo ganacsi online ah?
+
+        StoreClaw AI ayaa kaa caawin kara!
+    </p>
+
+    <!-- FREE CREDITS -->
+
+    <div class="credits">
+        <strong>300 BILAASH!</strong>
+        <small>DHIBCOOD OO BILAASH AH</small>
+    </div>
+
+    <!-- FEATURES -->
+
+    <div class="features">
+
+        <div class="feature">
+            <span class="check">✓</span>
+            <span>
+                Ku samee muuqaallo iyo sawirro tayo sare leh adigoo adeegsanaya AI.
+            </span>
+        </div>
+
+        <div class="feature">
+            <span class="check">✓</span>
+            <span>
+                Samee xayeysiis qurux badan oo aad ku soo bandhigto alaabtaada.
+            </span>
+        </div>
+
+        <div class="feature">
+            <span class="check">✓</span>
+            <span>
+                Maamul dukaankaaga internetka iyo alaabta aad iibinayso.
+            </span>
+        </div>
+
+        <div class="feature">
+            <span class="check">✓</span>
+            <span>
+                Ka bilow fikradahaaga ganacsi internetka.
+            </span>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM BUTTON: HADDA BILOW -->
+
+    <div class="bottom-area">
+
+        <span class="bottom-label">
+            DIYAAR MA U TAHAY INAAD BILOWDO?
+        </span>
+
+        <a
+            class="bottom-button"
+            href="https://www.awin1.com/cread.php?awinmid=126991&awinaffid=2990203&ued=https%3A%2F%2Fwww.storeclaw.ai%2F"
+            rel="sponsored nofollow"
+        >
+            Hadda Bilow
+            <span class="bottom-arrow">➜</span>
+        </a>
+
+    </div>
+
+    <p class="note">
+        Riix badhanka si aad u booqato
+        bogga rasmiga ah ee StoreClaw AI.
+        300-ka dhibcood waxay ku xiran yihiin
+        shuruudaha shirkadda.
+    </p>
+
+    <div class="footer">
+        Waxaa kuu diyaariyey
+        <a href="https://www.techsomalia.com/">
+            TechSomalia
+        </a>
+    </div>
+
+</main>
+
+</body>
+</html>
