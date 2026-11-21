@@ -1,10 +1,10 @@
-
+```html
 <!DOCTYPE html>
 <html lang="so">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ <link rel="icon" href="./techsomalia-logo.png">
 <title>StoreClaw AI - TechSomalia</title>
 <meta name="description" content="Ku samee muuqaallo iyo sawirro AI ah, maamul dukaankaaga internetka, kuna bilow ganacsi online ah.">
 <meta name="theme-color" content="#080D1B">
@@ -39,8 +39,6 @@ body {
     border-radius: 23px;
     box-shadow: 0 20px 65px rgba(0,0,0,.4);
 }
-
-/* TOP CTA BUTTON */
 
 .top-area {
     margin-bottom: 28px;
@@ -101,12 +99,8 @@ body {
 }
 
 @keyframes bluePulse {
-    0%, 100% {
-        box-shadow: 0 0 12px rgba(0,170,255,.3);
-    }
-    50% {
-        box-shadow: 0 0 28px rgba(0,170,255,.7);
-    }
+    0%, 100% { box-shadow: 0 0 12px rgba(0,170,255,.3); }
+    50% { box-shadow: 0 0 28px rgba(0,170,255,.7); }
 }
 
 @keyframes shine {
@@ -118,8 +112,6 @@ body {
     0%, 100% { transform: translateX(0); }
     50% { transform: translateX(6px); }
 }
-
-/* BRAND */
 
 .brand {
     font-size: 30px;
@@ -161,8 +153,6 @@ h1 span {
     margin-bottom: 23px;
 }
 
-/* CREDITS */
-
 .credits {
     padding: 19px;
     margin-bottom: 25px;
@@ -181,8 +171,6 @@ h1 span {
     font-size: 12px;
     font-weight: 800;
 }
-
-/* FEATURES */
 
 .features {
     text-align: left;
@@ -204,8 +192,6 @@ h1 span {
     font-size: 19px;
     font-weight: bold;
 }
-
-/* BOTTOM CTA */
 
 .bottom-area {
     padding: 17px 12px;
@@ -246,12 +232,8 @@ h1 span {
 }
 
 @keyframes greenPulse {
-    0%, 100% {
-        box-shadow: 0 0 12px rgba(35,223,145,.25);
-    }
-    50% {
-        box-shadow: 0 0 27px rgba(35,223,145,.65);
-    }
+    0%, 100% { box-shadow: 0 0 12px rgba(35,223,145,.25); }
+    50% { box-shadow: 0 0 27px rgba(35,223,145,.65); }
 }
 
 .bottom-arrow {
@@ -277,6 +259,133 @@ h1 span {
     text-decoration: none;
 }
 
+/* BROWSER WARNING POPUP */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,.82);
+    backdrop-filter: blur(7px);
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+.modal {
+    width: 100%;
+    max-width: 390px;
+    background: #14233e;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 21px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 20px 70px rgba(0,0,0,.6);
+    animation: modalIn .25s ease-out;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.warning-icon {
+    font-size: 39px;
+    margin-bottom: 12px;
+}
+
+.modal h2 {
+    font-size: 21px;
+    color: #ffbd55;
+    margin-bottom: 10px;
+}
+
+.modal-intro {
+    color: #c0cde0;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 19px;
+}
+
+.steps {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background: rgba(255,255,255,.06);
+    color: #e3ebf7;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.step-number {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #087cf5;
+    color: white;
+    font-weight: bold;
+}
+
+.copy-button,
+.continue-button,
+.close-button {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 11px;
+    padding: 14px 10px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.copy-button {
+    background: #ffbd55;
+    color: #182033;
+    margin-bottom: 10px;
+}
+
+.continue-button {
+    background: linear-gradient(100deg, #08b979, #23df91);
+    color: #052d20;
+    margin-bottom: 10px;
+}
+
+.close-button {
+    background: rgba(255,255,255,.08);
+    color: #d5dfed;
+}
+
+.copy-status {
+    display: none;
+    color: #65eab4;
+    font-size: 12px;
+    margin: 0 0 12px;
+}
+
 @media (max-width: 380px) {
     .container {
         padding: 25px 17px;
@@ -284,6 +393,10 @@ h1 span {
 
     h1 {
         font-size: 25px;
+    }
+
+    .modal {
+        padding: 22px 16px;
     }
 }
 
@@ -300,26 +413,16 @@ h1 span {
 
 <main class="container">
 
-    <!-- TOP BUTTON: BOOQO STORECLAW AI -->
-
     <div class="top-area">
-
         <span class="top-label">
             MA RABTAA INAAD SHARAXAADDA KA BOODDO?
         </span>
 
-        <a
-            class="top-button"
-            href="https://www.awin1.com/cread.php?awinmid=126991&awinaffid=2990203&ued=https%3A%2F%2Fwww.storeclaw.ai%2F"
-            rel="sponsored nofollow"
-        >
+        <a class="top-button affiliate-trigger" href="#">
             <span>BOOQO STORECLAW AI</span>
             <span class="arrow">➜</span>
         </a>
-
     </div>
-
-    <!-- BRAND -->
 
     <div class="brand">
         StoreClaw <span>AI</span>
@@ -343,14 +446,10 @@ h1 span {
         StoreClaw AI ayaa kaa caawin kara!
     </p>
 
-    <!-- FREE CREDITS -->
-
     <div class="credits">
-        <strong>300 CREDITS BILAASH BILOWGA!</strong>
-        <small>+50 CREDITS DAILY OO BILAASH AH</small>
+        <strong>300 Credits oo bilaash!</strong>
+        <small>+50 Credits Oo Daily Ah </small>
     </div>
-
-    <!-- FEATURES -->
 
     <div class="features">
 
@@ -384,19 +483,13 @@ h1 span {
 
     </div>
 
-    <!-- BOTTOM BUTTON: HADDA BILOW -->
-
     <div class="bottom-area">
 
         <span class="bottom-label">
             DIYAAR MA U TAHAY INAAD BILOWDO?
         </span>
 
-        <a
-            class="bottom-button"
-            href="https://www.awin1.com/cread.php?awinmid=126991&awinaffid=2990203&ued=https%3A%2F%2Fwww.storeclaw.ai%2F"
-            rel="sponsored nofollow"
-        >
+        <a class="bottom-button affiliate-trigger" href="#">
             Hadda Bilow
             <span class="bottom-arrow">➜</span>
         </a>
@@ -419,5 +512,140 @@ h1 span {
 
 </main>
 
+<div class="modal-overlay" id="browserModal" role="dialog"
+     aria-modal="true" aria-labelledby="modalTitle">
+
+    <div class="modal">
+
+        <div class="warning-icon">🌐</div>
+
+        <h2 id="modalTitle">Hal tallaabo oo muhiim ah!</h2>
+
+        <p class="modal-intro">
+            Haddii aad boggan ka furtay TikTok, fadlan raac
+            saddexdan tallaabo si aad StoreClaw AI u booqato:
+        </p>
+
+        <div class="steps">
+
+            <div class="step">
+                <span class="step-number">1</span>
+                <span>
+                    Taabo saddexda dhibcood (⋯) ee ku yaalla
+                    geeska kore ee bogga TikTok.
+                </span>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <span>
+                    Dooro <strong>Open in Browser</strong>
+                    si boggan loogu furo Chrome ama browser-kaaga.
+                </span>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <span>
+                    Markuu boggu browser-ka ka furmo,
+                    taabo <strong>BOOQO STORECLAW AI</strong>
+                    si aad u sii wadato.
+                </span>
+            </div>
+
+        </div>
+
+        <button class="copy-button" id="copyLink">
+            📋 KOOBI LINKIGA STORECLAW
+        </button>
+
+        <p class="copy-status" id="copyStatus">
+            ✓ Linkiga waa la koobiyeeyay. Chrome ku fur oo ku dheji.
+        </p>
+
+        <button class="continue-button" id="continueButton">
+            SII WAD STORECLAW AI ➜
+        </button>
+
+        <button class="close-button" id="closeModal">
+            Dib ugu noqo bogga
+        </button>
+
+    </div>
+</div>
+
+<script>
+const affiliateURL =
+    "https://www.awin1.com/cread.php?awinmid=126991&awinaffid=2990203&ued=https%3A%2F%2Fwww.storeclaw.ai%2F";
+
+const copyURL =
+    "https://www.techsomalia.com/freeCreditAI.html";
+
+const modal = document.getElementById("browserModal");
+const triggers = document.querySelectorAll(".affiliate-trigger");
+const copyButton = document.getElementById("copyLink");
+const continueButton = document.getElementById("continueButton");
+const closeButton = document.getElementById("closeModal");
+const copyStatus = document.getElementById("copyStatus");
+
+/* Show warning when either CTA is clicked */
+
+triggers.forEach(button => {
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
+        modal.classList.add("show");
+    });
+});
+
+/* Copy TechSomalia redirect URL */
+
+copyButton.addEventListener("click", async function() {
+    try {
+        await navigator.clipboard.writeText(copyURL);
+        copyStatus.style.display = "block";
+        copyButton.textContent = "✓ LINKIGA WAA LA KOOBIYEEYEY";
+    } catch (error) {
+        const textArea = document.createElement("textarea");
+        textArea.value = copyURL;
+        textArea.style.position = "fixed";
+        textArea.style.opacity = "0";
+        document.body.appendChild(textArea);
+        textArea.select();
+
+        const copied = document.execCommand("copy");
+        textArea.remove();
+
+        if (copied) {
+            copyStatus.style.display = "block";
+            copyButton.textContent = "✓ LINKIGA WAA LA KOOBIYEEYEY";
+        } else {
+            copyStatus.textContent = "Copy-ga wuu fashilmay. Fadlan isku day mar kale.";
+            copyStatus.style.display = "block";
+        }
+    }
+});
+
+/* Continue to StoreClaw through Awin */
+
+continueButton.addEventListener("click", function() {
+    window.location.href = affiliateURL;
+});
+
+/* Close warning */
+
+closeButton.addEventListener("click", function() {
+    modal.classList.remove("show");
+});
+
+/* Close if user taps outside the popup */
+
+modal.addEventListener("click", function(event) {
+    if (event.target === modal) {
+        modal.classList.remove("show");
+    }
+});
+</script>
+
 </body>
 </html>
+```
