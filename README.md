@@ -20,3 +20,4 @@ LearnTech is a static Af-Soomaali learning site for AI, digital skills, coding, 
 4. Link the article from `blog.html` or the relevant home-page category.
 
 All original article text and image files are preserved.
+# learntech2026
