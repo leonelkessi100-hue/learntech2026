@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="so" class="scroll-smooth">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-26STFV9LR7');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barashada Web Development Af Soomaali: HTML, CSS, JavaScript ilaa Full Stack</title>
+
+    <meta name="description"
+        content="Baro Web Development Af Soomaali laga bilaabo HTML, CSS iyo JavaScript ilaa React, Node.js, APIs iyo Full Stack Development. Hel roadmap cad, projects, skills iyo sida Web Developer loo noqdo.">
+
+    <meta name="author" content="LearnTech">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.techEnglisha.com/webdevelopment.html">
+    <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Barashada Web Development Af Soomaali: HTML, CSS, JavaScript ilaa Full Stack">
+    <meta property="og:description" content="Hagaha Web Development Af Soomaali: HTML, CSS, JavaScript, React, Node.js, APIs, Git, projects iyo roadmap-ka Full Stack Developer.">
+    <meta property="og:url" content="https://www.techEnglisha.com/webdevelopment.html">
+    <meta property="og:site_name" content="LearnTech">
+    <meta property="og:image" content="https://www.techEnglisha.com/techEnglisha-logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Barashada Web Development Af Soomaali: HTML, CSS, JavaScript ilaa Full Stack">
+    <meta name="twitter:description" content="Baro Web Development Af Soomaali laga bilaabo beginner ilaa Full Stack Developer, adigoo raacaya roadmap cad iyo projects dhab ah.">
+    <meta name="twitter:image" content="https://www.techEnglisha.com/techEnglisha-logo.png">
+
+    <!-- Article structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": "https://www.techEnglisha.com/webdevelopment.html#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.techEnglisha.com/webdevelopment.html"
+      },
+      "headline": "Barashada Web Development Af Soomaali: HTML, CSS, JavaScript ilaa Full Stack",
+      "description": "Hagaha Web Development Af Soomaali laga bilaabo HTML, CSS iyo JavaScript ilaa React, Node.js, APIs, Git, projects iyo Full Stack Development.",
+      "author": {
+        "@type": "Organization",
+        "name": "LearnTech",
+        "url": "https://www.techEnglisha.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LearnTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.techEnglisha.com/techEnglisha-logo.png"
+        }
+      },
+      "datePublished": "2026-04-01",
+      "dateModified": "2026-09-04",
+      "inLanguage": "so"
+    }
+    </script>
+
+    <!-- Breadcrumb structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.techEnglisha.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.techEnglisha.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Web Development",
+          "item": "https://www.techEnglisha.com/webdevelopment.html"
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: #2563eb;
+            z-index: 100;
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        .article-body {
+            color: #94a3b8;
+            line-height: 1.9;
+        }
+
+        .article-body p {
+            margin-bottom: 1.55rem;
+            font-size: 1.125rem;
+            text-align: left;
+        }
+
+        .article-body h2 {
+            font-size: 1.55rem;
+            font-weight: 800;
+            color: #60a5fa;
+            margin-top: 2.75rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+            line-height: 1.35;
+        }
+
+        .article-body h3 {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #f8fafc;
+            margin-top: 1.8rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-body h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #cbd5e1;
+            margin-top: 1.5rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .article-body ul,
+        .article-body ol {
+            margin: 0 0 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .article-body ul {
+            list-style-type: disc;
+        }
+
+        .article-body ol {
+            list-style-type: decimal;
+        }
+
+        .article-body li {
+            margin-bottom: 0.65rem;
+        }
+
+        .article-body li::marker {
+            color: #60a5fa;
+            font-weight: 700;
+        }
+
+        .article-body strong {
+            color: #f8fafc;
+            font-weight: 700;
+        }
+
+        .article-body a {
+            color: #60a5fa;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .article-body img {
+            width: 100%;
+            height: auto;
+            border-radius: 1.5rem;
+            margin: 1.75rem 0 2rem;
+        }
+
+        .code-snippet {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
+            font-family: monospace;
+            font-size: 0.875rem;
+            overflow-x: auto;
+            white-space: pre;
+            border: 1px solid #334155;
+            margin: 1.5rem 0;
+        }
+
+        .link-grid a {
+            text-decoration: none;
+        }
+
+        .quick-box {
+            background: rgba(37, 99, 235, 0.08);
+            border: 1px solid rgba(96, 165, 250, 0.22);
+            border-radius: 1rem;
+            padding: 1.25rem;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .toc {
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(15, 23, 42, 0.38);
+            border-radius: 1.25rem;
+            padding: 1.25rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box {
+            background: rgba(245, 158, 11, 0.07);
+            border: 1px solid rgba(245, 158, 11, 0.18);
+            border-radius: 1rem;
+            padding: 1.15rem;
+            margin: 1.5rem 0;
+        }
+
+        code.inline-code {
+            color: #93c5fd;
+            background: #0f172a;
+            padding: 0.15rem 0.35rem;
+            border-radius: 0.35rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 0.85rem;
+            text-align: left;
+        }
+
+        th {
+            background: #0f172a;
+            color: #f8fafc;
+        }
+
+        td {
+            color: #cbd5e1;
+        }
+    </style>
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+
+<body class="bg-[#0b0f19] text-[#f8fafc]">
+
+    <div id="scroll-progress"></div>
+
+    <nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+            <a href="./index.html" class="flex items-center gap-2 no-underline">
+                <span class="text-2xl font-bold font-display text-white">
+                    Rain<span style="color:var(--coral)">Book</span>
+                </span>
+            </a>
+
+            <div class="flex items-center">
+                <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+                    <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition no-underline">Home</a></li>
+                    <li><a href="./blog.html" class="px-4 py-2 rounded-lg text-[var(--coral)] font-bold no-underline">Blog</a></li>
+                    <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition no-underline">About</a></li>
+                    <li><a href="./contact.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition no-underline">Contact</a></li>
+                </ul>
+                <!-- <button id="menu-btn" class="md:hidden text-2xl text-blue-400 ml-4" aria-label="Open menu">☰</button> -->
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="bg-slate-900 flex-col p-6 space-y-4 md:hidden border-b border-white/5 hidden">
+        <a href="./index.html" class="font-bold text-white block py-2 border-b border-white/5">Home</a>
+        <a href="./blog.html" class="font-bold text-[var(--coral)] block py-2 border-b border-white/5">Blog</a>
+        <a href="./about.html" class="font-bold text-white block py-2 border-b border-white/5">About</a>
+        <a href="./contact.html" class="font-bold text-white block py-2">Contact</a>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pt-8">
+        <nav aria-label="Breadcrumb" class="text-sm text-slate-500">
+            <a href="./index.html" class="no-underline">Home</a>
+            <span class="mx-2">/</span>
+            <a href="./blog.html" class="no-underline">Blog</a>
+            <span class="mx-2">/</span>
+            <span aria-current="page">Web Development</span>
+        </nav>
+    </div>
+
+    <header class="py-10 md:py-14 px-6 text-center max-w-4xl mx-auto">
+        <div class="mb-4 inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full text-xs font-bold uppercase">
+            Digital Skills • Web Development
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
+            Barashada Web Development Af Soomaali: HTML, CSS, JavaScript ilaa Full Stack
+        </h1>
+
+        <p class="max-w-3xl mx-auto text-slate-400 text-base md:text-lg leading-8">
+            Hagahaan wuxuu ku tusayaa sida Web Development loo barto laga bilaabo beginner ilaa heer aad ku dhisi karto websites, APIs iyo web applications dhab ah.
+        </p>
+
+        <div class="flex flex-wrap justify-center items-center gap-3 text-slate-500 text-sm mt-6">
+            <span>By LearnTech</span>
+            <span>•</span>
+            <span>La cusbooneysiiyay Sebtembar 2026</span>
+            <span>•</span>
+            <span>12+ min read</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 pb-20">
+        <article class="bg-[#131926] rounded-3xl md:rounded-[2.5rem] p-6 sm:p-10 md:p-16 shadow-xl border border-white/5 article-body">
+
+            <div class="quick-box">
+                <p class="mb-0">
+                    <strong>Jawaabta kooban:</strong> Web Development waa dhisidda websites iyo web applications.
+                    Haddii aad beginner tahay, waddada ugu cad waa
+                    <strong>HTML → CSS → JavaScript → Git/GitHub → React → Backend/Node.js → Database → APIs → Projects → Portfolio.</strong>
+                    Uma baahnid inaad dhammaan hal mar barato.
+                </p>
+            </div>
+
+            <p>
+                <strong>Web Development</strong> waa mid ka mid ah xirfadaha digital-ka ah ee kuu oggolaanaya inaad wax ku dhisto,
+                adeeg u iibiso clients, ama aad sameysato products iyo systems kuu gaar ah. Laakiin qofka bilaabaya badanaa wuxuu la kulmaa su'aalo badan:
+                <em>HTML ma ka bilaabaa? CSS ka dib maxaan bartaa? JavaScript goorma? React ma hore ayaan u bilaabaa? Backend maxaa loo baahan yahay? Sidee Web Developer loo noqdaa?</em>
+            </p>
+
+            <p>
+                Maqaalkan waxaan uga jawaabaynaa su'aalahaas si nidaamsan. Halkii aad tool kasta oo cusub u boodboodi lahayd,
+                waxaad heli doontaa <strong>roadmap Web Development Af Soomaali</strong> oo kuu sheegaya waxa aad hadda baranayso,
+                waxa xiga, iyo goorta aad project samaynayso.
+            </p>
+
+            <div class="toc">
+                <h2 class="!mt-0">Waxaad Maqaalkan Ka Baran Doontaa</h2>
+                <ol class="mb-0">
+                    <li><a href="#what">Web Development waa maxay?</a></li>
+                    <li><a href="#frontend-backend">Frontend, Backend iyo Full Stack</a></li>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS iyo Responsive Design</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#git">Git iyo GitHub</a></li>
+                    <li><a href="#react">React iyo Frontend Development</a></li>
+                    <li><a href="#backend">Node.js, Express iyo Backend</a></li>
+                    <li><a href="#api">API-yada</a></li>
+                    <li><a href="#database">Database</a></li>
+                    <li><a href="#security">Security iyo best practices</a></li>
+                    <li><a href="#projects">Projects lagu barto Web Development</a></li>
+                    <li><a href="#portfolio">Portfolio iyo GitHub</a></li>
+                    <li><a href="#career">Shaqo, freelancing iyo online income</a></li>
+                    <li><a href="#roadmap">Roadmap Beginner ilaa Full Stack</a></li>
+                    <li><a href="#Englisha">Web Development iyo Soomaaliya</a></li>
+                    <li><a href="#mistakes">Khaladaadka beginners sameeyaan</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ol>
+            </div>
+
+            <section id="what">
+                <h2>Web Development Waa Maxay?</h2>
+
+                <p>
+                    Web Development waa habka lagu dhiso, lagu shaqaysiiyo laguna dayactiro websites iyo web applications.
+                    Website fudud oo xog soo bandhiga iyo application leh login, dashboard, database iyo payments dhammaantood waxay ka tirsan yihiin Web Development,
+                    laakiin heerarka iyo complexity-ga way kala duwan yihiin.
+                </p>
+
+                <p>
+                    Haddii aad rabto inaad barato <strong>Web Development Af Soomaali</strong>, waxaa fiican inaad marka hore fahanto saddex qaybood:
+                    <strong>Frontend</strong>, <strong>Backend</strong> iyo <strong>Database</strong>.
+                </p>
+            </section>
+
+            <section id="frontend-backend">
+                <h2>Frontend, Backend iyo Full Stack Maxay Kala Yihiin?</h2>
+
+                <h3>Frontend Development</h3>
+                <p>
+                    Frontend waa qaybta user-ku arko oo uu la falgalo: text, buttons, forms, navigation, dashboards, animations iyo layout.
+                    Teknoolajiyada aasaasiga ah waa <strong>HTML, CSS iyo JavaScript</strong>.
+                </p>
+
+                <h3>Backend Development</h3>
+                <p>
+                    Backend waa qaybta ka dambeysa interface-ka. Halkaas waxaa ka dhacaya business logic,
+                    authentication, authorization, database access, API requests iyo hawlo kale oo server-side ah.
+                </p>
+
+                <h3>Full Stack Development</h3>
+                <p>
+                    Full Stack Developer waa qof awood u leh inuu fahmo oo dhiso frontend iyo backend, isla markaana fahamaya database,
+                    APIs, deployment iyo security heerka looga baahan yahay system-ka uu dhisayo.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4 my-6">
+                    <div class="p-5 rounded-2xl border border-white/5 bg-slate-950">
+                        <h4 class="!mt-0 text-blue-400">Frontend</h4>
+                        <p class="text-sm mb-0">HTML, CSS, JavaScript, React</p>
+                    </div>
+                    <div class="p-5 rounded-2xl border border-white/5 bg-slate-950">
+                        <h4 class="!mt-0 text-blue-400">Backend</h4>
+                        <p class="text-sm mb-0">Node.js, Express, APIs, authentication</p>
+                    </div>
+                    <div class="p-5 rounded-2xl border border-white/5 bg-slate-950">
+                        <h4 class="!mt-0 text-blue-400">Data</h4>
+                        <p class="text-sm mb-0">SQL/NoSQL, queries, relationships, backups</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="html">
+                <h2>1. HTML: Halka Laga Bilaabo Web Development</h2>
+
+                <p>
+                    <strong>HTML (HyperText Markup Language)</strong> wuxuu qeexaa qaab-dhismeedka page-ka.
+                    Waxaad HTML ku dhistaa headings, paragraphs, images, forms, tables, links iyo qaybaha kale ee webpage-ka.
+                </p>
+
+                <h3>Semantic HTML Waa Maxay?</h3>
+                <p>
+                    Semantic HTML wuxuu isticmaalaa elements qeexaya macnaha content-ka, sida
+                    <code class="inline-code">header</code>, <code class="inline-code">nav</code>,
+                    <code class="inline-code">main</code>, <code class="inline-code">article</code> iyo
+                    <code class="inline-code">footer</code>.
+                    Tani waxay ka dhigtaa structure-ka page-ka mid si fiican loo fahmi karo.
+                </p>
+
+                <div class="code-snippet"><code>&lt;main&gt;
+  &lt;article&gt;
+    &lt;h1&gt;Barashada Web Development&lt;/h1&gt;
+    &lt;p&gt;Halkan waxaan ku baranaynaa aasaaska Web Development.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;</code></div>
+
+                <p>
+                    HTML kaligiis ma dhisayo website casri ah oo dhammeystiran, laakiin waa foundation-ka aadan ka boodin karin.
+                </p>
+            </section>
+
+            <section id="css">
+                <h2>2. CSS: Naqshadda, Layout-ka iyo Responsive Web Design</h2>
+
+                <p>
+                    <strong>CSS</strong> wuxuu xakameeyaa muuqaalka website-ka: colors, typography, spacing, borders,
+                    layout iyo responsive behavior.
+                </p>
+
+                <h3>Waxyaabaha CSS-ka ah ee beginner-ku barto</h3>
+                <ul>
+                    <li>Selectors iyo specificity</li>
+                    <li>Box model</li>
+                    <li>Margin iyo padding</li>
+                    <li>Flexbox</li>
+                    <li>CSS Grid</li>
+                    <li>Media queries</li>
+                    <li>Responsive design</li>
+                    <li>Transitions iyo basic animations</li>
+                </ul>
+
+                <p>
+                    Website maanta lagu isticmaalo mobile, tablet iyo desktop waa inuu la qabsadaa screen sizes kala duwan.
+                    Sidaas darteed <strong>responsive web design</strong> waa skill aasaasi ah, ma aha wax lagu daro dhammaadka.
+                </p>
+            </section>
+
+            <section id="javascript">
+                <h2>3. JavaScript: Logic-ka Website-ka</h2>
+
+                <p>
+                    <strong>JavaScript</strong> waa luqadda programming-ka ee kuu oggolaanaysa inaad website-ka ka dhigto interactive.
+                    Waxaad ku maamuli kartaa events, forms, DOM, API requests, state iyo logic badan oo application-ka ah.
+                </p>
+
+                <h3>Mawduucyada JavaScript ee aad si nidaamsan u baranayso</h3>
+                <ul>
+                    <li>Variables iyo data types</li>
+                    <li>Functions</li>
+                    <li>Arrays iyo objects</li>
+                    <li>Loops iyo conditionals</li>
+                    <li>DOM manipulation</li>
+                    <li>Events</li>
+                    <li>Array methods sida map, filter iyo reduce</li>
+                    <li>Promises iyo async/await</li>
+                    <li>Fetch API</li>
+                    <li>Error handling</li>
+                    <li>Modules</li>
+                </ul>
+
+                <h3>Tusaale Fetch API</h3>
+                <div class="code-snippet"><code>async function getUsers() {
+  try {
+    const response = await fetch('/api/users');
+
+    if (!response.ok) {
+      throw new Error('Request failed');
+    }
+
+    const users = await response.json();
+    console.log(users);
+  } catch (error) {
+    console.error(error);
+  }
+}</code></div>
+
+                <p>
+                    Marka aad JavaScript si fiican u fahanto, waxaad leedahay foundation aad ugu gudbi karto frameworks iyo libraries sida React.
+                </p>
+            </section>
+
+            <section id="git">
+                <h2>4. Git iyo GitHub: Maamulka Code-ka</h2>
+
+                <p>
+                    <strong>Git</strong> wuxuu kaydiyaa history-ga isbeddellada project-kaaga.
+                    Waxaad ku laaban kartaa version hore, sameyn kartaa branches, isla markaana si nidaamsan ula shaqeyn kartaa project.
+                </p>
+
+                <p>
+                    <strong>GitHub</strong> wuxuu kuu yahay meel aad repositories-kaaga ku kaydsato oo aad projects-kaaga kula wadaagto dadka kale.
+                    Marka aad dhiseyso portfolio, GitHub wuxuu kaa caawin karaa inaad muujiso code iyo projects dhab ah.
+                </p>
+
+                <div class="code-snippet"><code>git init
+git add .
+git commit -m "Initial project"
+git branch -M main
+git remote add origin YOUR_REPOSITORY_URL
+git push -u origin main</code></div>
+            </section>
+
+            <section id="react">
+                <h2>5. React: Tallaabada Xigta ee Frontend Development</h2>
+
+                <p>
+                    Marka HTML, CSS iyo JavaScript foundation kuu adkaadaan, waxaad u gudbi kartaa <strong>React</strong>.
+                    React wuxuu kaa caawinayaa inaad UI-ga u qaybiso components la isticmaali karo, isla markaana maamusho application state iyo rendering.
+                </p>
+
+                <h3>Waxyaabaha React-ka lagu barto</h3>
+                <ul>
+                    <li>Components</li>
+                    <li>Props</li>
+                    <li>State</li>
+                    <li>Events</li>
+                    <li>Conditional rendering</li>
+                    <li>Lists iyo keys</li>
+                    <li>Forms</li>
+                    <li>useEffect iyo data fetching</li>
+                    <li>Context marka uu project-ku u baahan yahay</li>
+                    <li>React Router</li>
+                </ul>
+
+                <p>
+                    Ha ku degdegin React haddii JavaScript-ku kuu yahay meel daciif ah. Framework-ku wuxuu fududeeyaa dhismaha UI,
+                    laakiin JavaScript ayaa ah foundation-ka aad ku fahmi doonto waxa React sameynayo.
+                </p>
+            </section>
+
+            <section id="backend">
+                <h2>6. Backend Development: Node.js iyo Express</h2>
+
+                <p>
+                    Haddii aad rabto inaad ka gudubto static websites oo aad dhisto systems dhab ah,
+                    waxaad u baahan tahay <strong>Backend Development</strong>.
+                </p>
+
+                <p>
+                    <strong>Node.js</strong> wuxuu kuu oggolaanayaa inaad JavaScript ku isticmaasho server-ka.
+                    <strong>Express</strong> wuxuu kaa caawinayaa inaad dhisto routes, middleware iyo APIs.
+                </p>
+
+                <h3>Waxyaabaha Backend Developer-ku barto</h3>
+                <ul>
+                    <li>HTTP methods: GET, POST, PUT/PATCH, DELETE</li>
+                    <li>Request iyo response</li>
+                    <li>Routing</li>
+                    <li>Middleware</li>
+                    <li>Error handling</li>
+                    <li>Environment variables</li>
+                    <li>CORS</li>
+                    <li>Authentication iyo authorization</li>
+                    <li>Validation</li>
+                    <li>API security</li>
+                    <li>Testing</li>
+                    <li>Deployment</li>
+                </ul>
+            </section>
+
+            <section id="api">
+                <h2>7. API: Sidee Frontend iyo Backend Isugu Xirmaan?</h2>
+
+                <p>
+                    API wuxuu noqon karaa interface ay application-yadu ku kala xiriiraan.
+                    Tusaale ahaan React frontend wuxuu u diri karaa backend request si uu u helo users, products ama orders.
+                </p>
+
+                <div class="code-snippet"><code>GET /api/products
+
+Frontend  →  HTTP Request  →  Backend
+Frontend  ←  JSON Response ←  Backend</code></div>
+
+                <p>
+                    Marka aad fahanto request/response flow, waxaad bilaabeysaa inaad si fiican u fahanto sida web applications-ka casriga ahi u shaqeeyaan.
+                </p>
+            </section>
+
+            <section id="database">
+                <h2>8. Database: Xaggee Xogta Application-ku Ku Kaydsan Tahay?</h2>
+
+                <p>
+                    Database waa meesha lagu kaydiyo xogta application-ka sida users, products, orders, payments ama records.
+                    Waxaad la kulmi kartaa databases SQL ah iyo NoSQL ah, waxaana doorashada ku xiran tahay project-ka.
+                </p>
+
+                <h3>SQL</h3>
+                <p>
+                    SQL databases waxay ku shaqeeyaan tables, relationships iyo queries. PostgreSQL waa tusaale caan ah.
+                </p>
+
+                <h3>NoSQL</h3>
+                <p>
+                    NoSQL databases sida MongoDB waxay ku kaydin karaan xog qaabab document-oriented ah.
+                </p>
+
+                <p>
+                    Waxa muhiimka ahi ma aha inaad hal database magacaantiisa taqaan oo keliya; waa inaad fahanto
+                    <strong>data modeling, relationships, indexing, validation iyo backup</strong> marka project-ku weynaado.
+                </p>
+            </section>
+
+            <section id="security">
+                <h2>9. Security: Website Shaqaynaya Keliya Kuma Filna</h2>
+
+                <p>
+                    Web application fiican waa inuu sidoo kale ilaaliyaa xogta iyo accounts-ka dadka isticmaala.
+                    Marka aad ka gudubto beginner level, security waa qayb aan laga boodin karin.
+                </p>
+
+                <ul>
+                    <li>Ha ku soo celin password-ka API response.</li>
+                    <li>Isticmaal password hashing.</li>
+                    <li>Validate user input.</li>
+                    <li>Ha soo bandhigin secret keys ama environment variables.</li>
+                    <li>Si taxaddar leh u maamul authentication iyo authorization.</li>
+                    <li>Ha u dirin client-ka internal server errors faahfaahsan.</li>
+                    <li>Isticmaal HTTPS production-ka.</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong>Muhiim:</strong> Security ma aha feature aad dhammaadka ku dartid.
+                    Waa mindset aad project-ka la bilowdo.
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>10. Projects: Sida Dhabta Ah Ee Web Development Lagu Barto</h2>
+
+                <p>
+                    Tutorials-ku waxay ku siinayaan faham, laakiin project-ku wuxuu ku barayaa sida wax loo isku xiro.
+                    Qof sheeganaya inuu yaqaan HTML, CSS iyo JavaScript laakiin aan dhisin project dhab ah wuxuu weli haystaa practice kooban.
+                </p>
+
+                <h3>Project 1: Responsive Portfolio Website</h3>
+                <p>
+                    Ku baro layout, responsive design, navigation, forms iyo deployment.
+                </p>
+
+                <h3>Project 2: JavaScript Dashboard</h3>
+                <p>
+                    Ku dar API data, filtering, search, pagination ama local state si aad u barato application logic.
+                </p>
+
+                <h3>Project 3: Full Stack CRUD App</h3>
+                <p>
+                    Dhis app leh create, read, update iyo delete, kadib ku dar authentication iyo database.
+                </p>
+
+                <h3>Project 4: E-commerce MVP</h3>
+                <p>
+                    Tani waxay ku baran kartaa products, categories, carts, orders, users, APIs iyo maamulka data.
+                </p>
+
+                <h3>Project 5: Real Problem-Solving System</h3>
+                <p>
+                    Dhis system xallinaya dhibaato dhab ah sida school management, attendance, booking ama inventory.
+                    Project noocan ahi wuxuu portfolio-gaaga ka qiimo badan yahay clone aanad fahmin.
+                </p>
+            </section>
+
+            <section id="portfolio">
+                <h2>11. Portfolio iyo GitHub: Sidee Aqoontaada Loo Muujiyaa?</h2>
+
+                <p>
+                    Portfolio wanaagsan ma aha liis ku qoran “waxaan aqaan React iyo Node.js”.
+                    Waa meel aad ku muujiso <strong>waxa aad dhistay, dhibaatada aad xallisay iyo sida system-ku u shaqeeyo.</strong>
+                </p>
+
+                <p>Project kasta ku dar:</p>
+                <ul>
+                    <li>Problem-ka aad xallisay</li>
+                    <li>Features-ka</li>
+                    <li>Tech stack-ka</li>
+                    <li>GitHub repository</li>
+                    <li>Live demo haddii ay suurtagal tahay</li>
+                    <li>Waxyaabihii aad baratay</li>
+                </ul>
+
+                <p>
+                    Waxaad sidoo kale ka faa'iidaysan kartaa maqaalada LearnTech ee ku saabsan
+                    <a href="./programing.html">programming</a>
+                    iyo
+                    <a href="./10skills.html">digital skills</a>.
+                </p>
+            </section>
+
+            <section id="career">
+                <h2>12. Sidee Web Development Loogu Beddelaa Shaqo iyo Dakhli?</h2>
+
+                <p>
+                    Marka xirfaddaadu gaarto heer aad xal u dhisi karto, waxaad yeelan kartaa dhowr waddo:
+                </p>
+
+                <ul>
+                    <li>Freelancing</li>
+                    <li>Remote work</li>
+                    <li>Local clients</li>
+                    <li>Software products</li>
+                    <li>Agency ama team</li>
+                    <li>Teaching ama technical content</li>
+                </ul>
+
+                <p>
+                    Web Development sidoo kale wuxuu si dabiici ah ugu xirmi karaa <strong>online income</strong>.
+                    Tusaale ahaan waxaad dhisi kartaa website, kadibna adeeg ahaan u iibin kartaa clients ama aad isticmaali kartaa website-kaaga si aad u dhisto business kuu gaar ah.
+                </p>
+
+                <p>
+                    Haddii aad rabto inaad fahanto waddooyinka kale ee internetka lacag looga sameeyo,
+                    akhri <a href="./onlineincome.html">Sidee lacag looga sameeyaa internetka?</a>.
+                </p>
+            </section>
+
+            <section id="roadmap">
+                <h2>13. Web Development Roadmap: Beginner ilaa Full Stack</h2>
+
+                <div class="overflow-x-auto">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Marxalad</th>
+                                <th>Waxa aad baranayso</th>
+                                <th>Waxa aad dhisayso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Beginner</td>
+                                <td>HTML + CSS</td>
+                                <td>Static responsive websites</td>
+                            </tr>
+                            <tr>
+                                <td>2. Junior Frontend</td>
+                                <td>JavaScript + DOM + APIs</td>
+                                <td>Interactive apps</td>
+                            </tr>
+                            <tr>
+                                <td>3. Modern Frontend</td>
+                                <td>React + routing + state</td>
+                                <td>React applications</td>
+                            </tr>
+                            <tr>
+                                <td>4. Backend</td>
+                                <td>Node.js + Express + REST APIs</td>
+                                <td>Server-side applications</td>
+                            </tr>
+                            <tr>
+                                <td>5. Data</td>
+                                <td>MongoDB/PostgreSQL + data modeling</td>
+                                <td>Database-backed systems</td>
+                            </tr>
+                            <tr>
+                                <td>6. Professional</td>
+                                <td>Auth + security + testing + deployment</td>
+                                <td>Production-style systems</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Order-ka aan kugula talinayo</h3>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS iyo responsive design</li>
+                    <li>JavaScript fundamentals</li>
+                    <li>DOM, async/await iyo Fetch API</li>
+                    <li>Git iyo GitHub</li>
+                    <li>React</li>
+                    <li>Node.js iyo Express</li>
+                    <li>Database</li>
+                    <li>Authentication iyo authorization</li>
+                    <li>API security</li>
+                    <li>Testing</li>
+                    <li>Deployment</li>
+                    <li>Projects iyo portfolio</li>
+                </ol>
+
+                <p>
+                    Roadmap-ka saxda ahi ma aha inaad topic kasta 100% ka dhamayso ka hor intaadan wax dhisin.
+                    <strong>Baro → dhis → khalad samee → sax → project-ka sii ballaari.</strong>
+                </p>
+            </section>
+
+            <section id="Englisha">
+                <h2>14. Web Development iyo Soomaaliya</h2>
+
+                <p>
+                    Web Development wuxuu qof Soomaaliya jooga siin karaa laba nooc oo fursado ah:
+                    inaad adeegyo siiso suuqa local-ka iyo inaad internetka ka raadiso clients ama remote opportunities,
+                    iyadoo platform kasta lagu hubinayo shuruudaha dalkaaga iyo lacag-bixinta uu taageero.
+                </p>
+
+                <p>
+                    Ganacsiyada, schools, NGOs, stores iyo adeegyo kale waxay u baahan karaan websites, dashboards,
+                    booking systems, inventory tools ama systems maamulka xogta.
+                </p>
+
+                <p>
+                    Tani waxay ka dhigan tahay inaadan ku koobnaan “website qurux badan”.
+                    Waxaad baran kartaa sida loo dhiso <strong>software xallinaya dhibaato dhab ah</strong>.
+                </p>
+
+                <p>
+                    Sidoo kale xirfadda Web Development waxay si fiican ula xiriirtaa AI iyo data.
+                    Tusaale ahaan waxaad dhisi kartaa web application isticmaala AI API ama system leh analytics dashboard.
+                    Taasi waxay kuu furaysaa waddo aad uga gudubto website building oo aad ugu gudubto software development.
+                </p>
+            </section>
+
+            <section id="mistakes">
+                <h2>15. Khaladaadka Ugu Badan Ee Web Development Beginners Sameeyaan</h2>
+
+                <h3>1. Framework ayay ka bilaabaan</h3>
+                <p>
+                    React ama framework kale ha ka bilaabin haddii HTML, CSS iyo JavaScript aasaaskooda aanad fahmin.
+                </p>
+
+                <h3>2. Tutorials badan ayay daawadaan laakiin project ma dhisaan</h3>
+                <p>
+                    Daawasho badan ma beddelayso practice.
+                </p>
+
+                <h3>3. Wax walba hal mar ayay bartaan</h3>
+                <p>
+                    HTML, CSS, JavaScript, React, Node, Python, Docker iyo AI hal mar waxay dhalin karaan jahawareer.
+                </p>
+
+                <h3>4. Copy ayay sameeyaan iyagoon fahmin</h3>
+                <p>
+                    Project qof kale copy-garee marka aad rabto inaad fahanto, laakiin kadib ka samee project aad adigu go'aannadiisa gaarto.
+                </p>
+
+                <h3>5. Git iyo GitHub way iska dhaafaan</h3>
+                <p>
+                    Marka project-yadu bataan, version control wuxuu noqdaa qayb muhiim ah oo workflow-ga ah.
+                </p>
+
+                <h3>6. Security waxay xasuustaan marka system-ku dhammaado</h3>
+                <p>
+                    Authentication, authorization, validation iyo secret management waa in lagu fikiraa inta aad dhisayso.
+                </p>
+
+                <h3>7. Project-yo aad u fudud ayay ku joogaan</h3>
+                <p>
+                    Calculator iyo to-do app waa bilow fiican, laakiin markaad hore u socoto waxaad u baahan tahay projects leh users, APIs, database iyo real business logic.
+                </p>
+            </section>
+
+            <section id="related">
+                <h2>Maqaallo LearnTech Ah oo Kugu Xiga</h2>
+
+                <div class="link-grid grid md:grid-cols-2 gap-4 my-6">
+                    <a href="./programing.html" class="p-5 bg-slate-950 rounded-2xl border border-white/5 hover:border-blue-500 transition">
+                        <span class="text-xs text-slate-500 uppercase">Programming</span>
+                        <p class="font-bold text-white mt-2 mb-0">Baro aasaaska Programming</p>
+                    </a>
+
+                    <a href="./dataAnalysis.html" class="p-5 bg-slate-950 rounded-2xl border border-white/5 hover:border-blue-500 transition">
+                        <span class="text-xs text-slate-500 uppercase">Digital Skills</span>
+                        <p class="font-bold text-white mt-2 mb-0">Sida Data Analyst loo noqdo</p>
+                    </a>
+
+                    <a href="./makingMoneyAI.html" class="p-5 bg-slate-950 rounded-2xl border border-white/5 hover:border-blue-500 transition">
+                        <span class="text-xs text-slate-500 uppercase">AI</span>
+                        <p class="font-bold text-white mt-2 mb-0">Sidee AI lacag looga sameeyaa?</p>
+                    </a>
+
+                    <a href="./onlineincome.html" class="p-5 bg-slate-950 rounded-2xl border border-white/5 hover:border-blue-500 transition">
+                        <span class="text-xs text-slate-500 uppercase">Online Income</span>
+                        <p class="font-bold text-white mt-2 mb-0">Sidee lacag looga sameeyaa internetka?</p>
+                    </a>
+
+                    <a href="./10skills.html" class="p-5 bg-slate-950 rounded-2xl border border-white/5 hover:border-blue-500 transition">
+                        <span class="text-xs text-slate-500 uppercase">Digital Skills</span>
+                        <p class="font-bold text-white mt-2 mb-0">10 Digital Skills oo muhiim ah</p>
+                    </a>
+
+                    <a href="./usingChatgptAndOhterAI.html" class="p-5 bg-slate-950 rounded-2xl border border-white/5 hover:border-blue-500 transition">
+                        <span class="text-xs text-slate-500 uppercase">AI</span>
+                        <p class="font-bold text-white mt-2 mb-0">Sida ChatGPT iyo AI si fiican loo isticmaalo</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="faq">
+                <h2>FAQ: Su'aalaha Inta Badan Laga Weydiiyo Web Development</h2>
+
+                <h3>Web Development ma adag yahay?</h3>
+                <p>
+                    Bilowga wuxuu u ekaan karaa mid adag sababtoo ah concepts badan ayaa cusub. Laakiin markaad si nidaamsan u kala qaaddo HTML, CSS, JavaScript, kadib framework iyo backend, way fududaanaysaa in aad fahanto.
+                </p>
+
+                <h3>Web Development intee lagu bartaa?</h3>
+                <p>
+                    Ma jiro waqti qof walba isku mid ah. Waxay ku xiran tahay waqtiga aad geliso, foundation-kaaga, practice-kaaga iyo heerka aad rabto inaad gaarto.
+                </p>
+
+                <h3>HTML iyo CSS keliya ma Web Developer baan ku noqdaa?</h3>
+                <p>
+                    Waxaad ku dhisi kartaa websites static ah, laakiin haddii aad rabto web applications casri ah, waxaad u baahan doontaa JavaScript iyo mararka qaar backend, database iyo APIs.
+                </p>
+
+                <h3>JavaScript ma muhiim baa?</h3>
+                <p>
+                    Haa. JavaScript waa foundation muhiim ah oo frontend development-ka casriga ah, waxaana sidoo kale lagu isticmaali karaa backend iyadoo la adeegsanayo Node.js.
+                </p>
+
+                <h3>React ma beginner baa loogu talagalay?</h3>
+                <p>
+                    React waa la baran karaa marka beginner-ku gaaro JavaScript foundation ku filan. Haddii JavaScript-ku kuu yahay daciif, marka hore xooji aasaaskiisa.
+                </p>
+
+                <h3>Web Developer ma freelance ahaan shaqayn karaa?</h3>
+                <p>
+                    Haa. Waxaad adeegyo ka iibin kartaa local clients ama platforms online ah, iyadoo fursadaha iyo payout-ka platform kasta lagu hubinayo shuruudihiisa hadda jira.
+                </p>
+
+                <h3>Full Stack Developer maxaa looga baahan yahay?</h3>
+                <p>
+                    Waxaad u baahan tahay frontend, backend, database, APIs, authentication, security, testing iyo deployment heerka project-kaagu u baahan yahay.
+                </p>
+            </section>
+
+            <section id="conclusion">
+                <h2>Gunaanad: Sida Web Developer Loo Noqdo</h2>
+
+                <p>
+                    Haddii hadafkaagu yahay <strong>barashada Web Development Af Soomaali</strong>, ha isku dayin inaad wax walba hal mar barato.
+                    Samee waddo cad oo aad ku socoto.
+                </p>
+
+                <p>
+                    Bilow <strong>HTML → CSS → JavaScript</strong>, kadib baro Git/GitHub,
+                    u gudub React, kadib Node.js/Express, database, APIs, authentication, security, testing iyo deployment.
+                </p>
+
+                <p>
+                    Inta aad baranayso, project ka dhis. Project kasta ha kuu keeno problem cusub:
+                    forms, API, database, authentication, roles, dashboards ama payments.
+                    Sidaas ayaad aqoonta uga beddeli kartaa <strong>xirfad shaqo</strong>.
+                </p>
+
+                <p>
+                    Ugu dambayn, Web Development ma aha oo keliya inaad code qorto.
+                    Waa awoodda aad ku fahmi karto problem, ku dhisi karto solution, ku tijaabin karto,
+                    ku ilaalin karto, kadibna dadka ugu dhiibi karto system shaqaynaya.
+                </p>
+
+                <div class="quick-box">
+                    <p class="mb-0">
+                        <strong>Roadmap-ka xusuuso:</strong>
+                        HTML → CSS → JavaScript → Git/GitHub → React → Node.js/Express → Database → APIs → Security → Testing → Deployment → Projects → Portfolio.
+                    </p>
+                </div>
+            </section>
+
+            <div class="w-full pt-10 pb-8 text-center">
+                <a href="./blog.html"
+                    class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-blue-600 via-blue-600 to-blue-700 text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.5)] hover:scale-[1.03] transition-all duration-300 border border-white/10 text-base no-underline">
+                    <span>Akhri maqaalada kale ee LearnTech</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="bg-[#131926] py-10 border-t border-white/5 text-center">
+        <p class="text-slate-500 text-sm">© 2026 LearnTech. Dhammaan xuquuqdu waa dhowran tahay.</p>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+        }
+
+        // Scroll progress
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+            const progress = document.getElementById('scroll-progress');
+            if (progress) progress.style.width = scrolled + '%';
+        });
+    </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>

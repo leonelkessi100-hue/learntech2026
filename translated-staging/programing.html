@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-26STFV9LR7');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programming: Simple Programming Ideas in English. Learn basic programming concepts such as variables, conditions, loops, and logic. Start your coding learning journey today!">
+    <meta name="keywords" content="English programming, learning English programming, programming concepts, variables, conditions, loops, logic, web development English, techEnglish">
+    <meta name="author" content="LearnTech">
+     <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+
+    <title>programming</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <style>
+        
+        /* --- General Setup --- */
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        #mobile-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 9999; display: none; }
+        #mobile-overlay.active { display: flex; }
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 4px; background: #2563eb; z-index: 100; width: 0%; }
+
+        /* --- ARTCLE BODY DESIGN (Halkan ayay dhibaatadu ka jirtay) --- */
+        .article-body { color: #475569; line-height: 1.8; font-size: 1.15rem; }
+        .dark .article-body { color: #94a3b8; }
+
+        /* Cinwaannada kala duwan */
+        .article-body h1 { font-size: 2.5rem; font-weight: 800; color: #1e293b; margin-bottom: 1.5rem; }
+        .article-body h2 { font-size: 1.9rem; font-weight: 800; color: #2563eb; margin-top: 2.5rem; margin-bottom: 1.25rem; border-left: 5px solid #2563eb; padding-left: 1rem; }
+        .article-body h3 { font-size: 1.6rem; font-weight: 700; color: #1e293b; margin-top: 2rem; margin-bottom: 1rem; }
+        .article-body h4 { font-size: 1.3rem; font-weight: 700; color: #334155; margin-top: 1.5rem; }
+        .dark .article-body h1, .dark .article-body h3, .dark .article-body h4 { color: #f1f5f9; }
+
+        /* Hagaajinta Liisaska (Lists) - Tan ayaa muhiim u ah koodhkaaga */
+        .article-body ul { list-style-type: disc !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body ol { list-style-type: decimal !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.6rem; }
+        .article-body li::marker { color: #2563eb; font-weight: bold; }
+
+        /* Strong & Links */
+        .article-body strong { color: #1e293b; font-weight: 700; }
+        .dark .article-body strong { color: #f8fafc; }
+        .article-body a { color: #2563eb; text-decoration: underline; font-weight: 600; }
+        
+        /* Sawirrada */
+        .article-body img { border-radius: 2rem; margin: 2rem 0; width: 100%; height: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+
+<nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+  <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+    <a href="./index.html" class="flex items-center gap-2">
+  
+      <span class="text-2xl font-bold font-display text-white">Rain<span style="color:var(--coral)">Book</span></span>
+    </a>
+    <div class="flex items-center">
+      <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+        <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Home</a></li>
+        <li><a href="./blog.html" class="px-4 py-2 rounded-lg text-[var(--coral)] font-bold">Blog</a></li>
+        <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">About</a></li>
+        <li><a href="./contact.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="mobile-overlay" class="bg-white dark:bg-slate-950 flex-col items-center justify-center space-y-8 text-2xl font-bold transition-all dark:text-white">
+        <button id="close-menu" class="absolute top-6 right-8 text-6xl text-slate-400">×</button>
+        <a href="./index.html">home</a>
+        <a href="./about.html">about</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">contact</a>
+    </div>
+
+<script>
+    // Logic-ga Dark Mode
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+    const htmlElement = document.documentElement;
+
+    // Hubi haddii uu qofku horay u doortay dark mode
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.classList.add('dark');
+        themeToggleIcon.innerText = '☀️';
+    } else {
+        htmlElement.classList.remove('dark');
+        themeToggleIcon.innerText = '🌙';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        if (htmlElement.classList.contains('dark')) {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            themeToggleIcon.innerText = '🌙';
+        } else {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggleIcon.innerText = '☀️';
+        }
+    });
+</script>
+    <header class="py-16 px-6 text-center max-w-4xl mx-auto">
+        <div class="mb-4 inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full text-xs font-bold uppercase">Technology</div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
+           What is programming and how to start🧠??
+        </a>
+    </div>
+        </h1>
+        <div class="flex justify-center items-center gap-4 text-slate-500 text-sm">
+            <span>By LearnTech</span> • <span>February 2026</span> • <span>5 min read</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+     <div class="article-body">            
+          
+ <article class="blog-article">
+
+<p>
+Programming is a modern skill that plays an important role in today's world.
+The phone you use, the website you visit, and every app you open
+All of them are behind the programming. Many people see it as programming
+complex, but really programming is a concept and a way of thinking that can be learned,
+before learning the code itself. In this article I explain it simply
+We will learn the basic concepts of programming, using the English Language
+Simple and easy examples.
+</p>
+
+<img src="./pexels-photo-5380664.webp" alt="how much" loading="lazy">
+
+<h2>1️⃣ What is Programming?</h2>
+<p>
+Programming is the process of telling a computer or other device what to do
+doing. Kombiyuutarku iskiis wax ma fahmo, balse wuxuu fahmaa amarro
+(code) written correctly. The programmer is the person who writes those commands, and
+sheega kombiyuutarka talaabo talaabo waxa la rabo inuu qabto.
+</p>
+
+<p>
+Simply put: programming is how you give someone clear instructions.
+If the instructions are incorrect, the job will not be executed.
+</p>
+
+<h3>A Daily Life Example</h3>
+<p>
+If you send someone to bring you tea by saying:
+"Go, get a cup, pour tea, add sugar, bring me"
+— that's programming. Every step is a command.
+</p>
+
+<img src="./pexels-photo-7989242.webp" alt="Programming" loading="lazy">
+
+<h2>2️⃣ Why Learn Programming?</h2>
+<p>
+Programming is learned for many reasons. Some of them are:
+</p>
+
+<ul>
+  <li>Build websites and apps</li>
+  <li>Finding an online job (freelance or remote)</li>
+  <li>Finding solutions to problems using technology</li>
+  <li>Being a logical thinker</li>
+</ul>
+
+<p>
+Programming is not just code, it's a way of thinking
+inaad dhibaatooyinka u kala jebiso qaybo yaryar oo la xallin karo.
+</p>
+
+<h2>3️⃣ Logic Concept (Programming Concept)</h2>
+<p>
+Logic is the backbone of programming. Before you write a single line of code,
+you must understand the problem and how to solve it.
+</p>
+
+<h3>A Logical Example</h3>
+<p>
+If the user enters the wrong password:
+</p>
+
+<ul>
+  <li>If the password is correct → allow him to enter</li>
+  <li>If the password is wrong → show error</li>
+</ul>
+
+<p>
+This is logic, and this is what programming is all about.
+</p>
+
+<h2>4️⃣ Variables – Data Storage</h2>
+<p>
+A variable is a place to store data. You're always programming
+works with data such as name, age, number, or message.
+</p>
+
+<h3>Simple Example</h3>
+<pre>
+magac = "Maxamed"
+da = 20
+</pre>
+
+<p>
+Here name and age are variables that store data.
+</p>
+
+<img src="./pexels-photo-12899156.webp" alt="Variables" loading="lazy">
+
+<h2>5️⃣ Conditions – If / Else</h2>
+<p>
+Conditions allow the program to make a decision.
+For example, "if this happens, do this".
+</p>
+
+<h3>Example</h3>
+<pre>
+haddii (da >= 18)
+  oggolow user
+haddii kale
+  diid user
+</pre>
+
+<p>
+This is a very important concept in programming, found in every language.
+</p>
+
+<h2>6️⃣ Loops – Repeat Work</h2>
+<p>
+Loops are used when you want a task to be performed repeatedly
+without typing the same code every time.
+</p>
+
+<h3>A Daily Life Example</h3>
+<p>
+If you say "Read 10 lessons" — you're doing a loop.
+</p>
+
+<h3>Example</h3>
+<p>
+Repeat 5 times:
+  print "Welcome to Programming"
+</p>
+
+<h2>7️⃣ Programming Languages - Programming Languages</h2>
+<p>
+There are many programming languages, such as:
+</p>
+
+<ul>
+  <li>JavaScript</li>
+  <li>Python</li>
+  <li>Java</li>
+  <li>C++</li>
+</ul>
+
+<p>
+Each language has its own purpose, but programming concepts
+they are all the same.
+</p>
+<img src="./pexels-sora-shimazaki-5926382.jpg" alt="Programming Languages" loading="lazy">
+
+<h2>8️⃣ Is Programming Hard?</h2>
+<p>
+Programming is not difficult if you learn it properly.
+Many mistakes happen in the beginning, and it is normal.
+Every professional programmer has made many mistakes.
+</p>
+
+<p>
+The key to success is:
+</p>
+
+<ul>
+  <li>Be patient</li>
+  <li>Regular practice</li>
+  <li>Understand the concept, before the code</li>
+</ul>
+
+<h2>9️⃣ Conclusion</h2>
+<p>
+Programming is a promising skill that anyone can learn.
+If you understand basic concepts like logic, variables,
+conditions, and loops, you can easily learn any language.
+Learning English Language programming will help you to
+understand the concept quickly, before moving on to English.
+</p>
+
+<p>
+If you want to be a successful programmer, start with understanding
+basic concepts, then gradually learn languages
+programming.
+</p> 
+            <div class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-4 items-center justify-between">
+                <span class="font-bold dark:text-white">Share with friends:</span>
+                <div class="flex gap-2">
+<a href="https://api.whatsapp.com/send?text=Halkan ka aqri maqaal aad u xiiso badan: https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-green-500 text-white rounded-xl text-sm font-bold"style="color: #f8fafc; text-decoration: none;">
+   
+   WhatsApp
+</a>
+               <a href="https://www.facebook.com/sharer/sharer.php?u=https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-bold" style="color: #f8fafc; text-decoration: none;">
+   Facebook
+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-12">
+            <a href="./hosting&domain.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">In the previous article</span>
+                <p class="font-bold dark:text-white mt-1">hosting and domain</p>
+            </a>
+            <a href="webdevelopment.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">Next article</span>
+                <p class="font-bold dark:text-white mt-1">learning web development</p>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress").style.width = scrolled + "%";
+        };
+
+        // Mobile Menu
+        const overlay = document.getElementById('mobile-overlay');
+        document.getElementById('open-menu').addEventListener('click', () => overlay.classList.add('active'));
+        document.getElementById('close-menu').addEventListener('click', () => overlay.classList.remove('active'));
+    </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>
+ 

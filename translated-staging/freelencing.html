@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-26STFV9LR7');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancing Englisha: A Beginner's Guide</title>
+  <meta name="description" content="Freelancing in Englisha: Learn how to start an online business, which platforms to use, and how to get paid while in Englisha.">
+  <meta name="keywords" content="Freelancing Englisha, How To Start Freelancing, Online Jobs Englisha, Payoneer Englisha, Freelance Platforms, LearnTech, Freelancing Guide Englisha">
+  <meta name="author" content="LearnTech">
+  <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+
+ <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <style>
+        
+        /* --- General Setup --- */
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        #mobile-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 9999; display: none; }
+        #mobile-overlay.active { display: flex; }
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 4px; background: #2563eb; z-index: 100; width: 0%; }
+
+        /* --- ARTCLE BODY DESIGN (Halkan ayay dhibaatadu ka jirtay) --- */
+        .article-body { color: #475569; line-height: 1.8; font-size: 1.15rem; }
+        .dark .article-body { color: #94a3b8; }
+
+        /* Cinwaannada kala duwan */
+        .article-body h1 { font-size: 2.5rem; font-weight: 800; color: #1e293b; margin-bottom: 1.5rem; }
+        .article-body h2 { font-size: 1.9rem; font-weight: 800; color: #2563eb; margin-top: 2.5rem; margin-bottom: 1.25rem; border-left: 5px solid #2563eb; padding-left: 1rem; }
+        .article-body h3 { font-size: 1.6rem; font-weight: 700; color: #1e293b; margin-top: 2rem; margin-bottom: 1rem; }
+        .article-body h4 { font-size: 1.3rem; font-weight: 700; color: #334155; margin-top: 1.5rem; }
+        .dark .article-body h1, .dark .article-body h3, .dark .article-body h4 { color: #f1f5f9; }
+
+        /* Hagaajinta Liisaska (Lists) - Tan ayaa muhiim u ah koodhkaaga */
+        .article-body ul { list-style-type: disc !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body ol { list-style-type: decimal !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.6rem; }
+        .article-body li::marker { color: #2563eb; font-weight: bold; }
+
+        /* Strong & Links */
+        .article-body strong { color: #1e293b; font-weight: 700; }
+        .dark .article-body strong { color: #f8fafc; }
+        .article-body a { color: #2563eb; text-decoration: underline; font-weight: 600; }
+        
+        /* Sawirrada */
+        .article-body img { border-radius: 2rem; margin: 2rem 0; width: 100%; height: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+  
+<nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+  <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+    <a href="./index.html" class="flex items-center gap-2">
+  
+      <span class="text-2xl font-bold font-display text-white">Rain<span style="color:var(--coral)">Book</span></span>
+    </a>
+    <div class="flex items-center">
+      <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+        <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Home</a></li>
+        <li><a href="./blog.html" class="px-4 py-2 rounded-lg text-[var(--coral)] font-bold">Blog</a></li>
+        <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">About</a></li>
+        <li><a href="./contact.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="mobile-overlay" class="bg-white dark:bg-slate-950 flex-col items-center justify-center space-y-8 text-2xl font-bold transition-all dark:text-white">
+        <button id="close-menu" class="absolute top-6 right-8 text-6xl text-slate-400">×</button>
+        <a href="./index.html">home</a>
+        <a href="./about.html">about</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">contact</a>
+    </div>
+
+<script>
+    // Logic-ga Dark Mode
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+    const htmlElement = document.documentElement;
+
+    // Hubi haddii uu qofku horay u doortay dark mode
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.classList.add('dark');
+        themeToggleIcon.innerText = '☀️';
+    } else {
+        htmlElement.classList.remove('dark');
+        themeToggleIcon.innerText = '🌙';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        if (htmlElement.classList.contains('dark')) {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            themeToggleIcon.innerText = '🌙';
+        } else {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggleIcon.innerText = '☀️';
+        }
+    });
+</script>
+    <header class="py-16 px-6 text-center max-w-4xl mx-auto">
+        <div class="mb-4 inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full text-xs font-bold uppercase">Technology</div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
+           How to work as a freelancer in Englisha?
+        </a>
+    </div>
+        </h1>
+        <div class="flex justify-center items-center gap-4 text-slate-500 text-sm">
+            <span>By LearnTech</span> • <span>February 2026</span> • <span>5 min read</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+     <div class="article-body">            
+          
+ 
+<article class="blog-post freelance-post">
+
+  <header class="freelance-header">
+  
+    <p>The real way to start an online business in Englisha</p>
+    <img src="pexels-photo-3837264 (1).jpeg" alt="" loading="lazy">
+  </header>
+
+  <section class="freelance-card">
+    <p>
+      The world of work is changing rapidly. Not needed today
+      office or company where you go to get money.
+      <strong>Freelancing</strong> it allows you to work on the internet
+      Staying at your home in Englisha and earning a steady income even while lying on your bed may surprise you but it is very simple and requires a lot of hard work and patience.
+    </p>
+
+    <p>
+      This text is <strong>a beginner's guide</strong> for anyone who wants to
+      to go into freelancing, but don't know where to start.
+    </p>
+  </section>
+
+  <section class="freelance-card">
+    <h2>What is Freelancing?</h2>
+    <p>
+      Freelancing is independent work that you do for yourself
+      different customers without being tied to one company.
+    </p>
+
+    <ul>
+      <li>You choose the job</li>
+      <li>You decide the time</li>
+      <li>You get the money</li>
+    </ul>
+  </section>
+
+  <section class="freelance-card">
+    <h2>Does Freelancing Work in Englisha?</h2>
+    <p>
+      Yes, freelancing <strong>He works full time in Englisha</strong>.
+      The only challenge is how to get the money, which has been solved today
+      services like <strong>Pioneer</strong>.
+    </p>
+  </section>
+
+  <section class="freelance-card">
+    <h2>The Most Popular Freelancing Jobs</h2>
+    <ul>
+      <li>Web Design & Development</li>
+      <li>Graphic Design</li>
+      <li>Content Writing & Blogging</li>
+      <li>Video Editing</li>
+      <li>Social Media Management</li>
+      <li>Data Entry</li>
+    </ul>
+  </section>
+
+  <section class="freelance-card">
+    <h2>Freelancing Platforms To Use</h2>
+    <p>These are the most popular places to find work:</p>
+
+    <ul>
+      <li>Upwork</li>
+      <li>Fiverr</li>
+      <li>Freelancer.com</li>
+      <li>PeoplePerHour</li>
+    </ul>
+  </section>
+
+  <section class="freelance-quote">
+    <p>
+      "Freelancing is not luck — it's skill + patience + persistence."
+    </p>
+  </section>
+
+  <section class="freelance-card">
+    <h2>How to start Freelancing in Englisha?</h2>
+    <ol>
+      <li>Learn a skill you love</li>
+      <li>Create a freelancing platform account</li>
+      <li>Build a professional profile</li>
+      <li>Start sending proposals</li>
+    </ol>
+  </section>
+
+  <section class="freelance-card">
+    <h2>How Does Freelancing Make Money?</h2>
+    <p>
+      The most common way Englishs use it is:
+    </p>
+
+    <ul>
+      <li>Platform → Pioneer</li>
+      <li>Payoneer → EVC Plus / Zaad</li>
+    </ul>
+  </section>
+
+  <section class="freelance-card">
+    <h2>The Most Common Startup Mistakes</h2>
+    <ul>
+      <li>Expect quick payment</li>
+      <li>Poor profile</li>
+      <li>Proposal copy</li>
+      <li>To give up quickly</li>
+    </ul>
+  </section>
+  <section class="freelance-card">
+  <h2>How to Build a Freelancing Profile That Works for You (Step by Step)</h2>
+
+  <p>
+    The main point of freelancing is <strong>your profile</strong>.
+    Even if you are professional, if your profile is poor,
+    Customers won't trust you. Many beginners fail
+    Freelancing for this reason alone.
+  </p>
+
+  <p>
+    A good profile is not long, but one <strong>clear, orderly,
+    and focus on what you can do for the customer</strong>,
+    instead of just being you.
+  </p>
+
+  <h3>1. Profile Title</h3>
+  <p>
+    Don't write a generic title like "Freelancer" or "Web Developer".
+    Choose a title that uniquely describes your service, for example:
+  </p>
+
+  <ul>
+    <li>"Responsive Website Developer for Small Businesses"</li>
+    <li>"Professional Graphic Designer for Social Media & Branding"</li>
+  </ul>
+
+  <p>
+    A good headline says it all <strong>the problem you are solving</strong>.
+  </p>
+
+  <h3>2. Profile Description</h3>
+  <p>
+    This essay should answer this question:
+    <strong>"What makes you the right person to do this job?"</strong>
+  </p>
+
+  <p>
+    Use this format:
+  </p>
+
+  <ul>
+    <li>Start: customer problems</li>
+    <li>Inside: how you can solve it</li>
+    <li>End: call to action</li>
+  </ul>
+
+  <p>
+    For example, instead of saying "I am a web developer",
+    you can say:
+    <em>"I help small businesses get a fast website,
+    mobile-friendly, attracting new customers.”</em>
+  </p>
+
+  <h3>3. Portfolio – Even If You're A Beginner</h3>
+  <p>
+    Many people say "I don't have a portfolio".
+    That is not an excuse. You can do:
+  </p>
+
+  <ul>
+    <li>Experimental website</li>
+    <li>A demo design</li>
+    <li>An article written by you</li>
+  </ul>
+
+  <p>
+    The portfolio shows <strong>your talent</strong>, it is not
+    how many clients you have worked with before.
+  </p>
+
+  <h3>4. Send a Professional Proposal</h3>
+  <p>
+    When applying for a job, do not send a proposal copy.
+    Read the work carefully, then:
+  </p>
+
+  <ol>
+    <li>Tell the customer that you understand their problem</li>
+    <li>Explain how you can solve it</li>
+    <li>Suggest the next step</li>
+  </ol>
+
+  <p>
+    Freelancing is not about luck. It is a skill that can be learned.
+    Anyone who builds their profile correctly,
+    he has a real chance to win.
+  </p>
+  <p>Freelancing is the easiest profession to work at this time. Get started today by signing up for Fiver, create a portfolio or showcase what you're capable of
+    <a href="https://bit.ly/GetWebCheap">fiver👈</a>
+  </p>
+</section>
+
+  <section class="freelance-card">
+    <h2>Conclusion</h2>
+    <p>
+      Freelancing is a real opportunity for Englishs
+      unemployment. A person who has learned skills, has patience,
+      and works systematically—he can succeed.
+
+  </section>
+<div class="w-full pt-10 pb-14 text-center">
+    <a href="./index.html" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-blue-605 via-blue-600 to-blue-700 text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 border border-white/10 text-base tracking-wide no-underline appearance-none" style="text-decoration: none !important;">
+        <span class="no-underline text-white" style="text-decoration: none !important;">🌐 Visit General Website</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+        </svg>
+    </a>
+</div>
+</article>
+            <div class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-4 items-center justify-between">
+                <span class="font-bold dark:text-white">Share with friends:</span>
+                <div class="flex gap-2">
+<a href="https://api.whatsapp.com/send?text=Halkan ka aqri maqaal aad u xiiso badan: https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-green-500 text-white rounded-xl text-sm font-bold"style="color: #f8fafc; text-decoration: none;">
+   
+   WhatsApp
+</a>
+               <a href="https://www.facebook.com/sharer/sharer.php?u=https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-bold" style="color: #f8fafc; text-decoration: none;">
+   Facebook
+</a>
+                </div>
+            </div>
+        </div>
+<div class="w-full pt-10 pb-14 text-center">
+    <a href="./index.html" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-blue-605 via-blue-600 to-blue-700 text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 border border-white/10 text-base tracking-wide no-underline appearance-none" style="text-decoration: none !important;">
+        <span class="no-underline text-white" style="text-decoration: none !important;">🌐 Visit General Website</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+        </svg>
+    </a>
+</div>
+</article>
+        <div class="grid md:grid-cols-2 gap-6 mt-12">
+            <a href="./website.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">In the previous article</span>
+                <p class="font-bold dark:text-white mt-1">making money from the internet</p>
+            </a>
+            <a href="aiforfreelencers.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">Next article</span>
+                <p class="font-bold dark:text-white mt-1">How AI has helped freelancing</p>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress").style.width = scrolled + "%";
+        };
+
+        // Mobile Menu
+        const overlay = document.getElementById('mobile-overlay');
+        document.getElementById('open-menu').addEventListener('click', () => overlay.classList.add('active'));
+        document.getElementById('close-menu').addEventListener('click', () => overlay.classList.remove('active'));
+    </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>
+ 

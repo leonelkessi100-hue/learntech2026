@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-26STFV9LR7');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use AI (ChatGPT & Claude) in Coding - LearnTech</title>
+    <meta name="description" content="Learn how to use ChatGPT and Claude for coding, debugging, frontend and backend development in 2026.">
+    <meta name="keywords" content="ChatGPT coding, Claude coding, AI programming, frontend AI, backend AI tools">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } }
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+
+<body class="bg-[#0b0f19] text-[#f8fafc]">
+
+    <div id="scroll-progress"></div>
+
+    <nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+      <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+        <a href="./index.html" class="flex items-center gap-2">
+          <span class="text-2xl font-bold font-display text-white">Rain<span style="color:var(--coral)">Book</span></span>
+        </a>
+        <div class="flex items-center">
+          <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+            <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Home</a></li>
+            <li><a href="./blog.html" class="px-4 py-2 rounded-lg text-[var(--coral)] font-bold">Blog</a></li>
+            <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">About</a></li>
+            <li><a href="./contact.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Contact</a></li>
+          </ul>
+    </div>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="bg-slate-900 flex-col p-6 space-y-4 md:hidden border-b border-white/5 hidden">
+        <a href="./index.html" class="font-bold text-white block">Home</a>
+        <a href="./blog.html" class="font-bold text-[var(--coral)] block">Blog</a>
+        <a href="./contact.html" class="font-bold text-white block">Contact</a>
+        <a href="./about.html" class="font-bold text-white block">About</a>
+    </div>
+
+
+    <main class="max-w-4xl mx-auto px-4 py-10 md:py-20">
+        <article class="bg-[#131926] rounded-[2.5rem] p-6 md:p-16 shadow-2xl border border-white/5 article-body">
+
+            <h1 class="text-3xl md:text-5xl font-black text-white mb-10 leading-tight">
+            🤖 How to Use AI (ChatGPT & Claude) to Code: The Complete Guide 2026
+            </h1>
+
+            <p class="text-lg md:text-xl font-medium text-slate-400 mb-8 italic">
+            "Today, a good developer is not the one who has everything in his head, but the one who knows how to use the right tools to achieve quick results."
+            </p>
+
+            <p>
+            The world of coding has entered a new era. If earlier developers used to spend hours debugging, syntax errors, and searching for solutions in different forums, today there are powerful AI tools such as ChatGPT and Claude.
+            Today's AI is not just an answer software, but a work assistant that truly understands your project.
+            </p>
+
+            <p>
+            Programming languages like HTML, CSS, JavaScript, Python, PHP, SQL and even frameworks like React or Tailwind CSS all work well with AI.
+            This makes every developer work faster than before.
+            </p>
+
+            <h2>1. What is the Role of AI in Coding?</h2>
+
+            <p>
+            When we talk about using AI in coding, we don't mean that AI will replace the developer.
+            Instead AI works as a Junior Developer very quickly and tirelessly.
+            You can use it to:
+            </p>
+
+            <ul class="list-disc pl-6 space-y-4 mb-8">
+            <li>Build code faster</li>
+            <li>To get an explanation of a complex code</li>
+            <li>To get debugging support</li>
+            <li>To clear old code</li>
+            <li>To get optimization</li>
+            </ul>
+
+            <p>
+            Many developers today use AI for every project from prototype to production.
+            </p>
+
+            <h2>2. ChatGPT vs Claude: Which one is better for Coding?</h2>
+
+            <p>Although both are powerful, they differ in the way they work:</p>
+
+            <ul class="list-disc pl-6 space-y-4 mb-8">
+            <li>
+            <strong>ChatGPT:</strong> He excels in algorithm design, idea generation, frontend planning, and rapid problem solving.
+            </li>
+
+            <li>
+            <strong>Claude:</strong> It is known for clean code, long context, and good file analysis.
+            </li>
+            </ul>
+
+            <p>
+            Many developers use ChatGPT when new ideas are needed, while Claude is used for refactoring and code review.
+            </p>
+
+            <h2>3. Prompt Engineering: How to get AI from correct code?</h2>
+
+            <p>
+            The prompt you give the AI is the main key to the result.
+            A short prompt results in a short answer.
+            A detailed prompt provides professional code.
+            </p>
+
+            <div class="bg-blue-950/40 p-6 rounded-2xl mb-8 border-l-4 border-blue-600">
+            <h3 class="mt-0 text-blue-400">Role-Context-Task Model</h3>
+            <p>
+            <strong>Example:</strong> You are a senior frontend developer. I want a responsive navbar with dark mode, Tailwind CSS, hamburger menu, and smooth animation.
+            </p>
+            </div>
+
+            <p>
+            This AI system better understands what exactly you want.
+            </p>
+
+            <h2>4. How to integrate AI into your daily work</h2>
+
+            <h3>A. Debugging</h3>
+
+            <p>
+            If the code doesn't work:
+            Copy the error code, add the error, then ask the AI:
+            "What's wrong with this code?"
+            </p>
+
+            <p>
+            AI usually immediately says:
+            </p>
+
+            <ul class="list-disc pl-6 space-y-4 mb-8">
+            <li>Syntax error</li>
+            <li>Missing semicolon</li>
+            <li>Wrong logic</li>
+            <li>Variable issue</li>
+            </ul>
+
+            <h3>B. Convert design (UI/UX) to code</h3>
+
+            <p>
+            Claude and ChatGPT today can convert image to code.
+            If you have a graphic design, AI you can find very close to HTML/CSS.
+            </p>
+
+            <div class="code-container my-6 p-4 bg-slate-950 rounded-xl relative border border-white/5">
+            <button class="copy-btn absolute top-3 right-3 bg-white/10 hover:bg-white/20 px-3 py-1 rounded text-xs text-white" onclick="copyCode(this)">Copy</button>
+            <pre class="overflow-x-auto"><code class="text-green-400 text-sm">&lt;button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 transform hover:scale-105"&gt;
+Riix Halkan
+&lt;/button&gt;</code></pre>
+            </div>
+
+            <h3>C. Refactoring Old Code</h3>
+
+            <p>
+            Sometimes the code works but is not clean.
+            You can say to AI:
+            "Clean up this code for me and make it maintainable."
+            </p>
+
+            <p>
+            The result is the code:
+            </p>
+
+            <ul class="list-disc pl-6 space-y-4 mb-8">
+            <li>Readable</li>
+            <li>Good functions</li>
+            <li>Good performance</li>
+            </ul>
+
+            <h2>5. AI and Learning Coding</h2>
+
+            <p>
+            The beginner's AI works as a personal tutor.
+            You can ask:
+            </p>
+
+            <ul class="list-disc pl-6 space-y-4 mb-8">
+            <li>How does HTML work?</li>
+            <li>What is a JavaScript function?</li>
+            <li>How to create an API?</li>
+            </ul>
+
+            <p>
+            AI gives you a description that suits your level.
+            </p>
+
+            <h2>6. Risks and Warnings for the use of AI</h2>
+
+            <ul class="list-decimal pl-6 space-y-4 mb-8">
+            <li>
+            <strong>Creativity:</strong> Don't just copy-paste.
+            </li>
+
+            <li>
+            <strong>Security:</strong> Never enter passwords and API keys.
+            </li>
+
+            <li>
+            <strong>Logical Errors:</strong> Sometimes AI generates code that looks good but doesn't work.
+            </li>
+            </ul>
+
+            <h2>7. Why Some Coding Articles Get Discovered Not Indexed</h2>
+
+            <p>
+            Google sometimes doesn't index articles quickly if:
+            </p>
+
+            <ul class="list-disc pl-6 space-y-4 mb-8">
+            <li>The content is short</li>
+            <li>Internal links are few</li>
+            <li>Low keyword focus</li>
+            </ul>
+
+            <p>
+            You can link this article internally to another article like:
+            <a href="./adsense.html" class="text-[var(--coral)] font-bold hover:underline">Google AdSense Englisha</a>
+            </p>
+
+            <div class="mt-12 p-8 bg-[#0b0f19] text-white rounded-[2rem] shadow-xl relative overflow-hidden border border-white/5">
+                <div class="relative z-10">
+                    <h3 class="text-blue-400 font-black mb-4">Conclusion</h3>
+                    <p class="leading-relaxed text-slate-300">
+                    Today's AI is an essential tool that makes every developer faster, more accurate, and ready for global competition.
+                    If used correctly, ChatGPT and Claude can be your most valuable assistant in your coding.
+                    </p>
+                </div>
+                <div class="absolute -right-10 -bottom-10 opacity-5 text-9xl font-black italic">AI</div>
+            </div>
+        <div class="w-full pt-10 pb-14 text-center">
+    <a href="./index.html" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-blue-605 via-blue-600 to-blue-700 text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 border border-white/10 text-base tracking-wide no-underline appearance-none" style="text-decoration: none !important;">
+        <span class="no-underline text-white" style="text-decoration: none !important;">🌐 Visit General Website</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+        </svg>
+    </a>
+</div>
+</article>
+    </main>
+
+    <footer class="bg-[#131926] py-12 border-t border-white/5 text-center">
+        <p class="text-slate-500 text-sm">© 2026 LearnTech - Technologies in English.</p>
+    </footer>
+
+    <script>
+        // Copy Code Function
+        function copyCode(btn) {
+            const pre = btn.nextElementSibling;
+            const code = pre.querySelector('code').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                btn.innerText = "La koobiyey!";
+                setTimeout(() => btn.innerText = "Copy", 2000);
+            });
+        }
+
+        // Theme Toggle Logic
+        const themeBtn = document.getElementById('theme-toggle');
+        const themeToggleIcon = document.getElementById('theme-toggle-icon');
+        
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            if(themeToggleIcon) themeToggleIcon.innerText = '☀️';
+        } else {
+            document.documentElement.classList.remove('dark');
+            if(themeToggleIcon) themeToggleIcon.innerText = '🌙';
+        }
+
+        if(themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.documentElement.classList.toggle('dark');
+                const isDark = document.documentElement.classList.contains('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                if(themeToggleIcon) themeToggleIcon.innerText = isDark ? '☀️' : '🌙';
+            });
+        }
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(menuBtn && mobileMenu) {
+            menuBtn.onclick = () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            };
+        }
+
+        // Scroll Bar
+        window.onscroll = () => {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = document.getElementById("scroll-progress");
+            if(progress) {
+                progress.style.width = (winScroll / height) * 100 + "%";
+            }
+        };
+    </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>LearnTech</title>
+  <defs>
+    <linearGradient id="rain" x1="20" y1="16" x2="108" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#54d6c2"/>
+      <stop offset="1" stop-color="#2a8fb8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="#071827"/>
+  <path d="M64 19c-16 21-28 35-28 51a28 28 0 1 0 56 0c0-16-12-30-28-51Z" fill="url(#rain)"/>
+  <path d="M43 73c7-6 14-7 21-2 7-5 14-4 21 2v25c-8-5-15-5-21 0-6-5-13-5-21 0V73Z" fill="#f4fbff"/>
+  <path d="M64 71v25" stroke="#071827" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,34 @@
+WORKER_STARTUP_FAILED: Worker failed before signalling ready
+    at workerStartupFailed (file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/node_modules/@qvac/sdk/dist/src/client/rpc/worker-failure.js:47:12)
+    at startWorker (file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/node_modules/@qvac/sdk/dist/src/client/rpc/node-rpc-client.js:236:15)
+    at async file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/node_modules/@qvac/sdk/dist/src/client/rpc/node-rpc-client.js:292:23
+    at async ensureRPC (file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/node_modules/@qvac/sdk/dist/src/client/rpc/node-rpc-client.js:338:16)
+    at async getRPCInstance (file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/node_modules/@qvac/sdk/dist/src/client/rpc/rpc-client.js:276:15)
+    at async prepareRPCContext (file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/node_modules/@qvac/sdk/dist/src/client/rpc/rpc-client.js:302:39)
+    at async stream (file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/node_modules/@qvac/sdk/dist/src/client/rpc/rpc-client.js:393:17)
+    at async runLoadModel (file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/node_modules/@qvac/sdk/dist/src/client/api/load-model.js:88:26)
+    at async file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/translate-test.mjs:10:19
+
+Caused by: Error: Cannot find package 'C:\Users\S u H e i p 1O\Desktop\LearnTech\blog\.translation-tools\qvac-runner\node_modules\bare-sidecar\index.js' imported from C:\Users\S u H e i p 1O\Desktop\LearnTech\blog\.translation-tools\qvac-runner\node_modules\@qvac\sdk\dist\src\client\rpc\unbundled-harness.js
+    at legacyMainResolve (node:internal/modules/esm/resolve:201:26)
+    ... 8 lines matching cause stack trace ...
+    at node:internal/modules/esm/loader:632:32 {
+  cause: Error: Cannot find package 'C:\Users\S u H e i p 1O\Desktop\LearnTech\blog\.translation-tools\qvac-runner\node_modules\bare-sidecar\index.js' imported from C:\Users\S u H e i p 1O\Desktop\LearnTech\blog\.translation-tools\qvac-runner\node_modules\@qvac\sdk\dist\src\client\rpc\unbundled-harness.js
+      at legacyMainResolve (node:internal/modules/esm/resolve:201:26)
+      at packageResolve (node:internal/modules/esm/resolve:778:12)
+      at moduleResolve (node:internal/modules/esm/resolve:859:18)
+      at defaultResolve (node:internal/modules/esm/resolve:992:11)
+      at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+      at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+      at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:56)
+      at #resolve (node:internal/modules/esm/loader:683:17)
+      at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:603:35)
+      at node:internal/modules/esm/loader:632:32 {
+    code: 'ERR_MODULE_NOT_FOUND'
+  },
+  code: 50207,
+  exitCode: null,
+  exitSignal: null,
+  timedOut: false,
+  stderrTail: undefined
+}

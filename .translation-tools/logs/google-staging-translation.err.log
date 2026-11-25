@@ -1,0 +1,8 @@
+file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/translate-html-staging.mjs:153
+  if (problem) throw new Error(`${page}: verification failed — ${problem}`);
+                     ^
+
+Error: Blogging.html: verification failed — English marker remains: Waxaad blog-gaaga lacag uga samayn kartaa AdSense, affiliate marketing, adeegyo, digital products, sponsorships, email marketing iyo business models kale.
+    at file:///C:/Users/S%20u%20H%20e%20i%20p%201O/Desktop/LearnTech/blog/.translation-tools/qvac-runner/translate-html-staging.mjs:153:22
+
+Node.js v24.18.0

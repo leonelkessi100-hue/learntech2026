@@ -1,0 +1,22 @@
+npm error code EPERM
+npm error syscall mkdir
+npm error path C:\Users\S
+npm error errno -4048
+npm error Error: EPERM: operation not permitted, mkdir 'C:\Users\S'
+npm error     at async mkdir (node:internal/fs/promises:859:10)
+npm error     at async Arborist.reify (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:107:7)
+npm error     at async Install.exec (C:\Program Files\nodejs\node_modules\npm\lib\commands\install.js:157:5)
+npm error     at async Npm.exec (C:\Program Files\nodejs\node_modules\npm\lib\npm.js:193:9)
+npm error     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli\entry.js:67:5) {
+npm error   errno: -4048,
+npm error   code: 'EPERM',
+npm error   syscall: 'mkdir',
+npm error   path: 'C:\\Users\\S'
+npm error }
+npm error
+npm error The operation was rejected by your operating system.
+npm error It's possible that the file was already in use (by a text editor or antivirus), or that you lack permissions to access it.
+npm error
+npm error If you believe this might be a permissions issue, please double-check the permissions of the file and its containing directories, or try running the command again as root/Administrator.
+npm error Log files were not written due to an error writing to the directory: C:\Users\S\_logs
+npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal

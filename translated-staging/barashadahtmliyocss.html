@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-26STFV9LR7');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML and CSS in English - LearnTech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <style>
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        #mobile-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 9999; display: none; }
+        #mobile-overlay.active { display: flex; }
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 4px; background: #2563eb; z-index: 100; width: 0%; }
+        
+        /* Typography System */
+        .article-body { color: #475569; line-height: 1.8; font-size: 1.1rem; }
+        .dark .article-body { color: #94a3b8; }
+        .article-body h2 { font-size: 2rem; font-weight: 800; color: #2563eb; margin: 2.5rem 0 1rem; border-left: 6px solid #2563eb; padding-left: 1rem; }
+        .article-body h3 { font-size: 1.5rem; font-weight: 700; color: #1e293b; margin: 2rem 0 1rem; position: relative; padding-left: 2rem; }
+        .article-body h3::before { content: "✔"; position: absolute; left: 0; color: #2563eb; }
+        .dark .article-body h3 { color: #f1f5f9; }
+        
+        /* Code Block Styling */
+        .code-container { position: relative; margin: 1.5rem 0; border-radius: 12px; overflow: hidden; border: 1px solid #334155; }
+        .code-header { background: #1e293b; color: #94a3b8; padding: 8px 16px; font-size: 0.8rem; display: flex; justify-content: space-between; align-items: center; }
+        pre { background: #0f172a; color: #e2e8f0; padding: 20px; overflow-x: auto; font-family: 'Fira Code', monospace; font-size: 0.95rem; margin: 0; }
+        .copy-btn { background: #334155; color: white; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.75rem; transition: 0.3s; }
+        .copy-btn:hover { background: #2563eb; }
+
+        /* General Content Styling */
+        .article-body ul { list-style: disc; margin: 0 0 1.5rem 2rem; }
+        .article-body li { margin-bottom: 0.5rem; }
+        .article-body strong { color: #1e40af; }
+        .dark .article-body strong { color: #60a5fa; }
+        blockquote { border-left: 6px solid #2563eb; background: #eff6ff; padding: 20px; border-radius: 0 15px 15px 0; font-style: italic; margin: 2.5rem 0; color: #1e40af; }
+        .dark blockquote { background: #1e293b; color: #60a5fa; }
+        .article-body img { width: 100%; height: auto; border-radius: 1rem; margin: 2rem 0; shadow: 0 10px 15px rgba(0,0,0,0.1); }
+    </style>
+<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+
+<body>
+
+    <div id="scroll-progress"></div>
+
+
+<nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+  <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+    <a href="./index.html" class="flex items-center gap-2">
+  
+      <span class="text-2xl font-bold font-display text-white">Rain<span style="color:var(--coral)">Book</span></span>
+    </a>
+    <div class="flex items-center">
+      <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+        <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Home</a></li>
+        <li><a href="./blog.html" class="px-4 py-2 rounded-lg text-[var(--coral)] font-bold">Blog</a></li>
+        <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">About</a></li>
+        <li><a href="./contact.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="mobile-overlay" class="bg-white dark:bg-slate-950 flex-col items-center justify-center space-y-8 text-2xl font-bold transition-all dark:text-white">
+        <button id="close-menu" class="absolute top-6 right-8 text-6xl text-slate-400">×</button>
+        <a href="./index.html">Home</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">contact</a>
+        <a href="./about.html">about</a>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <article class="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 md:p-14 shadow-2xl border border-slate-100 dark:border-slate-800 article-body">
+            
+            <img src="./pexels-photo-34803984 (1).webp" alt="HTML and CSS Learning" loading="lazy">
+            <h1 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-8 leading-tight">Learning HTML and CSS: A Beginner's Guide</h1>
+
+            <p>
+                Learning HTML and CSS is the most important step for anyone who wants to build a website. HTML (HyperText Markup Language) is responsible for the structure of your website, while CSS (Cascading Style Sheets) is responsible for appearance, color, and layout. Understanding these two languages ​​is the foundation of web development and is the right place or gateway for a person to enter the profession of web-developer.
+            </p>
+
+            <h3>1. What is HTML?</h3>
+            <img src="./pexels-photo-14553707.webp" alt="HTML Learning" loading="lazy">
+            <p>
+                HTML is a language for building the structure of a website. It contains <strong>elements</strong> and <strong>tags</strong> which define the parts of the page such as headings, paragraphs, images, links, lists, and forms. As we have already shown you in the picture, HTML is written in such a way, but we can easily explain it. Example:
+            </p>
+
+            <div class="code-container">
+                <div class="code-header"><span>HTML Example</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                <pre><code>&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;p&gt;Tani waa paragraph HTML ah.&lt;/p&gt;</code></pre>
+            </div>
+
+            <h3>Where can I get a free full html course?</h3> 
+            <p>Ok let me tell you where to get the full course html to learn just click on the link below to take the course:</p>
+            <a href="https://www.youtube.com/watch?v=9bBGJr-xZXg&t=3s" class="inline-block py-3 px-6 bg-blue-600 text-white font-bold rounded-xl hover:bg-red-600 transition mb-6">Full HTML Course 2024</a>
+
+            <h3>2. What is CSS?</h3>
+            <img src="./pexels-photo-14553706.webp" alt="CSS Learning" loading="lazy">
+            <p>
+                <strong>CSS is the language responsible for the appearance of the web. You can adjust colors, fonts, spacing, layout, hover effects, and animations. CSS makes the website look attractive and professional</strong>. As in the picture above, we can write CSS in this style so let's detail the css example.
+            </p>
+
+            <div class="code-container">
+                <div class="code-header"><span>CSS Example</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                <pre><code>p {
+  color: #1e293b;
+  font-size: 16px;
+  line-height: 1.6;
+}</code></pre>
+            </div>
+
+            <h3>Also where can I get a free full css course?</h3> 
+            <p>Ok let me tell you where to get full css course to learn just click on this link below to take the course:</p>
+            <a href="https://www.youtube.com/watch?v=WA-_6P3TM9A" class="inline-block py-3 px-6 bg-blue-600 text-white font-bold rounded-xl hover:bg-red-600 transition mb-6">Full CSS Course 2024</a>
+
+            <h3>3. Basic Structure of HTML + CSS</h3>
+            <p>By combining HTML and CSS, you can build a clean and custom website. Example of a simple layout:</p>
+
+            <div class="code-container">
+                <div class="code-header"><span>HTML Structure</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="so"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Website Example&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello HTML & CSS!&lt;/h1&gt;
+  &lt;p&gt;Boggan wuxuu tusaale u yahay barashada web development.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <h3>4. Tips for Getting Started</h3>
+            <ul>
+                <li>Start learning HTML, then CSS slowly.</li>
+                <li>Create small projects like a portfolio website or landing page.</li>
+                <li>Understand the box model, flexbox, and grid to build better layouts.</li>
+                <li>Practice coding to get proficient.</li>
+                <li>Use the browser developer tools to see changes in real-time.</li>
+            </ul>
+
+            <h3>5. Educational Resources</h3>
+            <p>There are many free resources for learning HTML and CSS:</p>
+            <ul>
+                <li><strong>MDN Web Docs</strong> – official documentation from Mozilla</li>
+                <li><strong>W3Schools</strong> – easy to understand tutorials</li>
+                <li><strong>FreeCodeCamp</strong> - projects and practical exercises</li>
+                <li><strong>YouTube Tutorials</strong> – step-by-step video tutorials</li>
+            </ul>
+
+            <blockquote>
+                "Learning HTML and CSS is the foundation of web development. Anyone who understands these two languages can improve their web skills continuously."
+            </blockquote>
+
+            <p>
+                Once you practice HTML and CSS, you can prepare to learn JavaScript, frameworks, and backend development. The right start will make you a professional developer, your website and your internet project will be professional, attractive, and functional.
+            </p>
+  <div class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-4 items-center justify-between">
+                <span class="font-bold dark:text-white">Share with friends:</span>
+                <div class="flex gap-2">
+<a href="https://api.whatsapp.com/send?text=Halkan ka aqri maqaal aad u xiiso badan: https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-green-500 text-white rounded-xl text-sm font-bold"style="color: #f8fafc; text-decoration: none;">
+   
+   WhatsApp
+</a>
+               <a href="https://www.facebook.com/sharer/sharer.php?u=https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-bold" style="color: #f8fafc; text-decoration: none;">
+   Facebook
+</a>
+                </div>
+            </div>
+        </div>
+
+          <div class="grid md:grid-cols-2 gap-6 mt-12">
+            <a href="frontendvsbackend.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">Previous article</span>
+                <p class="font-bold dark:text-white mt-1">frontend vs backend</p>
+            </a>
+            <a href="jv.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">Next article</span>
+                <p class="font-bold dark:text-white mt-1">learning javascript</p>
+            </a>
+        </div>
+         <div class="w-full pt-10 pb-14 text-center">
+    <a href="./index.html" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-blue-605 via-blue-600 to-blue-700 text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 border border-white/10 text-base tracking-wide no-underline appearance-none" style="text-decoration: none !important;">
+        <span class="no-underline text-white" style="text-decoration: none !important;">🌐 Visit General Website</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+        </svg>
+    </a>
+</div>
+</article>
+    </main>
+
+    <script>
+        // --- COPY CODE FUNCTION ---
+        function copyCode(button) {
+            const code = button.parentElement.nextElementSibling.innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                const originalText = button.innerText;
+                button.innerText = "La Koobiyey!";
+                button.style.background = "#10b981";
+                setTimeout(() => {
+                    button.innerText = originalText;
+                    button.style.background = "#334155";
+                }, 2000);
+            }).catch(err => {
+                console.error('Qalad baa dhacay: ', err);
+            });
+        }
+
+        // --- DARK MODE LOGIC ---
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+            themeToggleBtn.innerText = '☀️';
+        }
+        themeToggleBtn.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeToggleBtn.innerText = '🌙';
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggleBtn.innerText = '☀️';
+            }
+        });
+
+        // --- MOBILE MENU ---
+        const overlay = document.getElementById('mobile-overlay');
+        document.getElementById('open-menu').addEventListener('click', () => overlay.classList.add('active'));
+        document.getElementById('close-menu').addEventListener('click', () => overlay.classList.remove('active'));
+
+        // --- SCROLL PROGRESS ---
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress").style.width = scrolled + "%";
+        };
+    </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>

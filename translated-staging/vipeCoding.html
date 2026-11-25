@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-26STFV9LR7');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>What is Vibe Coding? Complete AI Coding Tutorial 2026</title>
+
+  <meta name="description" content="What is Vibe Coding? Learn how to use AI in writing code, creating websites and apps, Cursor, GitHub Copilot, correct prompts, benefits, pitfalls and how to start Vibe Coding step by step.">
+
+  <meta name="keywords" content="What is Vibe Coding, Vibe Coding, Vibe Coding English, Vibe Coding tutorial, Vibe Coding tutorial English, AI Coding, AI programming, coding with AI, how to learn Vibe Coding, Cursor Vibe Coding, GitHub Copilot, AI code generator">
+<meta name="robots" content="index, follow">
+ <meta name="author" content="LearnTech">
+
+  <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <style>
+        
+        /* --- General Setup --- */
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        #mobile-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 9999; display: none; }
+        #mobile-overlay.active { display: flex; }
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 4px; background: #2563eb; z-index: 100; width: 0%; }
+
+        /* --- ARTCLE BODY DESIGN (Halkan ayay dhibaatadu ka jirtay) --- */
+        .article-body { color: #475569; line-height: 1.8; font-size: 1.15rem; }
+        .dark .article-body { color: #94a3b8; }
+
+        /* Cinwaannada kala duwan */
+        .article-body h1 { font-size: 2.5rem; font-weight: 800; color: #1e293b; margin-bottom: 1.5rem; }
+        .article-body h2 { font-size: 1.9rem; font-weight: 800; color: #2563eb; margin-top: 2.5rem; margin-bottom: 1.25rem; border-left: 5px solid #2563eb; padding-left: 1rem; }
+        .article-body h3 { font-size: 1.6rem; font-weight: 700; color: #1e293b; margin-top: 2rem; margin-bottom: 1rem; }
+        .article-body h4 { font-size: 1.3rem; font-weight: 700; color: #334155; margin-top: 1.5rem; }
+        .dark .article-body h1, .dark .article-body h3, .dark .article-body h4 { color: #f1f5f9; }
+
+        /* Hagaajinta Liisaska (Lists) - Tan ayaa muhiim u ah koodhkaaga */
+        .article-body ul { list-style-type: disc !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body ol { list-style-type: decimal !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.6rem; }
+        .article-body li::marker { color: #2563eb; font-weight: bold; }
+
+        /* Strong & Links */
+        .article-body strong { color: #1e293b; font-weight: 700; }
+        .dark .article-body strong { color: #f8fafc; }
+        .article-body a { color: #2563eb; text-decoration: underline; font-weight: 600; }
+        
+        /* Sawirrada */
+        .article-body img { border-radius: 2rem; margin: 2rem 0; width: 100%; height: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+<nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+  <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+    <a href="./index.html" class="flex items-center gap-2">
+  
+      <span class="text-2xl font-bold font-display text-white">Rain<span style="color:var(--coral)">Book</span></span>
+    </a>
+    <div class="flex items-center">
+      <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+        <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Home</a></li>
+        <li><a href="./blog.html" class="px-4 py-2 rounded-lg text-[var(--coral)] font-bold">Blog</a></li>
+        <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">About</a></li>
+        <li><a href="./contact.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="mobile-overlay" class="bg-white dark:bg-slate-950 flex-col items-center justify-center space-y-8 text-2xl font-bold transition-all dark:text-white">
+        <button id="close-menu" class="absolute top-6 right-8 text-6xl text-slate-400">×</button>
+        <a href="./index.html">home</a>
+        <a href="./about.html">about</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">contact</a>
+    </div>
+
+<script>
+    // Logic-ga Dark Mode
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+    const htmlElement = document.documentElement;
+
+    // Hubi haddii uu qofku horay u doortay dark mode
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.classList.add('dark');
+        themeToggleIcon.innerText = '☀️';
+    } else {
+        htmlElement.classList.remove('dark');
+        themeToggleIcon.innerText = '🌙';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        if (htmlElement.classList.contains('dark')) {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            themeToggleIcon.innerText = '🌙';
+        } else {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggleIcon.innerText = '☀️';
+        }
+    });
+</script>
+    <header class="py-16 px-6 text-center max-w-4xl mx-auto">
+        <div class="mb-4 inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full text-xs font-bold uppercase">Technology</div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
+          What is Vibe Coding? Complete Tutorial To Learn AI Coding 2026
+        </h1>
+        <div class="flex justify-center items-center gap-4 text-slate-500 text-sm">
+            <span>By LearnTech</span> • <span>August 2026</span> • <span>5 min read</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+     <div class="article-body">            
+<article>
+
+  <header>
+   <header>
+        <p> | <strong>Author:</strong> AI & Software Engineering Specialist </p>
+    </header>
+    <p>
+      You may have spent days or even months learning HTML, CSS, JavaScript or React,
+      and then you saw someone who didn't write a lot of code by hand and made a website or application that works.
+      Then the question becomes: <strong>"How did he do that?"</strong>
+    </p>
+
+    <p>
+      Today's answer depends largely on a new term that has spread rapidly in the software world:
+      <strong>Vibe Coding</strong>.
+    </p>
+
+    <p>
+      But Vibe Coding is not magic, nor is it a way to change your programming skills overnight.
+      It's a new way to make humans and AI work together: you explain
+      what software is doing, and AI helps you write, edit, understand and sometimes
+      code testing.
+    </p>
+
+    <p>
+      In this article I will break it down <strong>What is Vibe Coding?</strong>, how it works,
+      It is required for a beginner, such equipment <strong>Cursor</strong> and <strong>GitHub Copilot</strong>,
+      how to write a good prompt, how to build a real app, mistakes to avoid and why
+      Vibe Coding does not mean that programming has stopped.
+    </p>
+  </header>
+
+  <section class="article-toc">
+    <h2>Table of Contents</h2>
+
+    <ul>
+      <li><a href="#vibe-coding">What is Vibe Coding?</a></li>
+      <li><a href="#history">Where did the name Vibe Coding come from?</a></li>
+      <li><a href="#how-it-works">How does Vibe Coding work?</a></li>
+      <li><a href="#difference">What is the difference between Vibe Coding and regular programming?</a></li>
+      <li><a href="#tools">Tools for Vibe Coding</a></li>
+      <li><a href="#cursor">How to use Cursor in Vibe Coding</a></li>
+      <li><a href="#copilot">GitHub Copilot and Vibe Coding</a></li>
+      <li><a href="#prompt">How to Write a Good Prompt</a></li>
+      <li><a href="#tutorial">Vibe Coding Tutorial: Step by Step</a></li>
+      <li><a href="#project">Example: A small AI-powered website</a></li>
+      <li><a href="#debugging">How to help AI with Errors</a></li>
+      <li><a href="#security">Vibe Coding and Security</a></li>
+      <li><a href="#advantages">Advantages of Vibe Coding</a></li>
+      <li><a href="#disadvantages">Problems and limitations</a></li>
+      <li><a href="#learn">How to learn Vibe Coding?</a></li>
+      <li><a href="#career">Can Vibe Coding be a career or career?</a></li>
+      <li><a href="#future">The Future Vibe Coding</a></li>
+      <li><a href="#faq">Frequently asked questions</a></li>
+    </ul>
+  </section>
+
+  <section id="vibe-coding">
+    <h2>What is Vibe Coding?</h2>
+
+    <p>
+      <strong>Vibe Coding</strong> It is a way to develop software by naturally explaining AI
+      he wants the program to do, instead of writing every piece of code by hand.
+      The AI can then generate code, interpret files, fix bugs, and suggest changes
+      or help build a new feature.
+    </p>
+
+    <p>
+      The term "vibe coding" became popular in 2025, and is attributed exclusively to computer scientists.
+      <strong>Andrej Karpathy</strong>. IBM has defined Vibe Coding as a reliable software development method
+      prompts for AI to generate code, with the developer focusing on results, testing and optimization. 
+     
+    </p>
+
+    <p>
+      For example, instead of saying:
+    </p>
+
+    <pre><code>Waxaan rabaa button React ah.
+Waxaan rabaa inuu noqdo blue.
+Waxaan rabaa hover effect.
+Waxaan rabaa inuu marka la gujiyo furo modal.</code></pre>
+
+    <p>
+      You can tell the AI all the needs in one prompt:
+    </p>
+
+    <pre><code>Build a reusable React button component.
+Use Tailwind CSS.
+Make it accessible.
+Add hover and focus states.
+When clicked, open a modal that displays a short message.
+Keep the component clean and reusable.</code></pre>
+
+    <p>
+      The AI can try to generate a piece of code, and you review it,
+      testing and explaining what is wrong or what you want to change.
+    </p>
+
+    <div class="note">
+      <strong>Important point:</strong>
+      Vibe Coding doesn't mean "AI do everything and I don't understand anything".
+      A healthy workflow is based on understanding the results, reviewing the code,
+      test and control what the AI does.
+    </div>
+  </section>
+
+  <section id="history">
+    <h2>Where did the name Vibe Coding come from?</h2>
+
+    <p>
+      Vibe Coding emerged from the growth of AI coding assistants and coding agents that are capable of it
+      understand the codebase, make many changes, search for files, operate the terminal,
+      and help developers with tasks beyond code completion.
+    </p>
+
+    <p>
+      During 2025 and 2026, the AI coding tool went beyond the concept of:
+      "AI completes the line for you"
+      and passed:
+      "AI can work with you on a whole task."
+    </p>
+
+    <p>
+      For example, Cursor Agent is able to search the codebase, modify multiple files,
+      use the terminal, build features, fix bugs and write tests.
+    </p>
+
+    <p>
+      That's why Vibe Coding can be understood as a change in the developer process
+      software dealing with it. Instead of the developer being the only person writing code,
+      can sometimes be a person:
+      <strong>define the problem, build the plan, guide the AI, review the code, test the results
+      and determines what is accepted.</strong>
+    </p>
+  </section>
+
+  <section id="how-it-works">
+    <h2>How does Vibe Coding work?</h2>
+
+    <p>
+      To truly understand Vibe Coding, think of software development as a conversation
+      you and the AI.
+    </p>
+
+    <h3>1. You define the problem</h3>
+
+    <p>
+      The first step is not to immediately say "make me an app".
+      You must explain what the app does, who will use it and the results you want.
+    </p>
+
+    <h3>2. AI understands context</h3>
+
+    <p>
+      Modern coding agents can read files and folders in a project to understand them
+      existing structure. Cursor, for example, can use codebase search and file context to
+      determine where change is needed.
+    </p>
+
+    <h3>3. AI suggests or generates code</h3>
+
+    <p>
+      Then AI can create new code, change old code or explain why
+      A certain section may not work.
+    </p>
+
+    <h3>4. You are experimenting</h3>
+
+    <p>
+      This part is very important. The generated code does not have to be automatically correct.
+      You need to run the application, view the browser, read the console,
+      perform builds and tests when needed.
+    </p>
+
+    <h3>5. You give AI feedback</h3>
+
+    <p>
+      When you find a bug or incorrect behavior, you can report the error and context to the AI.
+      Then you can repeat:
+    </p>
+
+    <pre><code>The login form renders correctly,
+but submitting the form gives a 500 error.
+
+Here is the error:
+[PASTE ERROR]
+
+Find the root cause, explain it first,
+then propose the safest fix.</code></pre>
+
+    <h3>6. You review the trend</h3>
+
+    <p>
+      Especially for an important project, it is necessary to check the diff, changed files and new dependencies.
+      Git plays a big role in this because it allows you to see the changes
+      and go back to the previous commit.
+    </p>
+  </section>
+
+  <section id="difference">
+    <h2>What is the difference between Vibe Coding and regular programming?</h2>
+
+    <p>
+      In traditional programming, the developer usually writes the code directly:
+      functions, components, APIs, database queries and logic.
+    </p>
+
+    <p>
+      And Vibe Coding brings AI to a big part of writing or editing code.
+      So the main difference is not that the code is stopped; The difference is in it
+      <strong>the way you manage the software</strong>.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Common Programming</th>
+          <th>Vibe Coding</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A developer writes a lot of code</td>
+          <td>AI writes a large chunk of code</td>
+        </tr>
+        <tr>
+          <td>Documentation and syntax are maintained manually</td>
+          <td>Prompt and context become important</td>
+        </tr>
+        <tr>
+          <td>Debugging is usually done manually</td>
+          <td>AI can help with diagnosis and fixes</td>
+        </tr>
+        <tr>
+          <td>Some development takes a lot of time</td>
+          <td>Prototyping and iteration can be slow</td>
+        </tr>
+        <tr>
+          <td>Understanding the implementation is usually straightforward</td>
+          <td>It is important to understand the architecture and verification</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      These two approaches are not completely opposite. A good developer can integrate
+      Basic programming and AI-assisted development.
+    </p>
+  </section>
+
+  <section id="tools">
+    <h2>Tools for Vibe Coding</h2>
+
+    <p>
+      There is no single software to do Vibe Coding. There are IDEs, coding assistants,
+      coding agents and different platforms.
+    </p>
+
+    <h3>Cursor</h3>
+
+    <p>
+      Cursor is an AI editor for programming. The Cursor Agent is able to
+      Explore the codebase, edit many files, use the terminal, build features, run tests
+      and help with bug fixing.
+    </p>
+
+    <p>
+      This makes Cursor a particularly suitable tool for someone who wants to integrate an IDE and
+      AI agent workflow.
+    </p>
+
+    <p>
+      <a href="https://cursor.com/docs" target="_blank" rel="noopener noreferrer">
+        Read Cursor Documentation
+      </a>
+    </p>
+
+    <h3>GitHub Copilot</h3>
+
+    <p>
+      GitHub Copilot can help with code suggestions, programming questions, and command-line assistance
+      and other AI-assisted development activities. GitHub also offers coding-agent workflows
+      who are able to plan, make changes and create a pull request for the developer
+      Review it.
+    </p>
+
+    <p>
+      <a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener noreferrer">
+        Visit GitHub Copilot Documentation
+      </a>
+    </p>
+
+    <h3>VS Code + AI Extensions</h3>
+
+    <p>
+      If you're already using VS Code, you don't need to move to a new IDE right away.
+      There are AI extensions and integrations that allow you to use AI in your workflow.
+    </p>
+
+    <p>
+      It's not just the name of the editor that matters; what matters is how you provide AI
+      In the right context, how you verify the code and how you manage the project.
+    </p>
+
+    <h3>Git</h3>
+
+    <p>
+      Git itself is not an AI tool, but it is important for Vibe Coding.
+      The reason is simple: if AI is going to change a lot, you have to have a way to see it
+      it has been changed and you can go back to the previous state.
+    </p>
+  </section>
+
+  <section id="cursor">
+    <h2>How to use Cursor in Vibe Coding</h2>
+
+    <p>
+      Cursor can fit the workflow of both the beginner and the experienced developer.
+      The official documentation indicates that the Agent can understand the codebase, make edits
+      and that he can use the terminal.
+    </p>
+
+    <h3>Step 1: Open the project</h3>
+
+    <p>
+      Open your project folder in Cursor. Don't start by giving AI commands without context.
+      First let him understand the project.
+    </p>
+
+    <h3>Step 2: Ask him to describe the project</h3>
+
+    <pre><code>Explain this codebase to me.
+
+Tell me:
+1. The main entry point
+2. The important folders
+3. Where routing is handled
+4. Where API calls are handled
+5. Where authentication is handled
+6. What I should understand before making changes</code></pre>
+
+    <p>
+      The official Cursor documentation for example suggests asking the agent to
+      describe the codebase, entry points and key modules before major changes are made.
+    </p>
+
+    <h3>Step 3: Go to a small task</h3>
+
+    <p>
+      Don't start with:
+      <strong>"Build Me Facebook."</strong>
+    </p>
+
+    <p>
+      Start with a defined task:
+    </p>
+
+    <pre><code>Add a student search field to the Students page.
+
+Requirements:
+- Search by name
+- Search by student ID
+- Update results as the user types
+- Do not change the existing API structure
+- Keep the current UI style
+- Tell me which files you plan to modify before editing</code></pre>
+
+    <p>
+      This model reduces confusion and makes it easier for you to understand the changes being made.
+    </p>
+
+    <h3>Step 4: Review the diff</h3>
+
+    <p>
+      Don't click on anything the AI pops up for you without looking. Cursor has diff and checkpoint
+      Workflows that can help you review and rollback.
+    </p>
+  </section>
+
+  <section id="copilot">
+    <h2>GitHub Copilot and Vibe Coding</h2>
+
+    <p>
+      GitHub Copilot was originally popular for coding suggestions and chat assistance,
+      but the GitHub ecosystem is now adding agentic workflows for broader coding tasks
+      can handle the developer.
+    </p>
+
+    <p>
+      For example, the GitHub docs explain that coding agents can be assigned to a task or issue,
+      then the agent makes the changes and creates a pull request for review.
+    </p>
+
+    <p>
+      This fits well with the Vibe Coding concept:
+      <strong>You define what you want, and AI helps you implement it.</strong>
+    </p>
+  </section>
+
+  <section id="prompt">
+    <h2>How to write a good Vibe Coding Prompt</h2>
+
+    <p>
+      Many people think that Vibe Coding is about "tell everything to AI".
+      The fact is that the quality of the prompt can greatly affect the quality of the result.
+    </p>
+
+    <h3>Poor prompt</h3>
+
+    <pre><code>Make me a website.</code></pre>
+
+    <p>
+      This prompt leaves many questions:
+      What kind of website? Who is using it? Which technology? What kind of design? How many pages?
+    </p>
+
+    <h3>Nice prompt</h3>
+
+    <pre><code>Build a responsive React website for a English technology blog.
+
+Requirements:
+- Use React and Tailwind CSS
+- Create Home, Article, Category and Search pages
+- Mobile-first responsive layout
+- Add a reusable Header and Footer
+- Use semantic HTML
+- Keep components modular
+- Do not add unnecessary dependencies
+- Explain the folder structure before implementation</code></pre>
+
+    <h3>Best Prompt Mode</h3>
+
+    <p>
+      A complex prompt usually consists of several parts:
+    </p>
+
+    <ol>
+      <li><strong>Context:</strong> What is the project?</li>
+      <li><strong>Goal:</strong> What do you want to do?</li>
+      <li><strong>Constraints:</strong> What hasn't been changed?</li>
+      <li><strong>Technical stack:</strong> React, Node.js, PHP, etc.</li>
+      <li><strong>Acceptance criteria:</strong> How do you know if the task is correct?</li>
+    </ol>
+
+    <h3>An example of an Advanced Prompt</h3>
+
+    <pre><code>You are working inside an existing React + Vite application.
+
+Goal:
+Add a reusable authentication form.
+
+Requirements:
+- Keep the current project architecture
+- Do not rewrite unrelated components
+- Use the existing styling system
+- Add email validation
+- Add password validation
+- Show accessible error messages
+- Disable submit while loading
+- Handle API errors gracefully
+
+Before editing:
+1. Inspect the existing authentication files
+2. Identify reusable components
+3. Explain the files you will change
+
+After editing:
+1. Run the build
+2. Report any errors
+3. Summarize the changes</code></pre>
+  </section>
+
+  <section id="tutorial">
+    <h2>Vibe Coding Tutorial: How to Get Started Step by Step</h2>
+
+    <p>
+      Now let's skip the explanation and get into the most useful part:
+      <strong>How exactly is Vibe Coding done?</strong>
+    </p>
+
+    <h3>Step 1: Choose a small project</h3>
+
+    <p>
+      A beginner should not start with a huge system with authentication, payments,
+      database, roles, notifications and many dashboards.
+    </p>
+
+    <p>
+      Start a project like this:
+    </p>
+
+    <ul>
+      <li>To-do app</li>
+      <li>Expense tracker</li>
+      <li>Weather dashboard</li>
+      <li>Blog website</li>
+      <li>Student management mini app</li>
+      <li>Portfolio website</li>
+    </ul>
+
+    <h3>Step 2: Define the requirement</h3>
+
+    <p>
+      Write down what you want before going to AI.
+    </p>
+
+    <pre><code>Project: Expense Tracker
+
+Features:
+- Add expense
+- Delete expense
+- Category selection
+- Total monthly expenses
+- Search expenses
+- Responsive UI</code></pre>
+
+    <h3>Step 3: Make a plan</h3>
+
+    <p>
+      If the task is big, don't ask the AI to build everything at once.
+      Share the project.
+    </p>
+
+    <pre><code>First, create the implementation plan only.
+
+Do not edit files yet.
+
+Break the project into:
+1. Project structure
+2. UI components
+3. State management
+4. Data model
+5. Validation
+6. Testing
+
+Wait for the next instruction before implementation.</code></pre>
+
+    <p>
+      Cursor has a Plan Mode for situations where there are many features or projects
+      need to first understand the scope and approach.
+    </p>
+
+    <h3>Step 4: Build the first part</h3>
+
+    <p>
+      Then you can apply for one clear section.
+    </p>
+
+    <pre><code>Implement the first phase only:
+Create the expense form and expense list.
+
+Do not add authentication, backend or database yet.</code></pre>
+
+    <h3>Step 5: Run the project</h3>
+
+    <p>
+      Always test the results. If you are using React/Vite, for example:
+    </p>
+
+    <pre><code>npm run dev</code></pre>
+
+    <p>
+      Then check the UI in the browser.
+    </p>
+
+    <h3>Step 6: Take the error</h3>
+
+    <p>
+      If your browser shows:
+    </p>
+
+    <pre><code>ReferenceError: handleSubmit is not defined</code></pre>
+
+    <p>
+      Don't stop at:
+    </p>
+
+    <pre><code>Fix it.</code></pre>
+
+    <p>
+      Use:
+    </p>
+
+    <pre><code>I get this error:
+
+ReferenceError: handleSubmit is not defined
+
+The error occurs in:
+src/components/ExpenseForm.jsx
+
+Please:
+1. Find the root cause
+2. Explain why it happens
+3. Show the smallest safe fix
+4. Avoid changing unrelated files</code></pre>
+
+    <h3>Step 7: Review the code</h3>
+
+    <p>
+      When you see a fix that works, learn what has been changed.
+      This is where Vibe Coding can be educational rather than just a shortcut.
+    </p>
+  </section>
+
+  <section id="project">
+    <h2>Example: How to Build AI for a Small Website</h2>
+
+    <p>
+      Imagine you want to build a website for a English technology blog.
+      Instead of giving the AI ​​a vague request, you can break it down like this.
+    </p>
+
+    <h3>Phase 1: Structure</h3>
+
+    <pre><code>Create this React structure:
+
+src/
+  components/
+  pages/
+  layouts/
+  data/
+  hooks/
+
+Create reusable:
+- Header
+- Footer
+- ArticleCard
+- CategoryCard
+
+Do not implement API integration yet.</code></pre>
+
+    <h3>Phase 2: Homepage</h3>
+
+    <pre><code>Build the homepage using the existing reusable components.
+
+Sections:
+- Hero
+- Featured articles
+- Categories
+- Trending posts
+- Newsletter section
+
+Requirements:
+- Responsive
+- Semantic HTML
+- Mobile friendly
+- Accessible buttons and links</code></pre>
+
+    <h3>Phase 3: Article Page</h3>
+
+    <pre><code>Create an article page.
+
+Include:
+- Article title
+- Author
+- Publish date
+- Featured image
+- Table of contents
+- Article body
+- Related articles
+
+Keep the component reusable for multiple articles.</code></pre>
+
+    <h3>Phase 4: Search</h3>
+
+    <pre><code>Add a site-wide article search.
+
+Users should be able to:
+- Search by title
+- Search by category
+- See matching results
+- See an empty state when no result is found
+
+Do not add a backend yet.
+Use local mock data first.</code></pre>
+
+    <p>
+      Here you can see the difference between "AI create a website for me"
+      and "AI executes a clear plan".
+      The second one gives you more control and predictable results.
+    </p>
+  </section>
+
+  <section id="debugging">
+    <h2>How AI can help with Errors and Debugging</h2>
+
+    <p>
+      One of the biggest benefits of AI-assisted coding is debugging.
+      But AI can help you better when you give it enough information.
+    </p>
+
+    <h3>Things you give AI</h3>
+
+    <ul>
+      <li>All error messages.</li>
+      <li>The error occurred in the file.</li>
+      <li>Relevant code.</li>
+      <li>What you expected to happen.</li>
+      <li>What actually happened.</li>
+    </ul>
+
+    <h3>For example</h3>
+
+    <pre><code>Expected:
+The dashboard should display the student's name.
+
+Actual:
+It displays "undefined".
+
+Error:
+No console error.
+
+Relevant response:
+{
+  "student": {
+    "fullName": "Ahmed Ali"
+  }
+}
+
+Component:
+{student.name}
+
+Find the mismatch and explain it.</code></pre>
+
+    <p>
+      AI can then tell you what the response is <code>fullName</code> while the component
+      looking for <code>name</code>.
+    </p>
+
+    <p>
+      This method helps you learn a debugging mindset:
+      <strong>What did I expect, what happened, where did the information go?</strong>
+    </p>
+  </section>
+
+  <section id="security">
+    <h2>Vibe Coding and Security: What to Watch Out for?</h2>
+
+    <p>
+      If you rely on AI, security is an area that cannot be ignored.
+      The coding agent can access files, modify code, and sometimes use it
+      tools such as terminal or web browsing depending on the device and settings.
+    </p>
+
+    <p>
+      Cursor officially warns that AI agents can act unexpectedly for reasons such as:
+      prompt injection and hallucinations, and recommends that guardrails be maintained and changes
+      important to review.
+    </p>
+
+    <h3>Do not enter secrets at the prompt</h3>
+
+    <p>
+      Don't put AI:
+    </p>
+
+    <ul>
+      <li>API cases</li>
+      <li>Database passwords</li>
+      <li>Private tokens</li>
+      <li>Authentication secrets</li>
+      <li>Production credentials</li>
+    </ul>
+
+    <p>
+      Use environment variables and secret management methods that are appropriate for your project.
+    </p>
+
+    <h3>AI code is not automatically trusted for production</h3>
+
+    <p>
+      Output code must be reviewed, tested, and understood before being entered
+      production.
+    </p>
+
+    <h3>Use Git</h3>
+
+    <p>
+      Make small commits.
+      When applying a major feature to AI, commit before the change.
+      That way you can easily go back to the previous state if the result is bad.
+    </p>
+  </section>
+
+  <section id="advantages">
+    <h2>Advantages of Vibe Coding</h2>
+
+    <h3>1. Development can accelerate</h3>
+
+    <p>
+      Many repetitive tasks such as component scaffolding, basic forms, boilerplate and refactoring
+      can be completed in less time when the AI is properly guided.
+    </p>
+
+    <h3>2. You can prototype quickly</h3>
+
+    <p>
+      If you have an idea but don't want to spend days on setup and boilerplate,
+      AI can help you make an early version faster.
+    </p>
+
+    <h3>3. You can focus on problem solving</h3>
+
+    <p>
+      Instead of spending a lot of time typing, the developer can focus on:
+      architecture, user experience, business logic and testing.
+    </p>
+
+    <h3>4. A beginner can easily test ideas</h3>
+
+    <p>
+      A person learning programming can ask the AI:
+      "What is this function doing?",
+      “What <code>map()</code> do you work here?”,
+      or
+      "Explain this error to me as a beginner."
+    </p>
+
+    <p>
+      However, this is very useful when one is trying to understand the answer,
+      instead of blindly copying.
+    </p>
+
+    <h3>5. Refactoring can be easy</h3>
+
+    <p>
+      You can ask AI to compile code into small components or functions,
+      without abandoning the old behavior.
+    </p>
+  </section>
+
+  <section id="disadvantages">
+    <h2>Problems and Limitations of Vibe Coding</h2>
+
+    <p>
+      It is a mistake to say that Vibe Coding is a perfect and flawless method.
+      The biggest problems come when someone accepts code they don't understand or haven't tested.
+    </p>
+
+    <h3>1. A working voice that is not understood</h3>
+
+    <p>
+      The app may look good, but if you don't know how it works,
+      When a big bug comes you can always depend on the AI.
+    </p>
+
+    <h3>2. Hallucinations</h3>
+
+    <p>
+      AI can produce non-existent functionality, incorrect API, incorrect package or implementation
+      not suitable for the project.
+    </p>
+
+    <h3>3. Code complexity</h3>
+
+    <p>
+      If you say "fix this" 20 times without reviewing the architecture, the project changes.
+      Can code intermingled.
+    </p>
+
+    <h3>4. Security bugs</h3>
+
+    <p>
+      Code generated by AI still needs security review.
+      If authentication, authorization, payments or data privacy are part of the project,
+      Review and testing is essential.
+    </p>
+
+    <h3>5. Dependency overload</h3>
+
+    <p>
+      AI can sometimes combine multiple libraries to make a faster solution.
+      That can increase complexity and maintenance.
+    </p>
+
+    <div class="note">
+      <strong>A golden rule:</strong>
+      Let AI be your developer assistant, but don't make it a black box that you trust every code.
+    </div>
+  </section>
+
+  <section id="learn">
+    <h2>How to learn Vibe Coding?</h2>
+
+    <p>
+      Many people want to learn Vibe Coding but start with tools instead of starting
+      had the foundation.
+      The best way is to mix it up <strong>programming fundamentals + AI workflow</strong>.
+    </p>
+
+    <h3>Start HTML</h3>
+
+    <p>
+      Learn how to build a webpage:
+      headings, paragraphs, links, images, forms and semantic elements.
+    </p>
+
+    <h3>After CSS</h3>
+
+    <p>
+      Bar layout, Flexbox, Grid, responsive design and basic visual styling.
+    </p>
+
+    <h3>After JavaScript</h3>
+
+    <p>
+      JavaScript is a great foundation for web development.
+      MDN provides a comprehensive guide covering variables, functions, objects, promises,
+      modules, error handling and other parts of the language.
+    </p>
+
+    <p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener noreferrer">
+        Learn JavaScript with MDN Guide
+      </a>
+    </p>
+
+    <h3>After Git and GitHub</h3>
+
+    <p>
+      Understand:
+      repositories, commits, branches, pull requests and rollbacks.
+    </p>
+
+    <h3>Then React or another framework</h3>
+
+    <p>
+      Once you have JavaScript fundamentals, you can move on to React, Next.js or any other stack you're interested in.
+    </p>
+
+    <p>
+      Reading the official documentation is important. If you are learning React, use the documentation
+      React to understand components, state, effects and important patterns.
+    </p>
+
+    <p>
+      <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">
+        React Learn – Official documentation
+      </a>
+    </p>
+
+    <h3>Then add AI</h3>
+
+    <p>
+      Once you understand the fundamentals, AI starts to become a multiplier.
+      You can understand the code he wrote, the error can be seen, and it becomes easier for you
+      rate AI advice.
+    </p>
+  </section>
+
+  <section id="career">
+    <h2>Can Vibe Coding be a career or career?</h2>
+
+    <p>
+      Yes, but it is important to understand it correctly.
+      Vibe Coding itself is not usually a "job title" you might think of.
+      What matters is the skill behind it:
+    </p>
+
+    <ul>
+      <li>Problem solving</li>
+      <li>Programming fundamentals</li>
+      <li>AI-assisted development</li>
+      <li>Testing</li>
+      <li>Debugging</li>
+      <li>Git and GitHub</li>
+      <li>UI/UX understanding</li>
+      <li>Database and API knowledge</li>
+      <li>Security awareness</li>
+    </ul>
+
+    <p>
+      For example, a freelancer can use AI to speed up:
+      landing pages, dashboards, forms, bug fixes, integrations and prototypes.
+      But for the client what matters is the result:
+      <strong>functional, secure, maintainable software that meets the requirements.</strong>
+    </p>
+
+    <p>
+      Therefore, a person who combines programming fundamentals and AI tools can find a workflow
+      Stronger than someone who relies on prompt alone.
+    </p>
+  </section>
+
+  <section id="seo-context">
+    <h2>Vibe Coding, AI Coding and the Future of the Developer</h2>
+
+    <p>
+      It is important to distinguish three terms:
+      <strong>AI Coding</strong>, <strong>AI-assisted development</strong> and <strong>Vibe Coding</strong>.
+    </p>
+
+    <p>
+      AI Coding is a broad term that describes the use of AI in programming.
+      AI-assisted development refers to AI being supported as part of the workflow.
+      Vibe Coding usually refers to the way a person explains the intent and task to the AI.
+      with AI taking a big part in writing or changing code.
+    </p>
+
+    <p>
+      All three of these methods are reflected in the new trend of software development:
+      The developer becomes a person who manages system, context, constraints, tests and quality,
+      rather than just someone who writes code line-by-line.
+    </p>
+  </section>
+
+  <section id="workflow">
+    <h2>The best workflow for Vibe Coding</h2>
+
+    <p>
+      If you want to use Vibe Coding professionally, this workflow can help you:
+    </p>
+
+    <ol>
+      <li><strong>Understand:</strong> Understand the requirement.</li>
+      <li><strong>Plan:</strong> Make a plan before implementation.</li>
+      <li><strong>Context:</strong> AI provides relevant files and data.</li>
+      <li><strong>Implementation:</strong> Do one part at a time.</li>
+      <li><strong>True:</strong> Run the application.</li>
+      <li><strong>Test:</strong> Check the behavior.</li>
+      <li><strong>Review:</strong> Read the diff and code.</li>
+      <li><strong>Commit:</strong> Make a Git commit if everything is correct.</li>
+      <li><strong>Iterate:</strong> Then move on to the next feature.</li>
+    </ol>
+
+    <p>
+      This is better than a random workflow of:
+      <strong>prompt → copy → error → another prompt → another error → another prompt.</strong>
+    </p>
+  </section>
+
+  <section id="internal-links">
+    <h2>Read more about LearnTech</h2>
+
+    <p>
+      If you are just starting to learn AI and programming, you can follow this article
+      Other components of LearnTech:
+    </p>
+
+    <ul>
+      <li>
+        <a href="usingChatgptAndOhterAI.html">
+           You're using AI wrong! <span>use this method</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="./10skills.html">
+          Learn Digital Skills
+        </a>
+      </li>
+
+      <li>
+        <a href="./programing.html">
+         what is programming
+        </a>
+      </li>
+
+     
+    </ul>
+
+    <p>
+      As you read through related articles, try to form a learning chain:
+      HTML → CSS → JavaScript → Git → React → AI Coding.
+      This builds a solid foundation for you rather than jumping straight into prompt-only development.
+    </p>
+  </section>
+
+  <section id="future">
+    <h2>What could the future of Vibe Coding look like?</h2>
+
+    <p>
+      Coding agents are expanding their capabilities.
+      Cursor, for example, now focuses on agent workflows, planning, debugging,
+      codebase understanding and even subagents.
+    </p>
+
+    <p>
+      And GitHub expands coding-agent workflows where tasks can be sent to an agent,
+      changes are made, and then the person reviews the pull request.
+    </p>
+
+    <p>
+      This indicates that the future developer may spend less time on repetitive coding,
+      and spend a lot of time on:
+      architecture, requirements, testing, product thinking, security and code review.
+    </p>
+
+    <p>
+      But one thing is likely to remain important:
+      <strong>one needs to understand what the AI is doing.</strong>
+      Real software doesn't just make the browser look good; should be understandable,
+      maintainable, testable and secure.
+    </p>
+  </section>
+
+  <section id="faq">
+    <h2>Vibe Coding Frequently Asked Questions</h2>
+
+    <h3>What is Vibe Coding?</h3>
+
+    <p>
+      Vibe Coding is a way to use AI to develop software using natural language
+      defines what he wants, and AI helps to produce, modify and sometimes
+      code testing.
+    </p>
+
+    <h3>Is Vibe Coding the same as AI Coding?</h3>
+
+    <p>
+      The two are closely related but not synonymous.
+      AI Coding is a broad term, while Vibe Coding usually refers to a workflow where AI is a major part
+      including writing code as the developer focuses on intent, feedback and results.
+    </p>
+
+    <h3>Do I need to learn programming to do Vibe Coding?</h3>
+
+    <p>
+      You can make prototypes with little knowledge, but if you want to make software
+      high quality, it is very important to learn programming fundamentals, debugging, Git, testing
+      and security.
+    </p>
+
+    <h3>Is Cursor compatible with Vibe Coding?</h3>
+
+    <p>
+      Yes. Cursor Agent has the ability to understand the codebase, modify multiple files,
+      run terminal commands and help with features and bug fixes.
+    </p>
+
+    <h3>Can GitHub Copilot be done with Vibe Coding?</h3>
+
+    <p>
+      Yes. GitHub Copilot has AI coding assistance and agent-oriented workflows that are yours
+      can help code, debugging and coding tasks.
+    </p>
+
+    <h3>Is every AI code valid?</h3>
+
+    <p>
+      No. AI can produce code that is faulty, insecure or incompatible with the architecture.
+      It should always be reviewed and tested.
+    </p>
+
+    <h3>Will Vibe Coding change programmers?</h3>
+
+    <p>
+      Vibe Coding can replace some of the programmer's tasks, especially
+      repetitive coding, but software development still requires planning, architecture,
+      testing, debugging, security and understanding the requirements.
+    </p>
+
+    <h3>Is Vibe Coding suitable for beginners?</h3>
+
+    <p>
+      Yes, but the beginner should use AI as a teacher and assistant, not make it
+      where he blindly picks up code.
+    </p>
+
+    <h3>What should I learn first?</h3>
+
+    <p>
+      HTML, CSS, JavaScript, Git, API basics and at least one framework like React.
+      Then you can add AI to your workflow to get more speed.
+    </p>
+
+    <h3>Can Vibe Coding be monetized?</h3>
+
+    <p>
+      AI itself doesn't automatically make you money. But the skill you build using AI
+      It can help you with freelance projects, websites, SaaS prototypes, automation and services
+      software if you can produce a quality result.
+    </p>
+  </section>
+
+  <section id="conclusion">
+    <h2>Conclusion: Is Vibe Coding the Future of Programming?</h2>
+
+    <p>
+      <strong>Vibe Coding</strong> is changing how many people work with code.
+      What made AI coding assistants and coding agents possible today was the human software
+      He can explain his ideas in natural language, and then AI helps with the implementation.
+    </p>
+
+    <p>
+      But here's a secret that many people miss:
+      <strong>The most powerful Coding Vibe isn't the person who writes the longest prompt; he is a good person
+      understanding the problem, the technology, the code and how to ensure the results.</strong>
+    </p>
+
+    <p>
+      If you are a beginner, don't be afraid of AI.
+      Use it.
+      But at the same time teach the fundamentals.
+    </p>
+
+    <p>
+      If you're a developer, don't just see AI as a code generator.
+      See it as an assistant capable of helping you with planning, implementation, debugging, refactoring,
+      testing and exploration.
+    </p>
+
+    <p>
+      Finally, Vibe Coding is not to be written off as a programmer.
+      It's a change <strong>how the programmer works</strong>.
+      A person who combines knowledge of programming, understanding of the product and the power of AI can have
+      Workflow is much faster than before.
+    </p>
+
+    <p>
+      If you want to start today, don't think about building a big application.
+      Take one small project, choose a Cursor or coding assistant you can understand, make a plan,
+      Write the AI to a clear prompt, test the code, read the errors and repeat.
+      This is where your journey really begins <strong>Vibe Coding</strong>.
+    </p>
+
+  </section>
+
+</article>
+
+            <div class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-4 items-center justify-between">
+                <span class="font-bold dark:text-white">Share with friends:</span>
+                <div class="flex gap-2">
+<a href="https://api.whatsapp.com/send?text=Halkan ka aqri maqaal aad u xiiso badan: https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-green-500 text-white rounded-xl text-sm font-bold"style="color: #f8fafc; text-decoration: none;">
+   
+   WhatsApp
+</a>
+               <a href="https://www.facebook.com/sharer/sharer.php?u=https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-bold" style="color: #f8fafc; text-decoration: none;">
+   Facebook
+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-12">
+            <a href="aiAgents.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">In the previous article</span>
+                <p class="font-bold dark:text-white mt-1">What is Agentic AI?</p>
+            </a>
+            <a href="webdevelopment.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">Next article</span>
+                <p class="font-bold dark:text-white mt-1">Learning Web development </p>
+            </a>
+        </div>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress").style.width = scrolled + "%";
+        };
+
+        // Mobile Menu
+        const overlay = document.getElementById('mobile-overlay');
+        document.getElementById('open-menu').addEventListener('click', () => overlay.classList.add('active'));
+        document.getElementById('close-menu').addEventListener('click', () => overlay.classList.remove('active'));
+    </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>

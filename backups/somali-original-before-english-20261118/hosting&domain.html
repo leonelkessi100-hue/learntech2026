@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="so">
+
+<head>
+           <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-26STFV9LR7');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting iyo Domain: Hagaha Bilowga</title>
+    <meta name="description"
+        content="Baro sida domain iyo hosting loo doorto, sida loo iibsado, iyo sida loo bilaabo website-kaaga. Hagaha bilowga ee Soomaaliya iyo dunida oo dhan.">
+    <meta name="keywords"
+        content="Hosting, Domain, Website Hosting, Buy Domain, Web Hosting Guide, LearnTech, Website Setup, Hosting for Beginners, Domain Registration">
+    <meta name="author" content="LearnTech">
+ <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+ 
+   <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <style>
+        
+        /* --- General Setup --- */
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        #mobile-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 9999; display: none; }
+        #mobile-overlay.active { display: flex; }
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 4px; background: #2563eb; z-index: 100; width: 0%; }
+
+        /* --- ARTCLE BODY DESIGN (Halkan ayay dhibaatadu ka jirtay) --- */
+        .article-body { color: #475569; line-height: 1.8; font-size: 1.15rem; }
+        .dark .article-body { color: #94a3b8; }
+
+        /* Cinwaannada kala duwan */
+        .article-body h1 { font-size: 2.5rem; font-weight: 800; color: #1e293b; margin-bottom: 1.5rem; }
+        .article-body h2 { font-size: 1.9rem; font-weight: 800; color: #2563eb; margin-top: 2.5rem; margin-bottom: 1.25rem; border-left: 5px solid #2563eb; padding-left: 1rem; }
+        .article-body h3 { font-size: 1.6rem; font-weight: 700; color: #1e293b; margin-top: 2rem; margin-bottom: 1rem; }
+        .article-body h4 { font-size: 1.3rem; font-weight: 700; color: #334155; margin-top: 1.5rem; }
+        .dark .article-body h1, .dark .article-body h3, .dark .article-body h4 { color: #f1f5f9; }
+
+        /* Hagaajinta Liisaska (Lists) - Tan ayaa muhiim u ah koodhkaaga */
+        .article-body ul { list-style-type: disc !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body ol { list-style-type: decimal !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.6rem; }
+        .article-body li::marker { color: #2563eb; font-weight: bold; }
+
+        /* Strong & Links */
+        .article-body strong { color: #1e293b; font-weight: 700; }
+        .dark .article-body strong { color: #f8fafc; }
+        .article-body a { color: #2563eb; text-decoration: underline; font-weight: 600; }
+        
+        /* Sawirrada */
+        .article-body img { border-radius: 2rem; margin: 2rem 0; width: 100%; height: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+
+<nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+  <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+    <a href="./index.html" class="flex items-center gap-2">
+  
+      <span class="text-2xl font-bold font-display text-white">Rain<span style="color:var(--coral)">Book</span></span>
+    </a>
+    <div class="flex items-center">
+      <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+        <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Home</a></li>
+        <li><a href="./blog.html" class="px-4 py-2 rounded-lg text-[var(--coral)] font-bold">Blog</a></li>
+        <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">About</a></li>
+        <li><a href="./contact.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="mobile-overlay" class="bg-white dark:bg-slate-950 flex-col items-center justify-center space-y-8 text-2xl font-bold transition-all dark:text-white">
+        <button id="close-menu" class="absolute top-6 right-8 text-6xl text-slate-400">&times;</button>
+        <a href="./index.html">home</a>
+        <a href="./about.html">about</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">contact</a>
+    </div>
+
+<script>
+    // Logic-ga Dark Mode
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+    const htmlElement = document.documentElement;
+
+    // Hubi haddii uu qofku horay u doortay dark mode
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.classList.add('dark');
+        themeToggleIcon.innerText = '☀️';
+    } else {
+        htmlElement.classList.remove('dark');
+        themeToggleIcon.innerText = '🌙';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        if (htmlElement.classList.contains('dark')) {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            themeToggleIcon.innerText = '🌙';
+        } else {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggleIcon.innerText = '☀️';
+        }
+    });
+</script>
+    <header class="py-16 px-6 text-center max-w-4xl mx-auto">
+        <div class="mb-4 inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full text-xs font-bold uppercase">Technology</div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
+      iibsahada hosting iyo domain iyo barashadooda
+        </a>
+    </div>
+        </h1>
+        <div class="flex justify-center items-center gap-4 text-slate-500 text-sm">
+            <span>By LearnTech</span> • <span>Febraayo 2026</span> • <span>5 min read</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+     <div class="article-body">
+
+
+    <article class="blog-post hosting-post">
+
+        <header class="hosting-header">
+            <h1>Hosting iyo Domain: Hagaha Bilowga</h1>
+            <p>Wax kasta oo aad u baahan tahay si aad u bilowdo website-kaaga cusub</p>
+        </header>
+
+        <section class="hosting-card">
+            <p>
+                Bilowga website waa talaabo xiiso leh, balse dadka cusub waxay la yaabaan
+                <strong>hosting iyo domain</strong>. Qoraalkan wuxuu kuugu sharaxayaa
+                waxa ay yihiin, sida loo iibsado, iyo sida loo bilaabo website-kaaga si fudud.
+            </p>
+        </section>
+
+        <section class="hosting-card">
+            <h2>1. Waa Maxay Domain?</h2>
+            <p>
+                Domain waa magaca website-kaaga oo dadka ku booqanaya internet-ka isticmaalaan.
+                Tusaale: <strong>www.tusaale.com</strong>. Waa ciwaanka online-kaaga ee gaarka ah.
+            </p>
+
+            <ul>
+                <li>Dooro domain fudud, xusuus sahlan</li>
+                <li>Ka fogow characters badan ama nambarro adag</li>
+                <li>Hubi inuu la socdo niche-kaaga</li>
+            </ul>
+        </section>
+
+        <section class="hosting-card">
+            <h2>2. Waa Maxay Hosting?</h2>
+            <p>
+                Hosting waa meesha website-kaaga lagu kaydiyo si uu internet-ka uga muuqdo.
+                Hosting-ka wuxuu noqon karaa:
+            </p>
+
+            <ul>
+                <li>Shared Hosting – lacag yar, ku habboon bilowga</li>
+                <li>VPS Hosting – wax qabad dheeri ah</li>
+                <li>Dedicated Hosting – server adiga kuu gaar ah</li>
+            </ul>
+
+            <p>
+                Doorashada hosting sax ah waa furaha website degdeg ah, secure, oo aan dhib lahayn.
+            </p>
+        </section>
+
+        <section class="hosting-card">
+            <h2>3. Sida Loo Iibsado Domain iyo Hosting</h2>
+            <ol>
+                <li>Dooro registrar domain (GoDaddy, Namecheap, iwm)</li>
+                <li>Raadi domain-ka la heli karo</li>
+                <li>Iibso domain-ka</li>
+                <li>Dooro hosting provider (Bluehost, Hostinger, SiteGround)</li>
+                <li>Ku xir domain hosting-kaaga</li>
+            </ol>
+        </section>
+
+        <section class="hosting-card">
+            <h2>4. Xulashada Hosting + Domain Ku Habboon Bilowga</h2>
+            <p>
+                Bilowga, waxaa fiican in aad isticmaasho <strong>Shared Hosting</strong> oo leh domain la socota.
+                Tani waxay kaa badbaadinaysaa kharash iyo dhib. Marka website-kaagu koro,
+                waxaad u guuri kartaa VPS ama Dedicated server.
+            </p>
+        </section>
+
+        <section class="hosting-card">
+            <h2>5. Talooyin Guud</h2>
+            <ul>
+                <li>Doorto domain oo fudud, memorable</li>
+                <li>Hubi hosting-ka inuu leeyahay support 24/7</li>
+                <li>Ka fogow hosting-ka jaban oo aan la isku halayn karin</li>
+                <li>Hubi security & SSL certificate</li>
+            </ul>
+            <blockquote>
+                “Domain iyo hosting-kaaga waa aasaaska website-kaaga. Haddii aasaasku xooggan yahay, website-kaagu wuu
+                koraayaa.”
+            </blockquote>
+        </section>
+
+        <section class="hosting-card">
+            <h2>Gunaanad</h2>
+            <p>
+                Marka la isku daro domain wanaagsan + hosting tayo leh, waxaad haysataa
+                website professional ah oo diyaar u ah inuu lacag ka sameeyo, content la dhiso,
+                iyo traffic soo jiito. Bilowga saxda ah waa furaha guusha.
+            </p>
+        </section>
+ 
+    <div class="w-full pt-10 pb-14 text-center">
+    <a href="./index.html" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-blue-605 via-blue-600 to-blue-700 text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 border border-white/10 text-base tracking-wide no-underline appearance-none" style="text-decoration: none !important;">
+        <span class="no-underline text-white" style="text-decoration: none !important;">🌐 Booqo Website-ka Guud</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+        </svg>
+    </a>
+</div>
+</article>
+   
+</section>
+            <div class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-4 items-center justify-between">
+                <span class="font-bold dark:text-white">La wadaag asxaabta:</span>
+                <div class="flex gap-2">
+<a href="https://api.whatsapp.com/send?text=Halkan ka aqri maqaal aad u xiiso badan: https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-green-500 text-white rounded-xl text-sm font-bold"style="color: #f8fafc; text-decoration: none;">
+   
+   WhatsApp
+</a>
+               <a href="https://www.facebook.com/sharer/sharer.php?u=https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-bold" style="color: #f8fafc; text-decoration: none;">
+   Facebook
+</a>
+                </div>
+            </div>
+        </div>
+<div class="w-full pt-10 pb-14 text-center">
+    <a href="./index.html" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-blue-605 via-blue-600 to-blue-700 text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 border border-white/10 text-base tracking-wide no-underline appearance-none" style="text-decoration: none !important;">
+        <span class="no-underline text-white" style="text-decoration: none !important;">🌐 Booqo Website-ka Guud</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+        </svg>
+    </a>
+</div>
+</article>
+        <div class="grid md:grid-cols-2 gap-6 mt-12">
+            <a href="onlineincome.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">Maqaalkii hore</span>
+                <p class="font-bold dark:text-white mt-1">qaabka lacag looga sameeya internetka</p>
+            </a>
+            <a href="programing.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">Maqaalka xiga</span>
+                <p class="font-bold dark:text-white mt-1">programming language</p>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress").style.width = scrolled + "%";
+        };
+
+        // Mobile Menu
+        const overlay = document.getElementById('mobile-overlay');
+        document.getElementById('open-menu').addEventListener('click', () => overlay.classList.add('active'));
+        document.getElementById('close-menu').addEventListener('click', () => overlay.classList.remove('active'));
+    </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>

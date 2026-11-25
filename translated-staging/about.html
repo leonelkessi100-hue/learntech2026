@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us | LearnTech</title>
+
+  <meta name="description" content="LearnTech is a English Language blog that talks about Programming, Web Development, AI and Online Income.">
+  <meta name="keywords" content="LearnTech, English Programming, English AI, Web Development">
+
+  <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+
+  <!-- Fonts (same as homepage style vibe) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{
+      --ink:#0F1B2D;
+      --surface:#16243A;
+      --surface-2:#1C2D47;
+      --line:rgba(245,243,234,0.10);
+      --cream:#F5F3EA;
+      --cream-dim:#C9CCD6;
+      --coral:#FF6B4A;
+      --mint:#6FE0BE;
+    }
+
+    body{
+      background:var(--ink);
+      color:var(--cream);
+      font-family:'Inter',sans-serif;
+    }
+
+    .font-display{font-family:'Fraunces',serif;}
+
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:18px;
+    }
+
+    .btn{
+      background:var(--coral);
+      color:#111;
+      padding:10px 18px;
+      border-radius:999px;
+      font-weight:700;
+    }
+
+    .glass{
+      background:rgba(22,36,58,0.75);
+      backdrop-filter:blur(12px);
+    }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+
+<body>
+
+<!-- NAV (same style as homepage) -->
+<header class="fixed top-0 w-full z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 card glass">
+
+     <!-- LOGO -->
+    <a href="./index.html" class="font-display font-bold text-xl tracking-tight">
+      Rain<span style="color:var(--coral)">Book</span>
+    </a>
+
+    <nav class="hidden md:flex gap-6 text-sm text-[var(--cream-dim)]">
+      <a href="./index.html">Home</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./about.html" style="color:var(--coral)">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    <a href="./blog.html" class="btn text-sm">Start Reading</a>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="pt-40 pb-16 text-center px-6">
+  <h1 class="font-display text-5xl md:text-7xl font-bold">
+    about <span style="color:var(--coral)">LearnTech</span>
+  </h1>
+
+  <p class="max-w-3xl mx-auto mt-6 text-[var(--cream-dim)] text-lg">
+    The biggest guide to technology, blogging, and online income for the English community.
+  </p>
+</section>
+
+<!-- CONTENT (ORIGINAL TEXT PRESERVED) -->
+<main class="max-w-6xl mx-auto px-6 pb-20 space-y-10">
+
+  <!-- SECTION 1 -->
+  <div class="card p-10 md:p-14">
+    <h2 class="text-sm uppercase tracking-widest text-[var(--mint)] mb-4">
+      Introduction & Objective
+    </h2>
+
+    <h3 class="font-display text-3xl font-bold mb-6">
+      What is LearnTech, and how was it born?
+    </h3>
+
+    <p class="text-[var(--cream-dim)] leading-relaxed mb-4">
+      Today's world has moved towards technology, but unfortunately, a lot of knowledge in this field
+      It is not available in the complete English Language. <b>LearnTech</b> she was born to fill that role. I
+      We started our journey in 2026 aiming for Englishs to be part of the global digital revolution.
+    </p>
+
+    <p class="text-[var(--cream-dim)] leading-relaxed">
+      It's not just a blog to publish articles, it's a platform to inspire young people
+      Englishs to learn skills to make money online. If you are someone who wants to start
+      Learning AI and digital skills such as Web Development, Video Editing and Data Analysis or how to use these skills to make a permanent income, you are in the right place for what you need to improve yourself.
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div class="card p-10">
+      <h3 class="text-xl font-bold mb-4" style="color:var(--coral)">
+        In our view
+      </h3>
+      <p class="text-[var(--cream-dim)] leading-relaxed">
+        To be the first source of modern technology knowledge in English Language,
+        by producing thousands of young digital professionals.
+      </p>
+    </div>
+
+    <div class="card p-10">
+      <h3 class="text-xl font-bold mb-4" style="color:var(--mint)">
+        Our purpose
+      </h3>
+      <p class="text-[var(--cream-dim)] leading-relaxed">
+        To provide quality lessons, based on real experience,
+        to make it easier for the English community to use the internet and make use of it.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- FOUNDER SECTION -->
+  <div class="card p-10 text-center">
+
+    <img src="./ali.jpg"
+         class="w-28 h-28 mx-auto rounded-full mb-6">
+
+    <h3 class="font-display text-2xl font-bold mb-3">
+      Founder & Developer
+    </h3>
+
+    <h4 class="text-xl mb-6">Mohamed Ahmed Ali</h4>
+
+    <p class="text-[var(--cream-dim)] max-w-2xl mx-auto leading-relaxed">
+      "I believe that knowledge is the only key to change.
+      My journey into Blogging and Web Development started years ago,
+      and today I want to use that experience to build a new generation of Tech in Englisha."
+    </p>
+
+    <div class="mt-6 flex justify-center gap-3 text-xs">
+      <span class="px-3 py-1 rounded-full bg-white/10">Full Stack Developer</span>
+      <span class="px-3 py-1 rounded-full bg-white/10">SEO Expert</span>
+      <span class="px-3 py-1 rounded-full bg-white/10">Blogger</span>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="text-center py-10 border-t border-white/10 text-sm text-[var(--cream-dim)]">
+  © 2026 LearnTech — All Rights Reserved
+</footer>
+
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>

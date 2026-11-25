@@ -1,14 +1,15 @@
-/* style.css - TechSomali Article Global Styles */
+/* style.css - TechEnglish Article Global Styles */
 
 :root {
-  --ink: #0F1B2D;
-  --surface: #16243A;
-  --surface-2: #1C2D47;
-  --line: rgba(245,243,234,0.10);
-  --cream: #F5F3EA;
-  --cream-dim: #C9CCD6;
-  --coral: #FF6B4A;
-  --mint: #6FE0BE;
+  /* LearnTech design tokens — shared by every article page. */
+  --ink: #071827;
+  --surface: #0d2638;
+  --surface-2: #12334a;
+  --line: rgba(225, 245, 255, 0.14);
+  --cream: #f4fbff;
+  --cream-dim: #b8cbd8;
+  --coral: #ffb547;
+  --mint: #54d6c2;
 }
 
 body { 
@@ -64,3 +65,35 @@ body {
 .article-body strong { color: var(--cream); font-weight: 700; }
 .article-body a { color: var(--mint); text-decoration:none; font-weight: 600; }
 .article-body img { border-radius: 1.5rem; margin: 2rem 0; width: 100%; height: auto; border: 1px solid var(--line); }
+
+/* === LearnTech CONTENT IMAGE SYSTEM ===
+   A single rule-set keeps existing blog images intact while making their
+   presentation consistent across desktop and mobile. */
+.article-body img,
+article img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  background: var(--surface-2);
+}
+
+.article-body > img:first-of-type,
+article > img:first-of-type {
+  aspect-ratio: 16 / 9;
+  object-position: center;
+}
+
+/* Make keyboard navigation obvious and keep every linked card usable. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--mint);
+  outline-offset: 3px;
+}
+
+@media (max-width: 767px) {
+  .article-body { font-size: 1.05rem; line-height: 1.75; }
+  .article-body h1 { font-size: 2rem; }
+  .article-body h2 { font-size: 1.55rem; margin-top: 2.35rem; }
+  .article-body img { border-radius: 1rem; margin: 1.5rem 0; }
+}

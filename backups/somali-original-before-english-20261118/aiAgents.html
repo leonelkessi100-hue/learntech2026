@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="so">
+
+<head>
+       <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-26STFV9LR7');
+</script>
+
+<title>AI Agents: Waa Maxay AI Agents iyo Sida Loo Dhiso AI Agent Casri Ah 2026</title>
+ <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Baro waxa ay yihiin AI Agents, sida ay u shaqeeyaan, noocyadooda, faa'iidooyinkooda, iyo sida loo dhiso AI Agent casri ah adigoo isticmaalaya OpenAI, LangChain, CrewAI iyo AutoGen">
+
+<meta name="keywords" content="AI Agents, Autonomous AI Agents, Build AI Agents, Waa Maxay AI Agents, Sida Loo Dhiso AI Agent, AI Automation, Artificial Intelligence, LangChain, CrewAI, AutoGen">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+ 
+<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+
+<body>
+
+    <div id="scroll-progress"></div>
+
+<nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+  <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+    <a href="./index.html" class="flex items-center gap-2">
+  
+      <span class="text-2xl font-bold font-display text-white">Rain<span style="color:var(--coral)">Book</span></span>
+    </a>
+    <div class="flex items-center">
+      <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+        <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Home</a></li>
+        <li><a href="./blog.html" class="px-4 py-2 rounded-lg text-[var(--coral)] font-bold">Blog</a></li>
+        <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">About</a></li>
+        <li><a href="./contact.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="mobile-overlay"
+        class="bg-white dark:bg-slate-950 flex-col items-center justify-center space-y-8 text-2xl font-bold transition-all dark:text-white">
+        <button id="close-menu" class="absolute top-6 right-8 text-6xl text-slate-400">&times;</button>
+        <a href="./index.html">home</a>
+        <a href="./about.html">about</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">contact</a>
+    </div>
+  
+    <script>
+        // Logic-ga Dark Mode
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeToggleIcon = document.getElementById('theme-toggle-icon');
+        const htmlElement = document.documentElement;
+
+        // Hubi haddii uu qofku horay u doortay dark mode
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+            themeToggleIcon.innerText = '☀️';
+        } else {
+            htmlElement.classList.remove('dark');
+            themeToggleIcon.innerText = '🌙';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeToggleIcon.innerText = '🌙';
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggleIcon.innerText = '☀️';
+            }
+        });
+    </script>
+    <header class="py-16 px-6 text-center max-w-4xl mx-auto">
+        <div
+            class="mb-4 inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full text-xs font-bold uppercase">
+            Technology</div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
+             Waa Maxay AI Agents iyo Sida Loo Dhiso AI Agent Casri Ah
+            <div class="mt-4">
+                <a href="https://techEnglish.com" class="text-sm text-blue-600 hover:underline">
+                    techEnglish.com
+        
+            </a>
+            </div>
+        </h1>
+        <div class="flex justify-center items-center gap-4 text-slate-500 text-sm">
+            <span>By LearnTech</span> • <span>april 2026</span> • <span>5 min read</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+    <div class="article-body">
+<article>
+
+<h1>AI Agents: Waa Maxay AI Agents iyo Sida Loo Dhiso AI Agent Casri Ah</h1>
+
+<p>
+Sirdoonka macmalka ah (Artificial Intelligence) wuxuu si xawaare sare leh u beddelayaa habka aan u shaqeyno, wax u baranno, ganacsi u maamulno, iyo xitaa sida aan go'aannada u qaadanno. Mid ka mid ah horumarrada ugu waaweyn ee AI-ga maanta waa <strong>AI Agents</strong>.
+</p>
+
+<p>
+AI Agents waxaa loo arkaa jiilka xiga ee AI sababtoo ah ma aha oo keliya inay ka jawaabaan su'aalaha dadka, balse waxay awood u leeyihiin inay qorsheeyaan, falanqeeyaan xogta, go'aanno qaataan, iyo inay si madax-bannaan u qabtaan hawlo adag.
+</p>
+
+<p>
+Haddii aad tahay blogger, developer, ganacsade, ama qof xiiseeya AI, fahamka AI Agents wuxuu noqon karaa xirfad muhiim ah sanadaha soo socda.
+</p>
+
+<hr>
+
+<h2>Waa Maxay AI Agents?</h2>
+
+<p>
+AI Agent waa nidaam sirdoon macmal ah oo awood u leh inuu fahmo yool la siiyay, qorsheeyo tallaabooyinka lagu gaari karo yoolkaas, kadibna si madaxbannaan u fuliyo hawsha.
+</p>
+
+<p>
+Si ka duwan chatbot-yada caadiga ah, AI Agent wuxuu leeyahay awood uu ku:
+</p>
+
+<ul>
+<li>Fahmo hadafka la siiyay</li>
+<li>Sameeyo qorshe shaqo</li>
+<li>Ururiyo xog muhiim ah</li>
+<li>Isticmaalo qalabyo kala duwan</li>
+<li>Qiimeeyo natiijada</li>
+<li>Iskiis u hagaajiyo khaladaadka</li>
+</ul>
+
+<p>
+Tusaale ahaan, haddii aad AI Agent ku tiraahdo:
+</p>
+
+<blockquote>
+"Raadi 10 fikradood oo ganacsi online ah kadibna samee warbixin PDF ah."
+</blockquote>
+
+<p>
+Chatbot caadi ah wuxuu kuu soo qori karaa jawaab. Laakiin AI Agent wuxuu awood u leeyahay inuu:
+</p>
+
+<ol>
+<li>Baadho fikrado ganacsi</li>
+<li>Falanqeeyo xogta</li>
+<li>Qoro warbixinta</li>
+<li>Abuuro PDF</li>
+<li>Kuu diro natiijada</li>
+</ol>
+
+<p>
+Taasi waa sababta AI Agents loogu yeero <strong>Autonomous AI Agents</strong>.
+</p>
+
+<h2>Sidee AI Agents U Shaqeeyaan?</h2>
+
+<p>
+AI Agent kasta wuxuu ku shaqeeyaa afar qaybood oo waaweyn:
+</p>
+
+<h3>1. Goal (Yool)</h3>
+
+<p>
+Agent-ka waxaa la siiyaa hadaf ama shaqo uu doonayo inuu qabto.
+</p>
+
+<p>
+Tusaale:
+</p>
+
+<ul>
+<li>Samee maqaal SEO ah</li>
+<li>Raadi macaamiil cusub</li>
+<li>Jadwal u samee shaqaalaha</li>
+<li>Falanqee xog ganacsi</li>
+</ul>
+
+<h3>2. Planning (Qorsheyn)</h3>
+
+<p>
+Agent-ku wuxuu kala jabinayaa hawsha qaybo yaryar si uu si fudud ugu fuliyo.
+</p>
+
+<h3>3. Action (Fulinta Hawsha)</h3>
+
+<p>
+Kadib wuxuu adeegsadaa qalabyo iyo APIs si uu shaqada u qabto.
+</p>
+
+<h3>4. Reflection (Dib-u-eegis)</h3>
+
+<p>
+Wuxuu qiimeeyaa natiijada si uu u ogaado haddii yoolkii la gaaray.
+</p>
+
+<h2>Noocyada AI Agents</h2>
+
+<h3>1. Reactive Agents</h3>
+
+<p>
+Kuwani waxay ka jawaabaan xaaladda hadda jirta iyagoo aan kaydin taariikh hore.
+</p>
+
+<h3>2. Goal-Based Agents</h3>
+
+<p>
+Waxay si joogto ah uga shaqeeyaan gaarista yool gaar ah.
+</p>
+
+<h3>3. Utility-Based Agents</h3>
+
+<p>
+Waxay qiimeeyaan doorashooyin kala duwan kadibna doortaan tan ugu fiican.
+</p>
+
+<h3>4. Learning Agents</h3>
+
+<p>
+Waxay wax ka bartaan xogta iyo khibradaha cusub.
+</p>
+
+<h3>5. Multi-Agent Systems</h3>
+
+<p>
+Koox AI Agents ah ayaa iska kaashanaya xalinta hawl adag.
+</p>
+
+<h2>AI Agents vs Chatbots</h2>
+
+<table border="1">
+<tr>
+<th>Chatbot</th>
+<th>AI Agent</th>
+</tr>
+
+<tr>
+<td>Ka jawaaba su'aalaha</td>
+<td>Qabta hawlo madax-bannaan</td>
+</tr>
+
+<tr>
+<td>Xaddidan</td>
+<td>Dabacsan</td>
+</tr>
+
+<tr>
+<td>Qorsheyn ma laha</td>
+<td>Qorsheyn buuxda leh</td>
+</tr>
+
+<tr>
+<td>Ma isticmaalo qalab badan</td>
+<td>Wuxuu isticmaali karaa qalabyo badan</td>
+</tr>
+
+<tr>
+<td>Jawaab keliya</td>
+<td>Waxqabad dhammeystiran</td>
+</tr>
+
+</table>
+
+<h2>Faa'iidooyinka AI Agents</h2>
+
+<ul>
+
+<li>Waxay badbaadiyaan waqti badan</li>
+
+<li>Waxay yareeyaan khaladaadka bini'aadamka</li>
+
+<li>Waxay kordhiyaan wax-soo-saarka</li>
+
+<li>Waxay shaqeyn karaan 24/7</li>
+
+<li>Waxay yareeyaan kharashaadka shirkadaha</li>
+
+<li>Waxay kordhiyaan dakhliga ganacsiyada</li>
+
+<li>Waxay otomaatig ka dhigaan hawlo badan</li>
+
+</ul>
+
+<h2>Meelaha AI Agents Laga Isticmaalo</h2>
+
+<h3>Ganacsiga</h3>
+
+<p>
+Shirkado badan ayaa AI Agents u adeegsada adeegga macaamiisha, suuq-geynta, iyo falanqaynta xogta.
+</p>
+
+<h3>E-commerce</h3>
+
+<p>
+Dukaamada online-ka ah waxay AI Agents u isticmaalaan talo-bixin alaabooyin iyo taageero macaamiil.
+</p>
+
+<h3>Caafimaadka</h3>
+
+<p>
+AI Agents waxay ka caawiyaan dhakhaatiirta falanqaynta xogta bukaanka.
+</p>
+
+<h3>Waxbarashada</h3>
+
+<p>
+Ardayda iyo macallimiinta ayaa AI Agents u adeegsanaya cilmi-baaris iyo diyaarinta casharro.
+</p>
+
+<h3>SEO iyo Blogging</h3>
+
+<p>
+Bloggers badan ayaa AI Agents u adeegsada:
+</p>
+
+<ul>
+<li>Keyword research</li>
+<li>Content planning</li>
+<li>Content writing</li>
+<li>On-page SEO</li>
+<li>Internal linking</li>
+<li>Content optimization</li>
+</ul>
+
+<h2>Sida Loo Dhiso AI Agent</h2>
+
+<p>
+Haddii aad rabto inaad dhisto AI Agent kuu gaar ah, waxaad u baahan tahay dhowr talaabo oo muhiim ah.
+</p>
+
+<h3>Tallaabada 1: Qeex Ujeeddada Agent-ka</h3>
+
+<p>
+Marka hore go'aanso shaqada uu qabanayo.
+</p>
+
+<p>
+Tusaale:
+</p>
+
+<ul>
+<li>SEO Agent</li>
+<li>Research Agent</li>
+<li>Customer Support Agent</li>
+<li>Sales Agent</li>
+<li>Content Writing Agent</li>
+</ul>
+
+<h3>Tallaabada 2: Dooro AI Model</h3>
+
+<p>
+Waxaad isticmaali kartaa:
+</p>
+
+<ul>
+<li>GPT Models</li>
+<li>Claude Models</li>
+<li>Gemini Models</li>
+<li>Open Source LLMs</li>
+</ul>
+
+<h3>Tallaabada 3: Dooro Framework</h3>
+
+<p>
+Framework-yada ugu caansan maanta waa:
+</p>
+
+<ul>
+<li>LangChain</li>
+<li>CrewAI</li>
+<li>AutoGen</li>
+<li>LangGraph</li>
+</ul>
+
+<h2>LangChain</h2>
+
+<p>
+LangChain waa framework caan ah oo loo isticmaalo dhisidda AI Agents awood badan leh.
+</p>
+
+<p>
+Waxay kuu oggolaaneysaa:
+</p>
+
+<ul>
+<li>Prompt management</li>
+<li>Memory systems</li>
+<li>Tool integration</li>
+<li>Agent workflows</li>
+</ul>
+
+<h2>CrewAI</h2>
+
+<p>
+CrewAI wuxuu kuu oggolaanayaa inaad sameyso koox AI Agents ah oo wada shaqeynaya.
+</p>
+
+<p>
+Tusaale:
+</p>
+
+<ul>
+<li>Research Agent</li>
+<li>Writer Agent</li>
+<li>Editor Agent</li>
+<li>SEO Agent</li>
+</ul>
+
+<p>
+Dhamaantood waxay wada shaqeyn karaan si ay u soo saaraan maqaal tayo sare leh.
+</p>
+<h3>Internal Links</h3>
+
+<ul>
+<li><a href="./makemoneychatgpt.html">lacag ka samee chatgpt💵</a></li>
+<li><a href="./freelencing.html">daqli joogto ah samee adigoo gurigaada joogo</a></li>
+</ul>
+
+
+<h2>Gunaanad</h2>
+
+<p>
+AI Agents waxay matalayaan mustaqbalka sirdoonka macmalka ah. Halkii AI-gu uu ahaan lahaa qalab jawaab bixiya, maanta wuxuu noqonayaa shaqaale dijitaal ah oo awood u leh inuu qabto hawlo badan isaga oo si madax-bannaan u shaqeynaya.
+</p>
+
+<p>
+Qof kasta oo maanta barta AI Agents iyo sida loo dhiso wuxuu heli karaa fursado waaweyn oo dhinaca shaqada, ganacsiga, automation-ka, iyo dakhliga internet-ka ah.
+</p>
+
+<div class="w-full pt-10 pb-14 text-center">
+    <a href="./index.html" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-blue-605 via-blue-600 to-blue-700 text-white font-extrabold rounded-2xl shadow-[0_10px_30px_rgba(37,99,235,0.3)] hover:shadow-[0_15px_35px_rgba(37,99,235,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 border border-white/10 text-base tracking-wide no-underline appearance-none" style="text-decoration: none !important;">
+        <span class="no-underline text-white" style="text-decoration: none !important;">🌐 Booqo Website-ka Guud</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+        </svg>
+    </a>
+</div>
+</article>
+
+
+
+            <div
+                class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-4 items-center justify-between">
+                <span class="font-bold dark:text-white">La wadaag asxaabta:</span>
+                <div class="flex gap-2">
+                    <a href="https://api.whatsapp.com/send?text=Halkan ka aqri maqaal aad u xiiso badan: https://techEnglish.com/payoneer.html"
+                        target="_blank" class="px-4 py-2 bg-green-500 text-white rounded-xl text-sm font-bold"
+                        style="color: #f8fafc; text-decoration: none;">
+
+                        WhatsApp
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://techEnglish.com/payoneer.html"
+                        target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-bold"
+                        style="color: #f8fafc; text-decoration: none;">
+                        Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    
+    </main>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress").style.width = scrolled + "%";
+        };
+
+        // Mobile Menu
+        const overlay = document.getElementById('mobile-overlay');
+        document.getElementById('open-menu').addEventListener('click', () => overlay.classList.add('active'));
+        document.getElementById('close-menu').addEventListener('click', () => overlay.classList.remove('active'));
+    </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+
+</html>

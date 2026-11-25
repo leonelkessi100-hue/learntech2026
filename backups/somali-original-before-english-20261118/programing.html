@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-26STFV9LR7');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programming: Fikradaha Programming si Fudud oo Af-Soomaali ah. Baro fikradaha aasaasiga ah ee programming sida variables, conditions, loops, iyo logic. Ku bilow safarkaaga barashada coding maanta!">
+    <meta name="keywords" content="programming afsoomaali, barashada programming afsoomaali, fikradaha programming, variables, conditions, loops, logic, web development afsoomaali, techEnglish">
+    <meta name="author" content="LearnTech">
+     <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+
+    <title>programing</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <style>
+        
+        /* --- General Setup --- */
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        #mobile-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 9999; display: none; }
+        #mobile-overlay.active { display: flex; }
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 4px; background: #2563eb; z-index: 100; width: 0%; }
+
+        /* --- ARTCLE BODY DESIGN (Halkan ayay dhibaatadu ka jirtay) --- */
+        .article-body { color: #475569; line-height: 1.8; font-size: 1.15rem; }
+        .dark .article-body { color: #94a3b8; }
+
+        /* Cinwaannada kala duwan */
+        .article-body h1 { font-size: 2.5rem; font-weight: 800; color: #1e293b; margin-bottom: 1.5rem; }
+        .article-body h2 { font-size: 1.9rem; font-weight: 800; color: #2563eb; margin-top: 2.5rem; margin-bottom: 1.25rem; border-left: 5px solid #2563eb; padding-left: 1rem; }
+        .article-body h3 { font-size: 1.6rem; font-weight: 700; color: #1e293b; margin-top: 2rem; margin-bottom: 1rem; }
+        .article-body h4 { font-size: 1.3rem; font-weight: 700; color: #334155; margin-top: 1.5rem; }
+        .dark .article-body h1, .dark .article-body h3, .dark .article-body h4 { color: #f1f5f9; }
+
+        /* Hagaajinta Liisaska (Lists) - Tan ayaa muhiim u ah koodhkaaga */
+        .article-body ul { list-style-type: disc !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body ol { list-style-type: decimal !important; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.6rem; }
+        .article-body li::marker { color: #2563eb; font-weight: bold; }
+
+        /* Strong & Links */
+        .article-body strong { color: #1e293b; font-weight: 700; }
+        .dark .article-body strong { color: #f8fafc; }
+        .article-body a { color: #2563eb; text-decoration: underline; font-weight: 600; }
+        
+        /* Sawirrada */
+        .article-body img { border-radius: 2rem; margin: 2rem 0; width: 100%; height: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+
+<nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+  <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+    <a href="./index.html" class="flex items-center gap-2">
+  
+      <span class="text-2xl font-bold font-display text-white">Rain<span style="color:var(--coral)">Book</span></span>
+    </a>
+    <div class="flex items-center">
+      <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+        <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Home</a></li>
+        <li><a href="./blog.html" class="px-4 py-2 rounded-lg text-[var(--coral)] font-bold">Blog</a></li>
+        <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">About</a></li>
+        <li><a href="./contact.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="mobile-overlay" class="bg-white dark:bg-slate-950 flex-col items-center justify-center space-y-8 text-2xl font-bold transition-all dark:text-white">
+        <button id="close-menu" class="absolute top-6 right-8 text-6xl text-slate-400">&times;</button>
+        <a href="./index.html">home</a>
+        <a href="./about.html">about</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">contact</a>
+    </div>
+
+<script>
+    // Logic-ga Dark Mode
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+    const htmlElement = document.documentElement;
+
+    // Hubi haddii uu qofku horay u doortay dark mode
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.classList.add('dark');
+        themeToggleIcon.innerText = '☀️';
+    } else {
+        htmlElement.classList.remove('dark');
+        themeToggleIcon.innerText = '🌙';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        if (htmlElement.classList.contains('dark')) {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            themeToggleIcon.innerText = '🌙';
+        } else {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggleIcon.innerText = '☀️';
+        }
+    });
+</script>
+    <header class="py-16 px-6 text-center max-w-4xl mx-auto">
+        <div class="mb-4 inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full text-xs font-bold uppercase">Technology</div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
+           programing muxuu yahay sidee loo billaabaa🧠??
+        </a>
+    </div>
+        </h1>
+        <div class="flex justify-center items-center gap-4 text-slate-500 text-sm">
+            <span>By LearnTech</span> • <span>Febraayo 2026</span> • <span>5 min read</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+     <div class="article-body">            
+          
+ <article class="blog-article">
+
+<p>
+Programming waa xirfad casri ah oo door weyn ka ciyaarta dunida maanta.
+Telefoonka aad isticmaasho, website-ka aad booqato, iyo app kasta oo aad furto
+dhammaantood waxaa ka dambeeya programming. Dad badan ayaa u arka programming
+mid adag, balse run ahaantii programming waa fikrad iyo hab-fikir la barto,
+ka hor inta aan la baran code laftiisa. Maqaalkan waxaan si fudud ugu sharxi
+doonnaa fikradaha aasaasiga ah ee programming, anagoo adeegsanayna Af-Soomaali
+fudud iyo tusaalooyin sahlan.
+</p>
+
+<img src="./pexels-photo-5380664.webp" alt="imge" loading="lazy">
+
+<h2>1️⃣ Waa Maxay Programming?</h2>
+<p>
+Programming waa habka aad kombiyuutarka ama qalabka kale ugu sheegto waxa uu
+sameynayo. Kombiyuutarku iskiis wax ma fahmo, balse wuxuu fahmaa amarro
+(code) si sax ah loo qoray. Programmer-ka waa qofka qora amaradaas, kuna
+sheega kombiyuutarka talaabo talaabo waxa la rabo inuu qabto.
+</p>
+
+<p>
+Si fudud u faham: programming waa sida aad qof u siinayso tilmaamo cad.
+Haddii tilmaamahaasi khaldan yihiin, shaqada lama fulinayo.
+</p>
+
+<h3>Tusaale Nolol Maalinle ah</h3>
+<p>
+Haddii aad qof u dirto inuu shaah kuu keeno adigoo leh:
+“Tag, koob qaado, shaah ku shub, sonkor ku dar, i keen”
+— taas waa programming. Talaabo kasta waa amar.
+</p>
+
+<img src="./pexels-photo-7989242.webp" alt="Programming" loading="lazy">
+
+<h2>2️⃣ Maxaa Loo Barta Programming?</h2>
+<p>
+Programming waxaa loo bartaa sababo badan awgood. Qaar ka mid ah waa:
+</p>
+
+<ul>
+  <li>Inaad dhisto websites iyo apps</li>
+  <li>Inaad shaqo online ah hesho (freelance ama remote)</li>
+  <li>Inaad xal u hesho dhibaatooyin adigoo isticmaalaya technology</li>
+  <li>Inaad noqoto qof fikirkiisu nidaamsan yahay (logical thinking)</li>
+</ul>
+
+<p>
+Programming ma aha oo kaliya code, waa hab fikir kaa caawinaya
+inaad dhibaatooyinka u kala jebiso qaybo yaryar oo la xallin karo.
+</p>
+
+<h2>3️⃣ Fikradda Logic-ga (Hab-Fikirka Programming)</h2>
+<p>
+Logic waa laf-dhabarta programming. Kahor intaadan qorin hal xariiq oo code ah,
+waa inaad fahantaa dhibaatada iyo sida loo xallin karo.
+</p>
+
+<h3>Tusaale Logic ah</h3>
+<p>
+Haddii user uu password khaldan geliyo:
+</p>
+
+<ul>
+  <li>Haddii password sax yahay → u oggolow inuu galo</li>
+  <li>Haddii password khaldan yahay → muuji error</li>
+</ul>
+
+<p>
+Tani waa logic, waana waxa programming-ku ku dhisan yahay.
+</p>
+
+<h2>4️⃣ Variables – Kaydinta Xogta</h2>
+<p>
+Variable waa meel xog lagu keydiyo. Programming-ka waxaad mar walba
+la shaqeysaa xog sida magac, da’, tiro, ama fariin.
+</p>
+
+<h3>Example Fudud</h3>
+<pre>
+magac = "Maxamed"
+da = 20
+</pre>
+
+<p>
+Halkan magac iyo da waa variables kaydinaya xog.
+</p>
+
+<img src="./pexels-photo-12899156.webp" alt="Variables" loading="lazy">
+
+<h2>5️⃣ Conditions – Haddii / Haddii Kale</h2>
+<p>
+Conditions waxay kuu ogolaanayaan in barnaamijku go’aan qaato.
+Tusaale ahaan, “haddii tani dhacdo, samee tan”.
+</p>
+
+<h3>Example</h3>
+<pre>
+haddii (da >= 18)
+  oggolow user
+haddii kale
+  diid user
+</pre>
+
+<p>
+Tani waa fikrad aad muhiim u ah programming, lagana helo luqad kasta.
+</p>
+
+<h2>6️⃣ Loops – Ku Celcelinta Shaqada</h2>
+<p>
+Loops waxaa loo isticmaalaa marka aad rabto in hawl la sameeyo marar badan
+adigoon code isku mid ah mar walba qorin.
+</p>
+
+<h3>Tusaale Nolol Maalinle ah</h3>
+<p>
+Haddii aad tiraahdo “Akhriso 10 cashar” — waxaad sameyneysaa loop.
+</p>
+
+<h3>Example</h3>
+<p>
+ku celi 5 jeer:
+  daabac "Ku soo dhawoow Programming"
+</p>
+
+<h2>7️⃣ Programming Languages – Luqadaha Programming</h2>
+<p>
+Waxaa jira luqado badan oo programming ah, sida:
+</p>
+
+<ul>
+  <li>JavaScript</li>
+  <li>Python</li>
+  <li>Java</li>
+  <li>C++</li>
+</ul>
+
+<p>
+Luqad kastaa waxay leedahay ujeeddo gaar ah, balse fikradaha programming
+waa isku mid dhammaantood.
+</p>
+<img src="./pexels-sora-shimazaki-5926382.jpg" alt="Programming Languages" loading="lazy">
+
+<h2>8️⃣ Programming Ma Adag Tahay?</h2>
+<p>
+Programming ma aha mid adag haddii aad si sax ah u barato.
+Qalad badan ayaa dhaca bilowga, waana wax caadi ah.
+Programmer kasta oo xirfad leh wuxuu soo maray qaladaad badan.
+</p>
+
+<p>
+Furaha guusha waa:
+</p>
+
+<ul>
+  <li>Samir</li>
+  <li>Practice joogto ah</li>
+  <li>Inaad fahanto fikradda, ka hor code-ka</li>
+</ul>
+
+<h2>9️⃣ Gunaanad</h2>
+<p>
+Programming waa xirfad mustaqbal leh oo qof walba baran karo.
+Haddii aad fahanto fikradaha aasaasiga ah sida logic, variables,
+conditions, iyo loops, waxaad si fudud u baran kartaa luqad kasta.
+Barashada programming Af-Soomaali ah waxay kaa caawinaysaa inaad
+si degdeg ah u fahanto fikradda, ka hor intaadan u gudbin English.
+</p>
+
+<p>
+Haddii aad rabto inaad noqoto programmer guuleysta, ku bilow fahamka
+fikradaha aasaasiga ah, kadibna si tartiib tartiib ah u baro luqadaha
+programming.
+</p> 
+            <div class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-4 items-center justify-between">
+                <span class="font-bold dark:text-white">La wadaag asxaabta:</span>
+                <div class="flex gap-2">
+<a href="https://api.whatsapp.com/send?text=Halkan ka aqri maqaal aad u xiiso badan: https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-green-500 text-white rounded-xl text-sm font-bold"style="color: #f8fafc; text-decoration: none;">
+   
+   WhatsApp
+</a>
+               <a href="https://www.facebook.com/sharer/sharer.php?u=https://techEnglish.com/payoneer.html" 
+   target="_blank" 
+   class="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-bold" style="color: #f8fafc; text-decoration: none;">
+   Facebook
+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-12">
+            <a href="./hosting&domain.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">Maqaalkii hore</span>
+                <p class="font-bold dark:text-white mt-1">hosting and domain</p>
+            </a>
+            <a href="webdevelopment.html" class="p-6 bg-[#131926] rounded-3xl border border-white/5 text-white dark:border-slate-800 hover:border-blue-500 transition shadow-lg">
+                <span class="text-xs text-slate-500 uppercase">Maqaalka xiga</span>
+                <p class="font-bold dark:text-white mt-1">barashada web development</p>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scroll-progress").style.width = scrolled + "%";
+        };
+
+        // Mobile Menu
+        const overlay = document.getElementById('mobile-overlay');
+        document.getElementById('open-menu').addEventListener('click', () => overlay.classList.add('active'));
+        document.getElementById('close-menu').addEventListener('click', () => overlay.classList.remove('active'));
+    </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>
+ 

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-26STFV9LR7');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - LearnTech</title>
+  <meta name="description" content="Contact LearnTech for inquiries, feedback, or support. Modern, responsive, and fully functional contact page.">
+  <meta name="keywords" content="LearnTech Contact, LearnTech Support, LearnTech Inquiries, Feedback, LearnTech Contact Form, LearnTech Blog">
+  <meta name="author" content="LearnTech">
+  <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght=500;600;700;900&family=Inter:wght=400;500;600;700;800&display=swap" rel="stylesheet">
+    
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } }
+    }
+  </script>
+
+  <style>
+    :root{
+      --ink:#0F1B2D;
+      --surface:#16243A;
+      --surface-2:#1C2D47;
+      --line:rgba(245,243,234,0.10);
+      --cream:#F5F3EA;
+      --cream-dim:#C9CCD6;
+      --coral:#FF6B4A;
+      --mint:#6FE0BE;
+    }
+
+    body { 
+      background: var(--ink);
+      color: var(--cream);
+      font-family: 'Inter', sans-serif; 
+      scroll-behavior: smooth; 
+    }
+    
+    .font-display { font-family: 'Fraunces', sans-serif; }
+    
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .btn {
+      background: var(--coral);
+      color: #111;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .glass-nav { 
+      background: rgba(22, 36, 58, 0.75);
+      backdrop-filter: blur(12px); 
+      -webkit-backdrop-filter: blur(12px); 
+    }
+
+    input:focus, textarea:focus { 
+      border-color: var(--coral) !important;
+      outline: none; 
+    }
+
+    #mobile-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 9999; display: none; }
+    #mobile-overlay.active { display: flex; }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="glass-nav sticky top-0 z-[100] border-b border-white/10 h-20">
+    <div class="max-w-7xl mx-auto flex justify-between items-center h-full px-6">
+      
+       <!-- LOGO -->
+    <a href="./index.html" class="font-display font-bold text-xl tracking-tight">
+      Rain<span style="color:var(--coral)">Book</span>
+    </a>
+
+
+      <!-- NAVIGATION (RIGHT) -->
+      <div class="flex items-center">
+        <ul class="hidden md:flex items-center space-x-1 font-semibold text-sm text-[var(--cream-dim)]">
+          <li><a href="./index.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Home</a></li>
+          <li><a href="./blog.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">Blog</a></li>
+          <li><a href="./about.html" class="px-4 py-2 rounded-lg hover:text-[var(--coral)] transition">About</a></li>
+          <li><a href="./contact.html" class="px-4 py-2 rounded-lg text-white font-bold" style="background:var(--coral); color:#111;">Contact</a></li>
+        </ul>
+        
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="open-menu" class="md:hidden text-3xl" style="color:var(--coral)">☰</button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- MOBILE OVERLAY -->
+  <div id="mobile-overlay" class="bg-[#0F1B2D] flex-col items-center justify-center space-y-8 text-2xl font-bold">
+    <button id="close-menu" class="absolute top-6 right-8 text-6xl text-[var(--cream-dim)] hover:text-[var(--coral)]">×</button>
+    <a href="./index.html" class="hover:text-[var(--coral)]">Home</a>
+    <a href="./blog.html" class="hover:text-[var(--coral)]">Blog</a>
+    <a href="./about.html" class="hover:text-[var(--coral)]">About</a>
+    <a href="./contact.html" class="text-[var(--coral)]">Contact</a>
+    <div class="h-px w-20 bg-white/10"></div>
+    <a href="./privacy.html" class="text-lg text-[var(--cream-dim)] hover:text-[var(--coral)]">Privacy</a>
+    <a href="./terms.html" class="text-lg text-[var(--cream-dim)] hover:text-[var(--coral)]">Terms</a>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-6xl mx-auto px-6 py-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      
+    <!-- LEFT SIDE: INFO -->
+    <div class="space-y-8 pt-6">
+      <h1 class="text-5xl md:text-6xl font-bold font-display tracking-tight">Get in <span style="color:var(--coral)">Touch</span></h1>
+      <p class="text-lg text-[var(--cream-dim)] leading-relaxed">
+        Have questions regarding modern technology, programming frameworks, or AI systems? Want to discuss collaborations? Fill out the secure form or reach out directly via our official channels below. Mohamed Ahmed Ali will review your request and reply shortly.
+      </p>
+
+      <div class="space-y-4">
+        <div class="flex items-center gap-4 p-5 card">
+          <div class="text-3xl">📧</div>
+          <div>
+            <p class="text-xs text-[var(--cream-dim)] uppercase tracking-wider">Official Inquiry Email</p>
+            <a href="mailto:info@techEnglisha.com" class="font-bold hover:text-[var(--coral)] text-lg transition">info@techEnglisha.com</a>
+          </div>
+        </div>
+
+        <a href="https://wa.me/252629707713" target="_blank" class="flex items-center gap-4 p-5 card border-[var(--mint)]/20 hover:scale-[1.02] transition block">
+          <div class="text-3xl">💬</div>
+          <div>
+            <p class="text-xs text-[var(--mint)] uppercase tracking-wider">Direct WhatsApp Chat</p>
+            <p class="font-bold text-lg">+252 629 707 713</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: FORM -->
+    <div class="card p-8 md:p-12 shadow-2xl">
+      <div id="successMessage" class="hidden mb-6 p-4 bg-emerald-500/10 border border-emerald-500/30 text-[var(--mint)] rounded-xl text-center font-bold">
+        ✔ Thank you! Your message has been sent successfully.
+      </div>
+
+      <!-- Formspree Endpoint Fixed and Consolidated -->
+      <form action="https://formspree.io/f/xzdaoeyv" method="POST" id="contactForm" class="space-y-5">
+          
+        <div>
+          <label class="block text-sm font-semibold mb-2 text-[var(--cream-dim)]">Full Name</label>
+          <input type="text" name="name" placeholder="Mohamed Ahmed" class="w-full p-4 rounded-xl bg-[#0F1B2D] border border-white/10 text-white" required>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-2 text-[var(--cream-dim)]">Email Address</label>
+          <input type="email" name="email" placeholder="example@mail.com" class="w-full p-4 rounded-xl bg-[#0F1B2D] border border-white/10 text-white" required>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-2 text-[var(--cream-dim)]">Subject</label>
+          <input type="text" name="subject" placeholder="How can we assist you?" class="w-full p-4 rounded-xl bg-[#0F1B2D] border border-white/10 text-white" required>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-2 text-[var(--cream-dim)]">Message Details</label>
+          <textarea name="message" rows="4" placeholder="Type your context here..." class="w-full p-4 rounded-xl bg-[#0F1B2D] border border-white/10 text-white" required></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn" class="w-full py-4 text-black font-bold rounded-xl shadow-lg transition-all transform hover:-translate-y-1" style="background:var(--coral)">
+          Transmit Message
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-10 border-t border-white/10 text-sm text-[var(--cream-dim)]">
+    © 2026 LearnTech Blog | Managed by Mohamed Ahmed Ali
+  </footer>
+
+  <script>
+    // Menu Overlay Toggle Navigation
+    const overlay = document.getElementById('mobile-overlay');
+    document.getElementById('open-menu').addEventListener('click', () => {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+    document.getElementById('close-menu').addEventListener('click', () => {
+      overlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+
+    // Formspree Submission Engine Fix
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      submitBtn.innerText = "Transmitting... Please wait.";
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+      
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          successMessage.classList.remove('hidden');
+          form.reset();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          alert('Submission error. Please verify input formats.');
+        }
+      })
+      .catch((error) => {
+        alert('Transmission standard error: ' + error);
+      })
+      .finally(() => {
+        submitBtn.innerText = "Transmit Message";
+        submitBtn.disabled = false;
+      });
+    });
+  </script>
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>

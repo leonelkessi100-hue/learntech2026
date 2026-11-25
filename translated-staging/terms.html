@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-26STFV9LR7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-26STFV9LR7');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions - LearnTech</title>
+  <meta name="description" content="Read the Terms and Conditions governing the use of LearnTech, covering content, affiliate partnerships, intellectual property, and website usage.">
+  <meta name="keywords" content="LearnTech Terms and Conditions, AI, Digital Skills, Make Money Online, Affiliate Disclosure, Website Terms">
+  <meta name="author" content="LearnTech">
+  <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root{
+      --ink:#0F1B2D;
+      --surface:#16243A;
+      --surface-2:#1C2D47;
+      --line:rgba(245,243,234,0.10);
+      --cream:#F5F3EA;
+      --cream-dim:#C9CCD6;
+      --coral:#FF6B4A;
+      --mint:#6FE0BE;
+    }
+
+    body{
+      background:var(--ink);
+      color:var(--cream);
+      font-family:'Inter',sans-serif;
+    }
+
+    .font-display{font-family:'Fraunces',sans-serif;}
+
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:18px;
+    }
+
+    .btn{
+      background:var(--coral);
+      color:#111;
+      padding:10px 18px;
+      border-radius:999px;
+      font-weight:700;
+    }
+
+    .glass-nav {
+      background:rgba(22,36,58,0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    #mobile-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 9999;
+      display: none;
+    }
+
+    #mobile-overlay.active { display: flex; }
+
+    .terms-container h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--coral);
+    }
+
+    .terms-container p {
+      margin-bottom: 1.25rem;
+      line-height: 1.8;
+      color: var(--cream-dim);
+      font-size: 1.05rem;
+    }
+
+    .terms-container ul {
+      margin-bottom: 1.5rem;
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .terms-container li {
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--cream-dim);
+    }
+
+    .terms-container li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--mint);
+      font-weight: bold;
+    }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="glass-nav sticky top-0 z-50 border-b border-white/10 h-20">
+    <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
+
+      <div class="flex items-center gap-2">
+        <a href="./index.html" class="font-display font-bold text-xl tracking-tight">
+          Rain<span style="color:var(--coral)">Book</span>
+        </a>
+      </div>
+
+      <ul class="hidden md:flex items-center space-x-8 font-bold text-sm text-[var(--cream-dim)]">
+        <li><a href="./index.html" class="hover:text-[var(--coral)] transition">Home</a></li>
+        <li><a href="./blog.html" class="hover:text-[var(--coral)] transition">Blog</a></li>
+        <li><a href="./about.html" class="hover:text-[var(--coral)] transition">About</a></li>
+        <li><a href="./contact.html" class="hover:text-[var(--coral)] transition">Contact</a></li>
+        <li><a href="./terms.html" class="text-[var(--coral)] underline decoration-2 underline-offset-4 font-extrabold">Terms</a></li>
+      </ul>
+
+      <button id="open-menu" class="md:hidden text-3xl" style="color:var(--coral)">☰</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE OVERLAY -->
+  <div id="mobile-overlay" class="bg-[#0F1B2D] flex-col items-center justify-center space-y-8 text-2xl font-bold transition-all">
+
+    <button id="close-menu" class="absolute top-6 right-8 text-6xl text-[var(--cream-dim)] hover:text-[var(--coral)]">×</button>
+
+    <a href="./index.html" class="hover:text-[var(--coral)]">Home</a>
+    <a href="./blog.html" class="hover:text-[var(--coral)]">Blog</a>
+    <a href="./about.html" class="hover:text-[var(--coral)]">About</a>
+    <a href="./contact.html" class="hover:text-[var(--coral)]">Contact</a>
+
+    <div class="h-px w-20 bg-white/10"></div>
+
+    <a href="./privacy.html" class="text-lg text-[var(--cream-dim)] hover:text-[var(--coral)]">Privacy Policy</a>
+    <a href="./terms.html" class="text-[var(--coral)]">Terms & Conditions</a>
+  </div>
+
+  <!-- HERO -->
+  <header class="py-24 text-center px-6">
+
+    <h1 class="text-5xl md:text-7xl font-bold font-display tracking-tight mb-6">
+      Terms & Conditions <span style="color:var(--coral)">Conditions</span>
+    </h1>
+
+    <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 text-[var(--mint)] rounded-full text-xs font-bold uppercase tracking-widest border border-white/10">
+      Last updated: November 2026
+    </div>
+
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-4xl mx-auto px-6 py-16">
+
+    <div class="card p-10 md:p-16 shadow-2xl terms-container">
+
+      <p class="text-lg font-medium">
+        Welcome to <strong>LearnTech</strong>. These Terms and Conditions govern your access to and use of our website. By visiting or using LearnTech, you agree to follow these terms. If you do not agree with them, please discontinue using our website.
+      </p>
+
+      <h2>1. About LearnTech</h2>
+
+      <p>
+        LearnTech is a digital technology and educational platform that provides information, resources, and insights across three main areas: Artificial Intelligence (AI), Digital Skills, and Making Money Online.
+      </p>
+
+      <p>
+        Our content is designed to help individuals discover useful AI tools, develop practical digital skills, explore online opportunities, and understand the evolving digital economy.
+      </p>
+
+      <h2>2. Intellectual Property Rights</h2>
+
+      <p>
+        Unless otherwise stated, the original content published on LearnTech, including articles, written materials, graphics, website design, and other original resources, belongs to LearnTech and is protected by applicable intellectual property laws.
+      </p>
+
+      <p>
+        You may read, share, and reference our content for personal and educational purposes, provided that proper credit and a link to the original source are included where appropriate.
+      </p>
+
+      <p>
+        You may not reproduce, republish, distribute, or commercially exploit our original content without prior written permission from LearnTech.
+      </p>
+
+      <h2>3. Acceptable Website Usage</h2>
+
+      <p>
+        You agree to use LearnTech responsibly and only for lawful purposes. You must not:
+      </p>
+
+      <ul>
+        <li>Use the website for fraudulent, misleading, or illegal activities.</li>
+        <li>Attempt to gain unauthorized access to our website, servers, or systems.</li>
+        <li>Upload or distribute malicious software, harmful code, or security threats.</li>
+        <li>Copy or scrape website content for unauthorized commercial purposes.</li>
+        <li>Interfere with the website's functionality, security, or availability.</li>
+        <li>Use our platform to distribute spam or misleading information.</li>
+      </ul>
+
+      <h2>4. Educational and Financial Disclaimer</h2>
+
+      <p>
+        All information published on LearnTech is provided for general informational and educational purposes only.
+      </p>
+
+      <p>
+        Our articles about AI tools, digital skills, freelancing, affiliate marketing, online business, and making money online are intended to provide knowledge and guidance. They should not be considered professional financial, legal, or business advice.
+      </p>
+
+      <p>
+        We do not guarantee that following any tutorial, strategy, recommendation, or opportunity discussed on our website will generate income or produce specific results. Your results may vary depending on your skills, experience, effort, location, and other factors.
+      </p>
+
+      <p>
+        You are responsible for evaluating opportunities and making your own decisions before investing money, purchasing products, or using third-party services.
+      </p>
+
+      <h2>5. Affiliate Disclosure</h2>
+
+      <p>
+        LearnTech does not participate in affiliate marketing programs. This means that some links published on our website may not be affiliate links.
+      </p>
+
+      <p>
+        If you click an affiliate link and make a purchase, register for a service, or complete another qualifying action, LearnTech may receive a commission or referral fee at no additional cost to you.
+      </p>
+
+      <p>
+        These partnerships help support the operation and development of LearnTech. However, affiliate relationships do not automatically determine our opinions, reviews, or recommendations.
+      </p>
+
+      <p>
+        We aim to provide useful and honest information to help our audience make informed decisions. Users should always review the terms, pricing, and policies of third-party products or services before taking action.
+      </p>
+
+      <h2>6. Third-Party Links and Services</h2>
+
+      <p>
+        LearnTech may contain links to external websites, applications, tools, and services operated by third parties.
+      </p>
+
+      <p>
+        These links are provided for convenience and informational purposes. We do not own or control these external platforms and are not responsible for their content, accuracy, availability, security, pricing, or privacy practices.
+      </p>
+
+      <p>
+        Accessing third-party websites or using their services is at your own discretion. We encourage you to review their applicable terms and privacy policies before using them.
+      </p>
+
+      <h2>7. Advertising and Cookies</h2>
+
+      <p>
+        LearnTech may use third-party advertising services, analytics tools, and similar technologies to understand website performance and improve user experience.
+      </p>
+
+      <p>
+        These services may use cookies or similar technologies to collect information about website visits, user interactions, and browsing activity in accordance with their respective privacy policies and applicable requirements.
+      </p>
+
+      <p>
+        The use of cookies and tracking technologies is explained further in our Privacy Policy.
+      </p>
+
+      <h2>8. Privacy</h2>
+
+      <p>
+        We respect the privacy of our visitors. Information collected through our website may be used to operate, maintain, analyze, and improve our services.
+      </p>
+
+      <p>
+        For more information about how information is collected, used, and protected, please review our
+        <a href="./privacy.html" class="text-[var(--mint)] font-bold underline">Privacy Policy</a>.
+      </p>
+
+      <h2>9. Limitation of Liability</h2>
+
+      <p>
+        LearnTech makes reasonable efforts to provide useful, accurate, and up-to-date information. However, we do not guarantee that all website content will always be complete, accurate, reliable, or available without interruption.
+      </p>
+
+      <p>
+        To the extent permitted by applicable law, LearnTech shall not be responsible for any direct or indirect loss, damage, or consequences arising from the use of our website, reliance on published information, or interactions with third-party products and services.
+      </p>
+
+      <h2>10. Changes to these Terms</h2>
+
+      <p>
+        We reserve the right to update, modify, or replace these Terms and Conditions at any time to reflect changes to our website, services, or applicable requirements.
+      </p>
+
+      <p>
+        Any updated version will be published on this page with a revised update date. Your continued use of LearnTech after changes are published indicates your acceptance of the updated terms.
+      </p>
+
+      <h2>11. Governing Law</h2>
+
+      <p>
+        These Terms and Conditions are intended to be interpreted in accordance with the applicable laws of Englisha, subject to any mandatory legal requirements that may apply.
+      </p>
+
+      <h2>12. Contact Information</h2>
+
+      <p>
+        If you have questions, concerns, or requests regarding these Terms and Conditions, you can contact us through our
+        <a href="./contact.html" class="text-[var(--coral)] font-bold underline">Contact page</a>.
+      </p>
+
+      <!-- FOOTER INNER -->
+      <div class="mt-20 pt-10 border-t border-white/10 text-center">
+
+        <div class="font-bold text-[var(--cream)] mb-2 font-display text-lg">
+          © 2026 LearnTech — Empowering Innovation
+        </div>
+
+        <p class="text-sm text-[var(--cream-dim)] opacity-70">
+          Helping people explore AI, develop digital skills, and discover online opportunities.
+        </p>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    const overlay = document.getElementById('mobile-overlay');
+    const openBtn = document.getElementById('open-menu');
+    const closeBtn = document.getElementById('close-menu');
+
+    openBtn.addEventListener('click', () => {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      overlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+  </script>
+
+  <script src="./components/navigation.js" defer></script>
+</body>
+</html>

@@ -13,11 +13,11 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - TechSomali</title>
-  <meta name="description" content="Contact TechSomali for inquiries, feedback, or support. Modern, responsive, and fully functional contact page.">
-  <meta name="keywords" content="Contact TechSomali, TechSomali Support, TechSomali Inquiries, Feedback, TechSomali Contact Form, TechSomali Blog">
-  <meta name="author" content="TechSomali">
-  <link rel="icon" href="./techsomalia-logo.png">
+  <title>Contact Us - LearnTech</title>
+  <meta name="description" content="Contact LearnTech for inquiries, feedback, or support. Modern, responsive, and fully functional contact page.">
+  <meta name="keywords" content="LearnTech Contact, LearnTech Support, LearnTech Inquiries, Feedback, LearnTech Contact Form, LearnTech Blog">
+  <meta name="author" content="LearnTech">
+  <link rel="icon" href="./LearnTech-mark.svg" type="image/svg+xml">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,6 +79,8 @@
     #mobile-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 9999; display: none; }
     #mobile-overlay.active { display: flex; }
   </style>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./components/responsive.css">
 </head>
 
 <body>
@@ -89,7 +91,7 @@
       
        <!-- LOGO -->
     <a href="./index.html" class="font-display font-bold text-xl tracking-tight">
-      Tech<span style="color:var(--coral)">Somalia</span>
+      Rain<span style="color:var(--coral)">Book</span>
     </a>
 
 
@@ -111,14 +113,14 @@
 
   <!-- MOBILE OVERLAY -->
   <div id="mobile-overlay" class="bg-[#0F1B2D] flex-col items-center justify-center space-y-8 text-2xl font-bold">
-    <button id="close-menu" class="absolute top-6 right-8 text-6xl text-[var(--cream-dim)] hover:text-[var(--coral)]">&times;</button>
+    <button id="close-menu" class="absolute top-6 right-8 text-6xl text-[var(--cream-dim)] hover:text-[var(--coral)]">×</button>
     <a href="./index.html" class="hover:text-[var(--coral)]">Home</a>
     <a href="./blog.html" class="hover:text-[var(--coral)]">Blog</a>
     <a href="./about.html" class="hover:text-[var(--coral)]">About</a>
     <a href="./contact.html" class="text-[var(--coral)]">Contact</a>
     <div class="h-px w-20 bg-white/10"></div>
     <a href="./privacy.html" class="text-lg text-[var(--cream-dim)] hover:text-[var(--coral)]">Privacy</a>
-    <a href="./terms&conditions.html" class="text-lg text-[var(--cream-dim)] hover:text-[var(--coral)]">Terms</a>
+    <a href="./terms.html" class="text-lg text-[var(--cream-dim)] hover:text-[var(--coral)]">Terms</a>
   </div>
 
   <!-- MAIN CONTAINER -->
@@ -136,7 +138,7 @@
           <div class="text-3xl">📧</div>
           <div>
             <p class="text-xs text-[var(--cream-dim)] uppercase tracking-wider">Official Inquiry Email</p>
-            <a href="mailto:info@techsomalia.com" class="font-bold hover:text-[var(--coral)] text-lg transition">info@techsomalia.com</a>
+            <a href="mailto:info@techEnglisha.com" class="font-bold hover:text-[var(--coral)] text-lg transition">info@techEnglisha.com</a>
           </div>
         </div>
 
@@ -188,7 +190,7 @@
 
   <!-- FOOTER -->
   <footer class="text-center py-10 border-t border-white/10 text-sm text-[var(--cream-dim)]">
-    © 2026 TechSomali Blog | Managed by Mohamed Ahmed Ali
+    © 2026 LearnTech Blog | Managed by Mohamed Ahmed Ali
   </footer>
 
   <script>
@@ -240,5 +242,6 @@
       });
     });
   </script>
+  <script src="./components/navigation.js" defer></script>
 </body>
 </html>
